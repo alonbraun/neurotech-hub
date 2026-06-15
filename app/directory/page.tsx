@@ -6,7 +6,7 @@ export const metadata = {
   description: "Discover the leading neurotechnology companies — from brain-computer interfaces to cognitive health platforms.",
 };
 
-const CATEGORIES = ["All", "Brain-Computer Interfaces", "Cognitive Health", "Mental Health Tech", "Neuromodulation", "Neuropharmaceuticals", "Neurodiagnostics", "Research Tools", "Neurofeedback"];
+const CATEGORIES = ["All", "Brain-Computer Interfaces", "Cognitive Health", "Mental Health Tech", "Neuromodulation", "Neuropharmaceuticals", "Neurodiagnostics", "Research Tools", "Neurofeedback", "Psychedelics"];
 
 const AVATAR_COLORS = [
   ["#dce8fb", "#185fa5"],

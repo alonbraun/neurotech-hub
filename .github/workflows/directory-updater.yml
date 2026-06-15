@@ -36,7 +36,7 @@ jobs:
 
           Already listed companies (slugs): {", ".join(existing)}
 
-          Generate 3 NEW neurotechnology companies NOT in the list above. Real companies in neurotech — BCIs, neuromodulation, cognitive health, mental health tech, neuropharmaceuticals, neurodiagnostics, research tools, neurofeedback.
+          Generate 3 NEW neurotechnology companies NOT in the list above. Real companies in neurotech — BCIs, neuromodulation, cognitive health, mental health tech, neuropharmaceuticals, neurodiagnostics, research tools, neurofeedback, psychedelics.
 
           For each company output a complete markdown file:
 
@@ -44,7 +44,7 @@ jobs:
           ---
           name: Company Name
           slug: slug-here
-          category: Brain-Computer Interfaces | Cognitive Health | Mental Health Tech | Neuromodulation | Neuropharmaceuticals | Neurodiagnostics | Research Tools | Neurofeedback
+          category: Brain-Computer Interfaces | Cognitive Health | Mental Health Tech | Neuromodulation | Neuropharmaceuticals | Neurodiagnostics | Research Tools | Neurofeedback | Psychedelics
           description: One sentence description of what the company does.
           website: https://example.com
           funding: Funding info or "Bootstrapped" or "Unknown"

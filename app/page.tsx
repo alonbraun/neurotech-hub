@@ -10,6 +10,7 @@ const CATEGORY_ICONS: Record<string, string> = {
   "Neurodiagnostics": "🔬",
   "Research Tools": "🔭",
   "Neurofeedback": "📊",
+  "Psychedelics": "🍄",
 };
 
 const AVATAR_COLORS = [
