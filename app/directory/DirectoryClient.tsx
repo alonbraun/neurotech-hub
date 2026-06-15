@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Link from "next/link";
 
 const CATEGORIES = ["All", "Brain-Computer Interfaces", "Cognitive Health", "Mental Health Tech", "Neuromodulation", "Neuropharmaceuticals", "Neurodiagnostics", "Research Tools", "Neurofeedback", "Psychedelics"];
 
@@ -93,7 +94,7 @@ export default function DirectoryClient({ companies }: { companies: any[] }) {
                   {premium.map((c) => {
                     const [bg, fg] = avatarColor(c.name);
                     return (
-                      <div key={c.slug} className="rounded-2xl p-6 bg-[#f0f7fd] border border-[#1a3d6b]/25 hover:-translate-y-0.5 hover:shadow-md transition-all">
+                      <Link key={c.slug} href={`/directory/${c.slug}`} className="rounded-2xl p-6 bg-[#f0f7fd] border border-[#1a3d6b]/25 hover:-translate-y-0.5 hover:shadow-md transition-all block">
                         <div className="flex items-center gap-3 mb-4">
                           <div className="w-11 h-11 rounded-xl flex items-center justify-center text-sm font-semibold" style={{ background: bg, color: fg }}>
                             {initials(c.name)}
@@ -109,13 +110,9 @@ export default function DirectoryClient({ companies }: { companies: any[] }) {
                           {c.funding && c.funding !== "Unknown" && (
                             <span className="text-xs text-gray-500 bg-white border border-gray-100 px-2 py-0.5 rounded-full">{c.funding}</span>
                           )}
-                          {c.website && (
-                            <a href={c.website} target="_blank" rel="noopener noreferrer" className="ml-auto text-sm font-medium text-[#1a3d6b] hover:underline">
-                              Visit →
-                            </a>
-                          )}
+                          <span className="ml-auto text-sm font-medium text-[#1a3d6b]">View profile →</span>
                         </div>
-                      </div>
+                      </Link>
                     );
                   })}
                 </div>
@@ -129,7 +126,7 @@ export default function DirectoryClient({ companies }: { companies: any[] }) {
               {free.map((c) => {
                 const [bg, fg] = avatarColor(c.name);
                 return (
-                  <div key={c.slug} className="rounded-2xl p-5 bg-white border border-gray-100 hover:border-[#1a3d6b]/20 hover:-translate-y-0.5 hover:shadow-sm transition-all">
+                  <Link key={c.slug} href={`/directory/${c.slug}`} className="rounded-2xl p-5 bg-white border border-gray-100 hover:border-[#1a3d6b]/20 hover:-translate-y-0.5 hover:shadow-sm transition-all block">
                     <div className="flex items-center gap-3 mb-3">
                       <div className="w-9 h-9 rounded-lg flex items-center justify-center text-xs font-semibold flex-shrink-0" style={{ background: bg, color: fg }}>
                         {initials(c.name)}
@@ -142,13 +139,9 @@ export default function DirectoryClient({ companies }: { companies: any[] }) {
                     <p className="text-sm text-gray-600 leading-relaxed line-clamp-2">{c.description}</p>
                     <div className="flex items-center mt-3 gap-2">
                       {c.location && <span className="text-xs text-gray-400">{c.location}</span>}
-                      {c.website && (
-                        <a href={c.website} target="_blank" rel="noopener noreferrer" className="ml-auto text-xs text-[#1a3d6b] hover:underline shrink-0">
-                          Visit →
-                        </a>
-                      )}
+                      <span className="ml-auto text-xs text-[#1a3d6b] shrink-0">View profile →</span>
                     </div>
-                  </div>
+                  </Link>
                 );
               })}
             </div>
