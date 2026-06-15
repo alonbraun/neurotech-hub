@@ -73,7 +73,7 @@ export default function Home() {
             <span className="text-[#5da8e0]">all in one place.</span>
           </h1>
           <p className="text-[#9fcae8] text-lg md:text-xl leading-relaxed max-w-2xl mx-auto mb-10">
-            The definitive resource for neurotech companies, investors, researchers, and clinicians worldwide. {companies.length > 0 ? `${companies.length}+ companies` : "Companies"}, daily news, and the best jobs in neurotechnology.
+            The definitive resource for neurotech companies, investors, researchers, and clinicians worldwide. {companies.length > 0 ? `${companies.length}+ companies listed` : "Hundreds of companies"}, news published 3× per week, and the best jobs in neurotechnology.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link href="/directory" className="bg-[#1a3d6b] hover:bg-[#1d5ea0] text-white text-base font-medium px-8 py-3.5 rounded-xl transition-colors">

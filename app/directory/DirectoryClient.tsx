@@ -38,10 +38,10 @@ export default function DirectoryClient({ companies }: { companies: any[] }) {
         <div className="max-w-7xl mx-auto">
           <span className="text-[#5da8e0] text-xs font-semibold tracking-[3px] uppercase">NeuroTech Directory</span>
           <h1 className="text-4xl md:text-5xl font-semibold text-white mt-4 mb-3 leading-tight">
-            {companies.length}+ neurotechnology<br className="hidden md:block" /> companies
+            The most comprehensive<br className="hidden md:block" /> neurotech company database
           </h1>
           <p className="text-[#9fcae8] text-lg max-w-2xl">
-            Discover the companies building the future of neurotechnology — from BCIs to cognitive health platforms.
+            {companies.length} companies across BCIs, cognitive health, neuromodulation, psychedelics, and more — updated weekly by our AI research agent.
           </p>
           <div className="mt-6 max-w-md">
             <input
