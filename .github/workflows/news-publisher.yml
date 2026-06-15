@@ -1,0 +1,71 @@
+name: NeuoTech News Agent
+
+on:
+  schedule:
+    - cron: '0 8 * * 1,3,5'  # Mon, Wed, Fri at 8am UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish-news:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Run News Publisher Agent
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          pip install anthropic
+          mkdir -p content/news
+          python - <<'EOF'
+          import anthropic, datetime, os, re
+
+          client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
+          today = datetime.date.today().isoformat()
+
+          message = client.messages.create(
+              model="claude-sonnet-4-6",
+              max_tokens=1024,
+              messages=[{"role": "user", "content": f"""You are the content agent for NeuoTech.com, the neurotechnology industry portal.
+
+          Write ONE news article for today ({today}) about the neurotechnology industry.
+          Focus on: funding rounds, product launches, research findings, policy updates, or company milestones in neurotech (BCIs, neuromodulation, cognitive health, neuropharmaceuticals, mental health tech, etc.).
+          The article should be 350-450 words, written for industry professionals.
+
+          Return ONLY a markdown file with this exact frontmatter, nothing else:
+
+          ---
+          title: "Article title here"
+          date: {today}
+          category: Funding | Product | Research | Policy | Industry
+          excerpt: "One sentence summary (under 160 chars)"
+          sponsored: false
+          ---
+
+          Article body here (350-450 words, plain paragraphs, no headers or markdown inside body)
+          """}]
+          )
+
+          content = message.content[0].text.strip()
+          title_match = re.search(r'title: "([^"]+)"', content)
+          title = title_match.group(1) if title_match else "neurotech-news"
+          slug = re.sub(r'[^a-z0-9]+', '-', title.lower()).strip('-')[:60]
+          filename = f"content/news/{today}-{slug}.md"
+
+          with open(filename, 'w') as f:
+              f.write(content)
+          print(f"Created: {filename}")
+          EOF
+
+      - name: Commit and push
+        run: |
+          git config user.name "NeuoTech News Agent"
+          git config user.email "agent@neurotech.com"
+          git add content/news/
+          git diff --staged --quiet || git commit -m "feat: publish news article $(date +%Y-%m-%d)"
+          git push

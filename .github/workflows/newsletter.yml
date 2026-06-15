@@ -1,0 +1,104 @@
+name: NeuoTech Newsletter Agent
+
+on:
+  schedule:
+    - cron: '0 9 * * 0'  # Every Sunday at 9am UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  send-newsletter:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Compose and Send Newsletter
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          NEUROTECH_AUDIENCE_ID: ${{ secrets.NEUROTECH_AUDIENCE_ID }}
+        run: |
+          pip install anthropic resend
+          python - <<'EOF'
+          import anthropic, resend, os, glob, datetime, json, urllib.request
+
+          resend.api_key = os.environ["RESEND_API_KEY"]
+          client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
+          audience_id = os.environ.get("NEUROTECH_AUDIENCE_ID", "")
+
+          if not audience_id:
+              print("No NEUROTECH_AUDIENCE_ID set — skipping send")
+              exit(0)
+
+          req = urllib.request.Request(
+              f"https://api.resend.com/audiences/{audience_id}/contacts",
+              headers={"Authorization": f"Bearer {os.environ['RESEND_API_KEY']}"}
+          )
+          with urllib.request.urlopen(req) as r:
+              contacts = json.loads(r.read())["data"]
+          subscribers = [c["email"] for c in contacts if not c.get("unsubscribed", False)]
+          print(f"Sending to {len(subscribers)} subscribers")
+
+          news_files = sorted(glob.glob("content/news/*.md"), reverse=True)[:3]
+          news_content = "".join(open(f).read() + "\n\n---\n\n" for f in news_files)
+
+          job_files = sorted(glob.glob("content/jobs/*.md"), reverse=True)[:3]
+          jobs_content = "".join(open(f).read() + "\n\n" for f in job_files)
+
+          today = datetime.date.today().strftime("%B %d, %Y")
+
+          message = client.messages.create(
+              model="claude-sonnet-4-6",
+              max_tokens=2048,
+              messages=[{"role": "user", "content": f"""Compose the weekly NeuoTech Digest newsletter for {today}.
+
+          Recent news:
+          {news_content or "No articles this week yet."}
+
+          Open jobs:
+          {jobs_content or "No jobs posted this week."}
+
+          Write an HTML email with:
+          1. Brief intro (2-3 sentences about the week in neurotech)
+          2. Top 3 news items (title + 2 sentence summary, linked to https://neurotech.com/news)
+          3. Open jobs section (if any)
+          4. Closing CTA to visit neurotech.com
+
+          Clean HTML, inline styles, brand color #1a3d6b (deep blue), max 600px wide, no images.
+          DO NOT include unsubscribe footer — added automatically.
+          Return ONLY the HTML body, no explanation.
+          """}]
+          )
+
+          html_body = message.content[0].text.strip()
+          if html_body.startswith("```html"): html_body = html_body[7:]
+          if html_body.endswith("```"): html_body = html_body[:-3]
+
+          footer_template = """
+          <hr style="margin:32px 0;border:none;border-top:1px solid #e5e5e5">
+          <p style="font-size:12px;color:#999;text-align:center;line-height:1.6">
+            You're receiving this because you subscribed at <a href="https://neurotech.com" style="color:#1a3d6b">neurotech.com</a>.<br>
+            <a href="https://neurotech.com/unsubscribe?email={email}" style="color:#999">Unsubscribe</a>
+            &nbsp;&middot;&nbsp;
+            <a href="https://neurotech.com" style="color:#999">Visit NeuoTech.com</a>
+          </p>
+          """
+
+          sent = 0
+          for email in subscribers:
+              html = html_body + footer_template.replace("{email}", email)
+              resend.Emails.send({
+                  "from": "NeuoTech Digest <digest@neurotech.com>",
+                  "to": email,
+                  "subject": f"NeuoTech Digest — {today}",
+                  "html": html,
+                  "headers": {
+                      "List-Unsubscribe": f"<https://neurotech.com/unsubscribe?email={email}>",
+                      "List-Unsubscribe-Post": "List-Unsubscribe=One-Click"
+                  }
+              })
+              sent += 1
+          print(f"Newsletter sent to {sent} subscribers" if sent else "No subscribers yet")
+          EOF

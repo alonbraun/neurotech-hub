@@ -1,0 +1,85 @@
+name: NeuoTech Directory Agent
+
+on:
+  schedule:
+    - cron: '0 8 * * 1'  # Every Monday at 8am UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-directory:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Find and add new neurotech companies
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          pip install anthropic
+          mkdir -p content/companies
+          python - <<'EOF'
+          import anthropic, os, re, glob
+          from datetime import date
+
+          client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
+          existing = [os.path.basename(f).replace(".md", "") for f in glob.glob("content/companies/*.md")]
+
+          message = client.messages.create(
+              model="claude-sonnet-4-6",
+              max_tokens=2048,
+              messages=[{"role": "user", "content": f"""You are the directory agent for NeuoTech.com.
+
+          Already listed companies (slugs): {", ".join(existing)}
+
+          Generate 3 NEW neurotechnology companies NOT in the list above. Real companies in neurotech — BCIs, neuromodulation, cognitive health, mental health tech, neuropharmaceuticals, neurodiagnostics, research tools, neurofeedback.
+
+          For each company output a complete markdown file:
+
+          FILE: slug-here.md
+          ---
+          name: Company Name
+          slug: slug-here
+          category: Brain-Computer Interfaces | Cognitive Health | Mental Health Tech | Neuromodulation | Neuropharmaceuticals | Neurodiagnostics | Research Tools | Neurofeedback
+          description: One sentence description of what the company does.
+          website: https://example.com
+          funding: Funding info or "Bootstrapped" or "Unknown"
+          location: City, State/Country
+          tier: free
+          featured: false
+          date: {date.today().isoformat()}
+          ---
+          END_FILE
+
+          Output all 3 files, separated by END_FILE markers.
+          """}]
+          )
+
+          content = message.content[0].text
+          files = re.split(r'END_FILE', content)
+          created = 0
+          for block in files:
+              file_match = re.search(r'FILE:\s*([^\n]+)\n(---.*?---)', block, re.DOTALL)
+              if file_match:
+                  filename = file_match.group(1).strip()
+                  file_content = file_match.group(2).strip() + "\n"
+                  filepath = f"content/companies/{filename}"
+                  if not os.path.exists(filepath):
+                      with open(filepath, 'w') as f:
+                          f.write(file_content)
+                      print(f"Created: {filepath}")
+                      created += 1
+          print(f"Added {created} new companies")
+          EOF
+
+      - name: Commit and push
+        run: |
+          git config user.name "NeuoTech Directory Agent"
+          git config user.email "agent@neurotech.com"
+          git add content/companies/
+          git diff --staged --quiet || git commit -m "feat: add new company listings $(date +%Y-%m-%d)"
+          git push
