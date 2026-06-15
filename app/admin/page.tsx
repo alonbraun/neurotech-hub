@@ -51,14 +51,14 @@ export default async function AdminPage() {
   const agentRuns = runs.filter((r: any) => r.name !== "Deploy to Netlify");
   const deployRuns = runs.filter((r: any) => r.name === "Deploy to Netlify");
   const lastDeploy = deployRuns[0];
-  const agentSummary = ["NeuoTech News Agent", "NeuoTech Directory Agent", "NeuoTech Newsletter Agent"].map(name => ({ name, last: agentRuns.find((r: any) => r.name === name) }));
+  const agentSummary = ["NeuroTech News Agent", "NeuroTech Directory Agent", "NeuroTech Newsletter Agent"].map(name => ({ name, last: agentRuns.find((r: any) => r.name === name) }));
 
   return (
     <div className="max-w-5xl mx-auto px-5 py-12">
       <div className="mb-10">
         <span className="text-xs font-semibold tracking-[3px] text-[#1a3d6b] uppercase">Portal Admin</span>
         <h1 className="text-3xl font-semibold text-gray-900 mt-2">Dashboard</h1>
-        <p className="text-gray-500 mt-1 text-sm">Live stats for NeuoTech.com</p>
+        <p className="text-gray-500 mt-1 text-sm">Live stats for NeuroTech.com</p>
       </div>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
         {[

@@ -2,7 +2,7 @@ import { getAllFiles } from "@/lib/content";
 import Link from "next/link";
 
 export const metadata = {
-  title: "NeuoTech Jobs — NeuoTech.com",
+  title: "NeuroTech Jobs — NeuroTech.com",
   description: "The best jobs in neurotechnology — BCIs, cognitive health, neuromodulation, and more.",
 };
 
@@ -13,7 +13,7 @@ export default function JobsPage() {
     <>
       <section className="bg-[#0d1525] px-5 py-16 md:py-20">
         <div className="max-w-7xl mx-auto">
-          <span className="text-[#5da8e0] text-xs font-semibold tracking-[3px] uppercase">NeuoTech Jobs</span>
+          <span className="text-[#5da8e0] text-xs font-semibold tracking-[3px] uppercase">NeuroTech Jobs</span>
           <h1 className="text-4xl md:text-5xl font-semibold text-white mt-4 mb-3 leading-tight">Jobs in neurotechnology</h1>
           <p className="text-[#9fcae8] text-lg max-w-2xl">Find your next role at the companies building the future of neurotechnology.</p>
         </div>

@@ -92,7 +92,7 @@ export default function Home() {
             [companies.length > 0 ? `${companies.length}+` : "20+", "Companies listed"],
             ["3×/week", "Industry news"],
             ["$3.2B+", "VC invested in 2024"],
-            ["Every Sunday", "NeuoTech Digest"],
+            ["Every Sunday", "NeuroTech Digest"],
           ].map(([val, label]) => (
             <div key={label} className="px-6 py-3 text-center">
               <p className="text-[#5da8e0] text-2xl md:text-3xl font-semibold">{val}</p>
@@ -255,7 +255,7 @@ export default function Home() {
       <section className="bg-[#0d1525] py-20 px-5">
         <div className="max-w-2xl mx-auto text-center">
           <span className="inline-block text-[#5da8e0] text-xs font-semibold tracking-[3px] uppercase mb-4">Every Sunday</span>
-          <h2 className="text-3xl md:text-4xl font-semibold text-white mb-4 leading-tight">The NeuoTech Digest</h2>
+          <h2 className="text-3xl md:text-4xl font-semibold text-white mb-4 leading-tight">The NeuroTech Digest</h2>
           <p className="text-[#9fcae8] text-base leading-relaxed mb-8">
             Funding rounds, product launches, research breakthroughs, and the best jobs — curated weekly for the neurotech industry.
           </p>
@@ -274,7 +274,7 @@ export default function Home() {
         <div className="bg-[#f0f7fd] border border-[#1a3d6b]/15 rounded-3xl p-10 md:p-14 text-center">
           <h2 className="text-3xl font-semibold text-gray-900 mb-3">Reach the neurotech industry</h2>
           <p className="text-gray-500 text-lg max-w-xl mx-auto mb-8">
-            Founders, investors, and researchers read NeuoTech.com. Premium listings, newsletter sponsorships, and featured placements available.
+            Founders, investors, and researchers read NeuroTech.com. Premium listings, newsletter sponsorships, and featured placements available.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link href="/advertise" className="bg-[#1a3d6b] hover:bg-[#0f2448] text-white font-medium px-8 py-3.5 rounded-xl transition-colors">

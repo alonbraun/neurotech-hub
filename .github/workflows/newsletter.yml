@@ -1,4 +1,4 @@
-name: NeuoTech Newsletter Agent
+name: NeuroTech Newsletter Agent
 
 on:
   schedule:
@@ -52,7 +52,7 @@ jobs:
           message = client.messages.create(
               model="claude-sonnet-4-6",
               max_tokens=2048,
-              messages=[{"role": "user", "content": f"""Compose the weekly NeuoTech Digest newsletter for {today}.
+              messages=[{"role": "user", "content": f"""Compose the weekly NeuroTech Digest newsletter for {today}.
 
           Recent news:
           {news_content or "No articles this week yet."}
@@ -82,7 +82,7 @@ jobs:
             You're receiving this because you subscribed at <a href="https://neurotech.com" style="color:#1a3d6b">neurotech.com</a>.<br>
             <a href="https://neurotech.com/unsubscribe?email={email}" style="color:#999">Unsubscribe</a>
             &nbsp;&middot;&nbsp;
-            <a href="https://neurotech.com" style="color:#999">Visit NeuoTech.com</a>
+            <a href="https://neurotech.com" style="color:#999">Visit NeuroTech.com</a>
           </p>
           """
 
@@ -90,9 +90,9 @@ jobs:
           for email in subscribers:
               html = html_body + footer_template.replace("{email}", email)
               resend.Emails.send({
-                  "from": "NeuoTech Digest <digest@neurotech.com>",
+                  "from": "NeuroTech Digest <digest@neurotech.com>",
                   "to": email,
-                  "subject": f"NeuoTech Digest — {today}",
+                  "subject": f"NeuroTech Digest — {today}",
                   "html": html,
                   "headers": {
                       "List-Unsubscribe": f"<https://neurotech.com/unsubscribe?email={email}>",

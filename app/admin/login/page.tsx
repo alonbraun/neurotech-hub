@@ -34,7 +34,7 @@ export default function AdminLoginPage() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50 px-4">
       <div className="bg-white rounded-3xl border border-gray-100 p-10 w-full max-w-sm text-center">
-        <Link href="/" className="text-[#1a3d6b] font-semibold text-lg">NeuoTech.com</Link>
+        <Link href="/" className="text-[#1a3d6b] font-semibold text-lg">NeuroTech.com</Link>
         <p className="text-xs text-gray-400 mt-1 mb-8">Admin dashboard</p>
         <p className="text-sm font-medium text-gray-700 mb-6">Enter your PIN</p>
         <div className="flex justify-center gap-2 mb-6">

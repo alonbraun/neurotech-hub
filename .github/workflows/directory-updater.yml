@@ -1,4 +1,4 @@
-name: NeuoTech Directory Agent
+name: NeuroTech Directory Agent
 
 on:
   schedule:
@@ -32,7 +32,7 @@ jobs:
           message = client.messages.create(
               model="claude-sonnet-4-6",
               max_tokens=2048,
-              messages=[{"role": "user", "content": f"""You are the directory agent for NeuoTech.com.
+              messages=[{"role": "user", "content": f"""You are the directory agent for NeuroTech.com.
 
           Already listed companies (slugs): {", ".join(existing)}
 
@@ -78,7 +78,7 @@ jobs:
 
       - name: Commit and push
         run: |
-          git config user.name "NeuoTech Directory Agent"
+          git config user.name "NeuroTech Directory Agent"
           git config user.email "agent@neurotech.com"
           git add content/companies/
           git diff --staged --quiet || git commit -m "feat: add new company listings $(date +%Y-%m-%d)"

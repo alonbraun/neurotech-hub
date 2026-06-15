@@ -1,4 +1,4 @@
-name: NeuoTech News Agent
+name: NeuroTech News Agent
 
 on:
   schedule:
@@ -31,7 +31,7 @@ jobs:
           message = client.messages.create(
               model="claude-sonnet-4-6",
               max_tokens=1024,
-              messages=[{"role": "user", "content": f"""You are the content agent for NeuoTech.com, the neurotechnology industry portal.
+              messages=[{"role": "user", "content": f"""You are the content agent for NeuroTech.com, the neurotechnology industry portal.
 
           Write ONE news article for today ({today}) about the neurotechnology industry.
           Focus on: funding rounds, product launches, research findings, policy updates, or company milestones in neurotech (BCIs, neuromodulation, cognitive health, neuropharmaceuticals, mental health tech, etc.).
@@ -64,7 +64,7 @@ jobs:
 
       - name: Commit and push
         run: |
-          git config user.name "NeuoTech News Agent"
+          git config user.name "NeuroTech News Agent"
           git config user.email "agent@neurotech.com"
           git add content/news/
           git diff --staged --quiet || git commit -m "feat: publish news article $(date +%Y-%m-%d)"

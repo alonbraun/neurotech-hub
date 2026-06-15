@@ -2,7 +2,7 @@ import { getAllFiles } from "@/lib/content";
 import Link from "next/link";
 
 export const metadata = {
-  title: "NeuoTech News & Insights — NeuoTech.com",
+  title: "NeuroTech News & Insights — NeuroTech.com",
   description: "The latest news, funding rounds, and insights from the neurotechnology industry.",
 };
 

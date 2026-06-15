@@ -6,13 +6,13 @@ import "./globals.css";
 const geist = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "NeuoTech.com — The Neurotechnology Industry Hub",
+  title: "NeuroTech.com — The Neurotechnology Industry Hub",
   description: "The go-to resource for neurotechnology companies, news, jobs, and insights.",
   openGraph: {
-    title: "NeuoTech.com — The Neurotechnology Industry Hub",
+    title: "NeuroTech.com — The Neurotechnology Industry Hub",
     description: "The go-to resource for neurotechnology companies, news, jobs, and insights.",
     url: "https://neurotech.com",
-    siteName: "NeuoTech.com",
+    siteName: "NeuroTech.com",
     type: "website",
   },
 };
@@ -24,7 +24,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <header className="sticky top-0 z-50 bg-[#0d1525]/95 backdrop-blur-md border-b border-white/5">
           <div className="max-w-7xl mx-auto px-5 h-16 flex items-center justify-between">
             <Link href="/" className="flex items-center gap-1.5">
-              <span className="text-[#5da8e0] font-semibold text-xl tracking-tight">NeuoTech</span>
+              <span className="text-[#5da8e0] font-semibold text-xl tracking-tight">NeuroTech</span>
               <span className="text-[#3d6a9e] font-normal text-xl">.com</span>
             </Link>
             <nav className="hidden md:flex items-center gap-1">
@@ -57,7 +57,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div className="grid md:grid-cols-4 gap-10 mb-10">
               <div className="md:col-span-2">
                 <div className="flex items-center gap-1 mb-3">
-                  <span className="text-[#5da8e0] font-semibold text-lg">NeuoTech</span>
+                  <span className="text-[#5da8e0] font-semibold text-lg">NeuroTech</span>
                   <span className="text-[#3d6a9e] text-lg">.com</span>
                 </div>
                 <p className="text-[#6b8fae] text-sm leading-relaxed max-w-xs">
@@ -82,7 +82,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               </div>
             </div>
             <div className="border-t border-white/5 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
-              <p className="text-[#3d6a9e] text-xs">© 2026 NeuoTech.com. All rights reserved.</p>
+              <p className="text-[#3d6a9e] text-xs">© 2026 NeuroTech.com. All rights reserved.</p>
               <p className="text-[#3d6a9e] text-xs">The neurotechnology industry hub.</p>
             </div>
           </div>

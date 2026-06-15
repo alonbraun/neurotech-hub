@@ -3,20 +3,20 @@ import { useState } from "react";
 
 const PLANS = [
   { id: "premium-listing", name: "Premium Listing", price: "$1,200", per: "/month", highlight: true,
-    paypal: "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick-subscriptions&business=alonbraun@me.com&item_name=NeuoTech+Premium+Listing&a3=1200&p3=1&t3=M&src=1&sra=1",
+    paypal: "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick-subscriptions&business=alonbraun@me.com&item_name=NeuroTech+Premium+Listing&a3=1200&p3=1&t3=M&src=1&sra=1",
     features: ["Full company profile page", "Featured badge in directory", "Priority ranking above free listings", "Contact button for inbound leads", "2 free job posts per month", "Logo on homepage (rotating)"] },
   { id: "newsletter-sponsor", name: "Newsletter Sponsor", price: "$1,500", per: "/issue", highlight: false,
-    paypal: "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=alonbraun@me.com&item_name=NeuoTech+Newsletter+Sponsor&amount=1500",
-    features: ["Logo + 60-word blurb in NeuoTech Digest", "Sent every Sunday to all subscribers", "Linked to your website or landing page", "Max 2 sponsors per issue", "Archived permanently in newsletter archive"] },
+    paypal: "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=alonbraun@me.com&item_name=NeuroTech+Newsletter+Sponsor&amount=1500",
+    features: ["Logo + 60-word blurb in NeuroTech Digest", "Sent every Sunday to all subscribers", "Linked to your website or landing page", "Max 2 sponsors per issue", "Archived permanently in newsletter archive"] },
   { id: "featured-homepage", name: "Featured Homepage", price: "$800", per: "/month", highlight: false,
-    paypal: "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick-subscriptions&business=alonbraun@me.com&item_name=NeuoTech+Featured+Homepage&a3=800&p3=1&t3=M&src=1&sra=1",
+    paypal: "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick-subscriptions&business=alonbraun@me.com&item_name=NeuroTech+Featured+Homepage&a3=800&p3=1&t3=M&src=1&sra=1",
     features: ["Company card on homepage hero section", '"Featured" badge across all pages', "Included in directory featured section", "1 free job post per month"] },
   { id: "sponsored-article", name: "Sponsored Article", price: "$1,500", per: "/article", highlight: false,
-    paypal: "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=alonbraun@me.com&item_name=NeuoTech+Sponsored+Article&amount=1500",
-    features: ["400–800 word thought leadership piece", "Published in News & Insights section", "Included in weekly newsletter", "Labeled 'Sponsored' for transparency", "Permanent archive on NeuoTech.com"] },
+    paypal: "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=alonbraun@me.com&item_name=NeuroTech+Sponsored+Article&amount=1500",
+    features: ["400–800 word thought leadership piece", "Published in News & Insights section", "Included in weekly newsletter", "Labeled 'Sponsored' for transparency", "Permanent archive on NeuroTech.com"] },
   { id: "job-posting", name: "Job Posting", price: "$250", per: "/30 days", highlight: false,
-    paypal: "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=alonbraun@me.com&item_name=NeuoTech+Job+Posting&amount=250",
-    features: ["30-day listing on NeuoTech Jobs", "Included in next 2 newsletter issues", "Apply link goes directly to your ATS", "Free for Premium listing members"] },
+    paypal: "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=alonbraun@me.com&item_name=NeuroTech+Job+Posting&amount=250",
+    features: ["30-day listing on NeuroTech Jobs", "Included in next 2 newsletter issues", "Apply link goes directly to your ATS", "Free for Premium listing members"] },
 ];
 
 export default function AdvertisePage() {
@@ -35,7 +35,7 @@ export default function AdvertisePage() {
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold text-gray-900">Reach the neurotech industry</h1>
         <p className="mt-3 text-lg text-gray-500 max-w-xl mx-auto">
-          NeuoTech.com is read by founders, investors, researchers, and clinicians in the neurotechnology space. All payments via PayPal — no contract required.
+          NeuroTech.com is read by founders, investors, researchers, and clinicians in the neurotechnology space. All payments via PayPal — no contract required.
         </p>
       </div>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-14">

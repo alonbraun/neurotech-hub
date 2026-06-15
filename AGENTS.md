@@ -1,4 +1,4 @@
-# NeuoTech.com Autonomous Agents
+# NeuroTech.com Autonomous Agents
 
 Three GitHub Actions agents run on schedule — no human intervention needed.
 
@@ -6,7 +6,7 @@ Three GitHub Actions agents run on schedule — no human intervention needed.
 
 1. **News Publisher** — Mon/Wed/Fri 8am UTC — writes neurotech news article → content/news/
 2. **Directory Updater** — Monday 8am UTC — adds 3 new neurotech companies → content/companies/
-3. **Newsletter Composer** — Sunday 9am UTC — sends NeuoTech Digest to Resend audience
+3. **Newsletter Composer** — Sunday 9am UTC — sends NeuroTech Digest to Resend audience
 
 ## Required Secrets (GitHub repo settings)
 

@@ -17,7 +17,7 @@ export default function NewsletterPage() {
   return (
     <div className="max-w-2xl mx-auto px-4 py-16 text-center">
       <span className="text-xs font-semibold tracking-widest text-[#1a3d6b] uppercase">Every Sunday</span>
-      <h1 className="mt-3 text-4xl font-bold text-gray-900">The NeuoTech Digest</h1>
+      <h1 className="mt-3 text-4xl font-bold text-gray-900">The NeuroTech Digest</h1>
       <p className="mt-4 text-lg text-gray-600 leading-relaxed">
         The weekly newsletter for founders, investors, researchers, and clinicians in the neurotechnology space.
       </p>
@@ -55,7 +55,7 @@ export default function NewsletterPage() {
       )}
       <div className="mt-16 border border-gray-100 rounded-2xl p-6 text-left">
         <p className="text-xs font-semibold tracking-widest text-gray-400 uppercase mb-2">For companies</p>
-        <h3 className="font-semibold text-gray-900">Sponsor the NeuoTech Digest</h3>
+        <h3 className="font-semibold text-gray-900">Sponsor the NeuroTech Digest</h3>
         <p className="text-sm text-gray-500 mt-1">Each issue goes to thousands of neurotech professionals. Two sponsor slots per issue at $1,500 each.</p>
         <a href="/advertise#newsletter-sponsor" className="mt-3 inline-block text-sm font-medium text-[#1a3d6b] hover:underline">View sponsorship options →</a>
       </div>
