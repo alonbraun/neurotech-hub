@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import { getAllFiles } from "@/lib/content";
 
 const AUDIENCE_ID = process.env.NEUROTECH_AUDIENCE_ID || "";
