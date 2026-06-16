@@ -9,6 +9,7 @@ import os, csv, json, datetime, urllib.request, urllib.parse, time, random, temp
 
 RESEND_API_KEY = os.environ.get("RESEND_API_KEY", "re_MA4BSqhJ_HeBKRzoa6mHT77oABnsKBkAh")
 FROM_EMAIL     = "listings@neurotech.com"
+REPLY_TO       = "hello@neurotech.com"
 FROM_NAME      = "NeuroTech.com"
 SITE_URL       = "https://neurotech.com"
 PRICE          = "$199/month"
@@ -52,7 +53,7 @@ def email_body_html(name, category, slug):
   </p>
 
   <p>
-    <a href="mailto:{FROM_EMAIL}?subject=Featured listing — {name}"
+    <a href="mailto:{REPLY_TO}?subject=Featured listing — {name}"
        style="display:inline-block;background:#1a3d6b;color:#fff;padding:10px 22px;border-radius:8px;text-decoration:none;font-weight:600">
       Reply to claim your featured listing →
     </a>
@@ -93,6 +94,7 @@ To unsubscribe, reply with "unsubscribe".
 def send_email(to_email, name, category, slug):
     payload = json.dumps({
         "from": f"{FROM_NAME} <{FROM_EMAIL}>",
+        "reply_to": REPLY_TO,
         "to": [to_email],
         "subject": email_subject(name),
         "html": email_body_html(name, category, slug),

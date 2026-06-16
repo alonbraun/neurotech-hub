@@ -8,6 +8,7 @@ import os, csv, json, datetime, urllib.request, time, random, shutil
 
 RESEND_API_KEY = os.environ.get("RESEND_API_KEY", "re_MA4BSqhJ_HeBKRzoa6mHT77oABnsKBkAh")
 FROM_EMAIL     = "listings@neurotech.com"
+REPLY_TO       = "hello@neurotech.com"
 FROM_NAME      = "NeuroTech.com"
 SITE_URL       = "https://neurotech.com"
 LEADS_CSV      = os.path.join(os.path.dirname(__file__), "leads.csv")
@@ -27,7 +28,7 @@ def followup_html(name, category, slug):
   </p>
   <p>If this isn't for you, no worries at all — just reply and I'll stop reaching out.</p>
   <p>
-    <a href="mailto:{FROM_EMAIL}?subject=Featured listing — {name}"
+    <a href="mailto:{REPLY_TO}?subject=Featured listing — {name}"
        style="display:inline-block;background:#1a3d6b;color:#fff;padding:10px 22px;border-radius:8px;text-decoration:none;font-weight:600">
       Claim featured listing →
     </a>
@@ -41,6 +42,7 @@ def followup_html(name, category, slug):
 def send_email(to_email, name, category, slug):
     payload = json.dumps({
         "from": f"{FROM_NAME} <{FROM_EMAIL}>",
+        "reply_to": REPLY_TO,
         "to": [to_email],
         "subject": f"Following up — {name}'s featured listing on NeuroTech.com",
         "html": followup_html(name, category, slug),
