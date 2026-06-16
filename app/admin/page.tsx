@@ -30,6 +30,48 @@ async function getAgentRuns() {
   } catch { return []; }
 }
 
+async function getGithubFile(path: string) {
+  if (!GITHUB_TOKEN) return null;
+  try {
+    const res = await fetch(`https://api.github.com/repos/${GITHUB_REPO}/contents/${path}`, {
+      headers: { Authorization: `token ${GITHUB_TOKEN}`, Accept: "application/vnd.github.v3.raw" },
+      next: { revalidate: 120 },
+    });
+    if (!res.ok) return null;
+    return await res.text();
+  } catch { return null; }
+}
+
+function parseCsv(text: string) {
+  const lines = text.trim().split("\n");
+  const headers = lines[0].split(",");
+  return lines.slice(1).map((line) => {
+    const cells = line.split(",");
+    const row: Record<string, string> = {};
+    headers.forEach((h, i) => (row[h.trim()] = (cells[i] || "").trim()));
+    return row;
+  });
+}
+
+async function getOutreachStats() {
+  const csv = await getGithubFile("scripts/leads.csv");
+  if (!csv) return { total: 0, emailsFound: 0, contacted: 0, replied: 0, remaining: 0, recent: [] as any[] };
+  const rows = parseCsv(csv);
+  const emailsFound = rows.filter((r) => r.email).length;
+  const contacted = rows.filter((r) => r.contacted === "yes").length;
+  const replied = rows.filter((r) => r.replied && r.replied !== "").length;
+  const remaining = rows.filter((r) => r.email && r.contacted !== "yes").length;
+  const recent = rows.filter((r) => r.contacted === "yes" && r.contact_date)
+    .sort((a, b) => (a.contact_date < b.contact_date ? 1 : -1)).slice(0, 6);
+  return { total: rows.length, emailsFound, contacted, replied, remaining, recent };
+}
+
+async function getLinkedInStats() {
+  const json = await getGithubFile("content/news/.linkedin-posted.json");
+  const posted: string[] = json ? (JSON.parse(json).posted || []) : [];
+  return { posted };
+}
+
 function timeAgo(dateStr: string) {
   const diff = Date.now() - new Date(dateStr).getTime();
   const mins = Math.floor(diff / 60000); const hours = Math.floor(mins / 60); const days = Math.floor(hours / 24);
@@ -44,10 +86,11 @@ function StatusBadge({ conclusion, status }: { conclusion: string | null; status
 }
 
 export default async function AdminPage() {
-  const [subscribers, runs] = await Promise.all([getSubscribers(), getAgentRuns()]);
+  const [subscribers, runs, outreach, linkedin] = await Promise.all([getSubscribers(), getAgentRuns(), getOutreachStats(), getLinkedInStats()]);
   const companies = getAllFiles("companies") as any[];
   const news = getAllFiles("news") as any[];
   const jobs = getAllFiles("jobs") as any[];
+  const linkedinRemaining = news.filter((n: any) => !linkedin.posted.includes(n.slug) && !n.sponsored).length;
   const agentRuns = runs.filter((r: any) => r.name !== "Deploy to Netlify");
   const deployRuns = runs.filter((r: any) => r.name === "Deploy to Netlify");
   const lastDeploy = deployRuns[0];
@@ -147,6 +190,66 @@ export default async function AdminPage() {
               <a href="https://resend.com/audiences" target="_blank" rel="noopener noreferrer" className="text-xs text-gray-600 hover:text-[#1a3d6b] transition-colors">→ Manage subscribers in Resend</a>
               <a href="https://app.netlify.com" target="_blank" rel="noopener noreferrer" className="text-xs text-gray-600 hover:text-[#1a3d6b] transition-colors">→ Netlify site settings</a>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="grid md:grid-cols-2 gap-6 mt-6">
+        <div className="bg-white border border-gray-100 rounded-2xl p-6">
+          <div className="flex items-baseline justify-between mb-5">
+            <h2 className="text-sm font-semibold text-gray-900">Sales outreach</h2>
+            <span className="text-xs text-gray-400">{outreach.emailsFound} leads with email</span>
+          </div>
+          <div className="grid grid-cols-3 gap-3 mb-5">
+            <div>
+              <p className="text-2xl font-semibold text-[#1a3d6b]">{outreach.contacted}</p>
+              <p className="text-xs text-gray-400 mt-0.5">Contacted</p>
+            </div>
+            <div>
+              <p className="text-2xl font-semibold text-green-600">{outreach.replied}</p>
+              <p className="text-xs text-gray-400 mt-0.5">Replied</p>
+            </div>
+            <div>
+              <p className="text-2xl font-semibold text-amber-600">{outreach.remaining}</p>
+              <p className="text-xs text-gray-400 mt-0.5">Remaining</p>
+            </div>
+          </div>
+          <div className="flex flex-col gap-2.5 pt-4 border-t border-gray-50">
+            {outreach.recent.length > 0 ? outreach.recent.map((r: any) => (
+              <div key={r.slug} className="flex items-center justify-between gap-2">
+                <p className="text-xs font-medium text-gray-800 truncate">{r.name}</p>
+                <span className="text-xs text-gray-400 shrink-0">{r.contact_date}</span>
+              </div>
+            )) : <p className="text-xs text-gray-400">No outreach sent yet.</p>}
+          </div>
+        </div>
+
+        <div className="bg-white border border-gray-100 rounded-2xl p-6">
+          <div className="flex items-baseline justify-between mb-5">
+            <h2 className="text-sm font-semibold text-gray-900">LinkedIn posting</h2>
+            <a href="https://buffer.com" target="_blank" rel="noopener noreferrer" className="text-xs text-[#1a3d6b] hover:underline">Open Buffer →</a>
+          </div>
+          <div className="grid grid-cols-2 gap-3 mb-5">
+            <div>
+              <p className="text-2xl font-semibold text-[#1a3d6b]">{linkedin.posted.length}</p>
+              <p className="text-xs text-gray-400 mt-0.5">Posted</p>
+            </div>
+            <div>
+              <p className="text-2xl font-semibold text-amber-600">{linkedinRemaining}</p>
+              <p className="text-xs text-gray-400 mt-0.5">Backlog remaining</p>
+            </div>
+          </div>
+          <div className="flex flex-col gap-2.5 pt-4 border-t border-gray-50">
+            {news.slice(0, 6).map((n: any) => {
+              const isPosted = linkedin.posted.includes(n.slug);
+              return (
+                <div key={n.slug} className="flex items-center justify-between gap-2">
+                  <p className="text-xs font-medium text-gray-800 truncate">{n.title}</p>
+                  <span className={`text-xs shrink-0 px-2 py-0.5 rounded-full ${isPosted ? "bg-green-50 text-green-700" : "bg-gray-50 text-gray-400"}`}>
+                    {isPosted ? "Posted" : "Pending"}
+                  </span>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
