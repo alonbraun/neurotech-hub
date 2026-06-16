@@ -18,6 +18,12 @@ import os, re, json, glob, sys, hashlib
 NEWS_DIR     = os.path.join(os.path.dirname(__file__), "../content/news")
 TRACKER_FILE = os.path.join(NEWS_DIR, ".linkedin-posted.json")
 SITE_URL     = "https://neurotech.com"
+COMPANY_TAGS_FILE = os.path.join(os.path.dirname(__file__), "linkedin_company_tags.json")
+
+def load_company_tags():
+    if os.path.exists(COMPANY_TAGS_FILE):
+        return json.load(open(COMPANY_TAGS_FILE))
+    return {}
 
 # Mix of broad (large-audience) and niche (highly relevant) tags. LinkedIn
 # rewards this mix: broad tags surface the post in bigger feeds, niche tags
@@ -75,9 +81,44 @@ def make_post_copy(title, excerpt, category, slug):
     text = f"{hook}\n\n{title}\n\n{excerpt}\n\nRead more on NeuroTech.com 👉 {url}\n\n{' '.join(hashtags)}"
     return text
 
+def utf16_len(s):
+    # LinkedIn's annotation offsets are UTF-16 code-unit indices, not Python
+    # character indices. Emoji outside the BMP (most modern ones, like 💰)
+    # are surrogate pairs = 2 UTF-16 units but only 1 Python char, so a plain
+    # str.find() offset is wrong whenever an emoji precedes the match.
+    return len(s.encode("utf-16-le")) // 2
+
+def find_company_annotations(text, company_tags):
+    """
+    Scan the post text for any known company name (from linkedin_company_tags.json)
+    and build a LinkedIn @mention annotation at its first occurrence. Only the
+    title+excerpt portion is searched to avoid matching inside hashtags/URLs.
+    Returns a list ready for Buffer's metadata.linkedin.annotations field.
+    """
+    annotations = []
+    matched_names = set()
+    for company_name, info in company_tags.items():
+        if company_name in matched_names:
+            continue
+        idx = text.find(company_name)
+        if idx == -1:
+            continue
+        annotations.append({
+            "id": info["id"],
+            "link": info["link"],
+            "entity": info["entity"],
+            "vanityName": info["vanityName"],
+            "localizedName": info["localizedName"],
+            "start": utf16_len(text[:idx]),
+            "length": utf16_len(company_name),
+        })
+        matched_names.add(company_name)
+    return annotations
+
 def main():
     tracker = load_tracker()
     posted_slugs = set(tracker["posted"])
+    company_tags = load_company_tags()
 
     files = sorted(glob.glob(f"{NEWS_DIR}/*.md"))
     pending = []
@@ -92,13 +133,15 @@ def main():
         # Skip sponsored content from auto-posting unless explicitly allowed
         if fm.get("sponsored", "false").lower() == "true":
             continue
+        text = make_post_copy(fm.get("title",""), fm.get("excerpt",""), fm.get("category",""), slug)
         pending.append({
             "slug": slug,
             "title": fm.get("title", ""),
             "excerpt": fm.get("excerpt", ""),
             "category": fm.get("category", ""),
             "date": fm.get("date", ""),
-            "text": make_post_copy(fm.get("title",""), fm.get("excerpt",""), fm.get("category",""), slug),
+            "text": text,
+            "annotations": find_company_annotations(text, company_tags),
         })
 
     # Each run posts up to 2 articles: the oldest backlog item (drains the
