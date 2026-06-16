@@ -1,7 +1,30 @@
-{
-  "posted": [
-    "2026-05-30-fda-finalizes-guidance-framework-for-adaptive-neural-devices",
-    "2026-06-02-synchron-launches-stentrode-home-system-enabling-fully-wirel",
-    "2026-06-15-synchron-closes-275m-series-d-to-accelerate-stentrode-bci-co"
-  ]
-}
+[
+  {
+    "slug": "2026-05-30-fda-finalizes-guidance-framework-for-adaptive-neural-devices",
+    "title": "FDA Finalizes Guidance Framework for Adaptive Neural Devices, Setting Clearer Path for BCI Approvals",
+    "postedAt": "2026-06-16T07:13:07.676Z",
+    "postId": "6a30f7820cf8c4f5e837a4d3",
+    "imageUrl": null
+  },
+  {
+    "slug": "2026-06-02-synchron-launches-stentrode-home-system-enabling-fully-wirel",
+    "title": "Synchron Launches Stentrode Home System, Enabling Fully Wireless BCI Use Outside Clinical Settings",
+    "postedAt": "2026-06-16T07:21:37.726Z",
+    "postId": "6a30f981d74ab8cd733a897c",
+    "imageUrl": null
+  },
+  {
+    "slug": "2026-06-15-synchron-closes-275m-series-d-to-accelerate-stentrode-bci-co",
+    "title": "Synchron Closes $275M Series D to Accelerate Stentrode BCI Commercialization",
+    "postedAt": "2026-06-16T07:33:04.855Z",
+    "postId": "6a30fc30d5ab8c5f5f18375c",
+    "imageUrl": null
+  },
+  {
+    "slug": "2026-06-04-closed-loop-deep-brain-stimulation-demonstrates-sustained-co",
+    "title": "Closed-Loop Deep Brain Stimulation Demonstrates Sustained Cognitive Benefits in Landmark Alzheimer's Trial",
+    "postedAt": "2026-06-16T09:55:56.749Z",
+    "postId": "6a311d965f543e1160731866",
+    "imageUrl": "https://raw.githubusercontent.com/alonbraun/neurotech-hub/main/public/linkedin-images/2026-06-04-closed-loop-deep-brain-stimulation-demonstrates-sustained-co.png"
+  }
+]
