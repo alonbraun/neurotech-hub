@@ -19,14 +19,29 @@ NEWS_DIR     = os.path.join(os.path.dirname(__file__), "../content/news")
 TRACKER_FILE = os.path.join(NEWS_DIR, ".linkedin-posted.json")
 SITE_URL     = "https://neurotech.com"
 
+# Mix of broad (large-audience) and niche (highly relevant) tags. LinkedIn
+# rewards this mix: broad tags surface the post in bigger feeds, niche tags
+# put it in front of the right people. 4-5 tags is the sweet spot — fewer
+# under-targets, more starts to look spammy and can suppress reach.
 CATEGORY_HASHTAGS = {
-    "Funding":   ["#Neurotech", "#VentureCapital", "#HealthTech"],
-    "Research":  ["#Neurotech", "#Neuroscience", "#Research"],
-    "Product":   ["#Neurotech", "#BCI", "#Innovation"],
-    "Industry":  ["#Neurotech", "#HealthTech", "#Industry"],
-    "Policy":    ["#Neurotech", "#Policy", "#FDA"],
+    "Funding":   ["#VentureCapital", "#HealthTech", "#Innovation", "#Neurotechnology", "#Startups"],
+    "Research":  ["#Neuroscience", "#Innovation", "#HealthTech", "#Neurotechnology", "#Research"],
+    "Product":   ["#Innovation", "#HealthTech", "#MedTech", "#Neurotechnology", "#BCI"],
+    "Industry":  ["#HealthTech", "#Innovation", "#MedTech", "#Neurotechnology", "#DigitalHealth"],
+    "Policy":    ["#Healthcare", "#Policy", "#Innovation", "#Neurotechnology", "#MedTech"],
 }
-DEFAULT_HASHTAGS = ["#Neurotech", "#BCI", "#HealthTech"]
+DEFAULT_HASHTAGS = ["#Neurotechnology", "#HealthTech", "#Innovation", "#MedTech"]
+
+# A short hook line before the headline increases dwell time, which the
+# LinkedIn algorithm weighs more heavily than hashtags for initial reach.
+CATEGORY_HOOKS = {
+    "Funding":  "💰 Capital keeps flowing into neurotech.",
+    "Research": "🧠 New research worth a closer look.",
+    "Product":  "🚀 A new product just hit the market.",
+    "Industry": "📡 An industry milestone worth tracking.",
+    "Policy":   "⚖️ A policy shift that could reshape the field.",
+}
+DEFAULT_HOOK = "🧠 What's new in neurotech."
 
 def parse_frontmatter(filepath):
     content = open(filepath).read()
@@ -56,7 +71,8 @@ def slug_from_filename(filepath):
 def make_post_copy(title, excerpt, category, slug):
     url = f"{SITE_URL}/news/{slug}"
     hashtags = CATEGORY_HASHTAGS.get(category, DEFAULT_HASHTAGS)
-    text = f"{title}\n\n{excerpt}\n\nRead more on NeuroTech.com 👉 {url}\n\n{' '.join(hashtags)}"
+    hook = CATEGORY_HOOKS.get(category, DEFAULT_HOOK)
+    text = f"{hook}\n\n{title}\n\n{excerpt}\n\nRead more on NeuroTech.com 👉 {url}\n\n{' '.join(hashtags)}"
     return text
 
 def main():
