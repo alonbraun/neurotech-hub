@@ -31,6 +31,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               {[
                 ["Directory", "/directory"],
                 ["News", "/news"],
+                ["Events", "/events"],
                 ["Jobs", "/jobs"],
                 ["Newsletter", "/newsletter"],
               ].map(([label, href]) => (
@@ -61,13 +62,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   <span className="text-[#3d6a9e] text-lg">.com</span>
                 </div>
                 <p className="text-[#6b8fae] text-sm leading-relaxed max-w-xs">
-                  The definitive resource for the neurotechnology industry — companies, news, jobs, and investors.
+                  The definitive resource for the neurotechnology industry — companies, news, events, and investors.
                 </p>
               </div>
               <div>
                 <p className="text-[#9fcae8] text-sm font-medium mb-4">Explore</p>
                 <div className="flex flex-col gap-2.5">
-                  {[["Directory", "/directory"], ["News", "/news"], ["Jobs", "/jobs"]].map(([l, h]) => (
+                  {[["Directory", "/directory"], ["News", "/news"], ["Events", "/events"], ["Jobs", "/jobs"]].map(([l, h]) => (
                     <Link key={h} href={h} className="text-[#6b8fae] text-sm hover:text-[#9fcae8] transition-colors">{l}</Link>
                   ))}
                 </div>
