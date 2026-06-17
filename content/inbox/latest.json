@@ -1,111 +1,153 @@
 {
-  "updated_at": "2026-06-17T12:41:19.322870Z",
-  "unread_count": 3,
-  "emails": [
+  "updated_at": "2026-06-17T14:15:22.962988Z",
+  "unread_count": 4,
+  "unread": [
+    {
+      "from": "Zoho Team <noreply@zohoaccounts.eu>",
+      "from_addr": "noreply@zohoaccounts.eu",
+      "subject": "New sign-in to your Zoho account",
+      "date": "Wed, 17 Jun 2026 10:42:22 +0200 (CEST)",
+      "body": "Hi Alon braun,    \r\n   There&#39;s been a new sign-in to your Zoho account hello@neurotech.com on Wednesday, June 17 2026 09:42:20 AM BST.   \r\n   Device Mac OS X   \r\n   App Safari   \r\n   Location Hillingdon, United Kingdom \r\n (Location is approximated based on the accessed IP Address: 31.205.227.118)   \r\n   If this wasn&#39;t you, you need to change your Zoho account password to protect your accou",
+      "thread_length": 2,
+      "suggested_reply": "Hi Alon,\n\nI noticed you received a sign-in notification from Zoho on June 17th\u2014just wanted to make sure that was you and your account is secure. Let me know if you need anything on our end or have questions about your NeuroTech.com listing.\n\nLooking forward to connecting!\n\nThe NeuroTech.com Team",
+      "unread": true
+    },
+    {
+      "from": "\"help@neurotrack.com\" <help@neurotrack.com>",
+      "from_addr": "help@neurotrack.com",
+      "subject": "Re: Neurotrack is listed on NeuroTech.com \u2014 claim your featured profile",
+      "date": "Wed, 17 Jun 2026 12:13:07 +0000",
+      "body": "Hi NeuroTech.com,\r\n\r\n\r\nThank you for reaching out! We\u2019ve received your email and will look into it shortly.\r\n\r\n\r\nRegards,\r\n___\r\n\r\n\r\nNeurotrack Support\r\nhttps://neurotrack.com",
+      "thread_length": 1,
+      "suggested_reply": "Thanks for getting back to us! We appreciate you taking a look. If you have any questions about the featured listing or job posting options, just let us know\u2014we're here to help. Feel free to reach out anytime if you'd like to move forward.\n\nThe NeuroTech.com Team",
+      "unread": true
+    },
+    {
+      "from": "Mydecine <info@mydecine.com>",
+      "from_addr": "info@mydecine.com",
+      "subject": "Re: Mydecine Innovations is listed on NeuroTech.com \u2014 claim your featured profile",
+      "date": "Wed, 17 Jun 2026 12:20:34 +0000",
+      "body": "Hello!     Thank you for your business inquiry regarding mydecine.com content placement opportunities. \u00a0      We maintain an active content acceptance policy with the following rate card:  \u2713 Standard Guest Post:\u00a0$100  \u2713 Sensitive Guest Post:\u00a0$130  \u2713 Standard Link Insertion:\u00a0$60  \u2713 Sensitive Link Insertion:\u00a0$90      Banner/Homepage Links: \u00a0$100/month. (quarterly, semi-annual, or annual terms availa",
+      "thread_length": 2,
+      "suggested_reply": "Hi there,\n\nThanks for reaching out about content opportunities. I think there may be some confusion here\u2014it looks like you're pitching us your services, but we're actually NeuroTech.com, the directory where *your company* (Mydecine) is listed. \n\nIf you're interested in upgrading Mydecine's profile to a featured listing ($199/month) or posting job openings ($250 each), you can set that up directly at https://neurotech.com/advertise.\n\nLet us know if you have any questions!\n\nThe NeuroTech.com Team",
+      "unread": true
+    },
+    {
+      "from": "Mydecine <info@mydecine.com>",
+      "from_addr": "info@mydecine.com",
+      "subject": "Re: Re: Mydecine Innovations listing on NeuroTech.com",
+      "date": "Wed, 17 Jun 2026 13:21:49 +0000",
+      "body": "Hello!     Thank you for your business inquiry regarding mydecine.com content placement opportunities. \u00a0      We maintain an active content acceptance policy with the following rate card:  \u2713 Standard Guest Post:\u00a0$100  \u2713 Sensitive Guest Post:\u00a0$130  \u2713 Standard Link Insertion:\u00a0$60  \u2713 Sensitive Link Insertion:\u00a0$90      Banner/Homepage Links: \u00a0$100/month. (quarterly, semi-annual, or annual terms availa",
+      "thread_length": 2,
+      "suggested_reply": "Hi there,\n\nThanks for reaching out about content opportunities. I think there may be some confusion\u2014it looks like you're pitching *to* us, but we're actually the directory listing *your* company. We offer featured profiles ($199/month) and job posts ($250) for neurotechnology companies like Mydecine. If you're interested in upgrading your current listing or posting a job opening, you can get started here: https://neurotech.com/advertise\n\nBest,\nThe NeuroTech.com Team",
+      "unread": true
+    }
+  ],
+  "recent": [
+    {
+      "from": "Mydecine <info@mydecine.com>",
+      "subject": "Re: Re: Mydecine Innovations listing on NeuroTech.com",
+      "date": "Wed, 17 Jun 2026 13:21:49 +0000",
+      "preview": "Hello!     Thank you for your business inquiry regarding mydecine.com content placement opportunities. \u00a0      We maintain an active content acceptance",
+      "unread": false
+    },
     {
       "from": "Mydecine <info@mydecine.com>",
       "subject": "Re: Mydecine Innovations is listed on NeuroTech.com \u2014 claim your featured profile",
       "date": "Wed, 17 Jun 2026 12:20:34 +0000",
-      "unread": true,
-      "preview": "Hello!     Thank you for your business inquiry regarding mydecine.com content placement opportunities. \u00a0      We maintain an active content acceptance policy with the following rate card:  \u2713 Standard "
+      "preview": "Hello!     Thank you for your business inquiry regarding mydecine.com content placement opportunities. \u00a0      We maintain an active content acceptance",
+      "unread": false
     },
     {
       "from": "\"help@neurotrack.com\" <help@neurotrack.com>",
       "subject": "Re: Neurotrack is listed on NeuroTech.com \u2014 claim your featured profile",
       "date": "Wed, 17 Jun 2026 12:13:07 +0000",
-      "unread": true,
-      "preview": "Hi NeuroTech.com,\r\n\r\n\r\nThank you for reaching out! We\u2019ve received your email and will look into it shortly.\r\n\r\n\r\nRegards,\r\n___\r\n\r\n\r\nNeurotrack Support\r\nhttps://neurotrack.com"
+      "preview": "Hi NeuroTech.com,\r\n\r\n\r\nThank you for reaching out! We\u2019ve received your email and will look into it shortly.\r\n\r\n\r\nRegards,\r\n___\r\n\r\n\r\nNeurotrack Support",
+      "unread": false
     },
     {
       "from": "Zoho Team <noreply@zohoaccounts.eu>",
       "subject": "New sign-in to your Zoho account",
       "date": "Wed, 17 Jun 2026 10:42:22 +0200 (CEST)",
-      "unread": true,
-      "preview": "Hi Alon braun,    \r\n   There&#39;s been a new sign-in to your Zoho account hello@neurotech.com on Wednesday, June 17 2026 09:42:20 AM BST.   \r\n   Device Mac OS X   \r\n   App Safari   \r\n   Location Hill"
+      "preview": "Hi Alon braun,    \r\n   There&#39;s been a new sign-in to your Zoho account hello@neurotech.com on Wednesday, June 17 2026 09:42:20 AM BST.   \r\n   Devi",
+      "unread": false
     },
     {
       "from": "alonbraun@me.com",
       "subject": "Re: Test \u2014 reply to this email",
       "date": "Wed, 17 Jun 2026 08:54:06 +0100",
-      "unread": false,
-      "preview": "Nice to meet you\r\nOn 17 Jun 2026 at 8:53 +0100, NeuroTech.com <listings@neurotech.com>, wrote:\r\n> This is a test email from NeuroTech.com outreach.\r\n> Please hit Reply and check that your reply goes t"
+      "preview": "Nice to meet you\r\nOn 17 Jun 2026 at 8:53 +0100, NeuroTech.com <listings@neurotech.com>, wrote:\r\n> This is a test email from NeuroTech.com outreach.\r\n>",
+      "unread": false
     },
     {
       "from": "Alpha CM <csmitchell@alphaneuroscience.com>",
       "subject": "RE: Hello from Alpha Neuroscience",
       "date": "Mon, 15 Jun 2026 14:48:38 +0000",
-      "unread": false,
-      "preview": "Good morning Alon\r\n\r\nThank you for responding to my email request.\r\nRegarding an introduction call, I can be available this afternoon and tomorrow and via phone only on Wednesday.\r\nDo any of these day"
+      "preview": "Good morning Alon\r\n\r\nThank you for responding to my email request.\r\nRegarding an introduction call, I can be available this afternoon and tomorrow and",
+      "unread": false
     },
     {
       "from": "shevronvictor@gmail.com",
       "subject": "Expert Written Guest Post for Your Website",
       "date": "Mon, 15 Jun 2026 02:55:29 -0700",
-      "unread": false,
-      "preview": "Hi,\r\nI was exploring your website and was impressed by both the content quality\r\nand the overall design. It's clean and easy to navigate.\r\nI have a relevant blog that could add value to your audience."
+      "preview": " Hi,\r\nI was exploring your website and was impressed by both the content quality\r\nand the overall design. It's clean and easy to navigate.\r\nI have a r",
+      "unread": false
     },
     {
       "from": "Zeno Rocha <zeno.rocha@resend.com>",
       "subject": "Welcome to Resend!",
       "date": "Mon, 15 Jun 2026 08:12:22 +0000",
-      "unread": false,
-      "preview": "Hey,\r\n\r\nMy name is Zeno \u2014 I'm the founder and CEO of Resend.\r\n\r\nWe started Resend because we wanted a better email API for developers.\r\nA simple, fast, and elegant interface that just works.\r\n\r\nHere a"
+      "preview": "Hey,\r\n\r\nMy name is Zeno \u2014 I'm the founder and CEO of Resend.\r\n\r\nWe started Resend because we wanted a better email API for developers.\r\nA simple, fast",
+      "unread": false
     },
     {
       "from": "Resend <team@notifications.resend.com>",
       "subject": "Confirm your Resend account",
       "date": "Mon, 15 Jun 2026 08:11:02 +0000",
-      "unread": false,
-      "preview": "Confirm your account\r\n\r\nThank you for signing up for Resend. To confirm your account, please click the button below.\r\n\r\nConfirm account https://resend.com/auth/confirm-account?token=248616709242157fec"
+      "preview": "Confirm your account\r\n\r\nThank you for signing up for Resend. To confirm your account, please click the button below.\r\n\r\nConfirm account https://resend",
+      "unread": false
     },
     {
       "from": "Alpha CM <csmitchell@alphaneuroscience.com>",
       "subject": "Hello from Alpha Neuroscience",
       "date": "Fri, 12 Jun 2026 14:43:00 +0000",
-      "unread": false,
-      "preview": "Good morning\r\n\r\nMy name is Cameron Mitchell, partner and founder of Alpha Neuroscience LLC.  We are an interventional Neuro treatment company and would like to learn more about your technology.\r\nAs we"
+      "preview": "Good morning\r\n\r\nMy name is Cameron Mitchell, partner and founder of Alpha Neuroscience LLC.  We are an interventional Neuro treatment company and woul",
+      "unread": false
     },
     {
       "from": "alonbraun@me.com",
       "subject": "Test",
       "date": "Mon, 18 May 2026 08:40:42 +0100",
-      "unread": false,
-      "preview": "Test"
+      "preview": "Test\r\n",
+      "unread": false
     },
     {
       "from": "Zoho Team <noreply@zohoaccounts.eu>",
       "subject": "Verify your email address",
       "date": "Mon, 18 May 2026 00:01:14 +0200 (CEST)",
-      "unread": false,
-      "preview": "Hello Alon braun,\r\n Thank you for signing up with us.  We&#39;d love for you to explore our software suite, and discover how our technology stack can help you meet your business needs.\r\n   \r\n       To"
+      "preview": "Hello Alon braun,\r\n Thank you for signing up with us.  We&#39;d love for you to explore our software suite, and discover how our technology stack can ",
+      "unread": false
     },
     {
       "from": "Accounts Receivable <ar.zsuk@eu.zohocorp.com>",
       "subject": "Invoice - 80030876898 from Zoho Corporation Limited.",
       "date": "Mon, 18 May 2026 00:20:09 +0200 (CEST)",
-      "unread": false,
-      "preview": "Dear Customer,\r\nThank&nbsp;you&nbsp;for subscribing&nbsp;to&nbsp;Zoho service.\r\nWe&nbsp;have attached&nbsp;the invoice&nbsp;for&nbsp;your subscription paid&nbsp;on&nbsp;18 May 2026&nbsp;with&nbsp;this"
+      "preview": "Dear Customer,\r\nThank&nbsp;you&nbsp;for subscribing&nbsp;to&nbsp;Zoho service.\r\nWe&nbsp;have attached&nbsp;the invoice&nbsp;for&nbsp;your subscription",
+      "unread": false
     },
     {
       "from": "Zoho Store Notification <notification@zohostore.eu>",
       "subject": "Zoho Workplace - Your subscription to Zoho Workplace was successful",
       "date": "Mon, 18 May 2026 00:11:17 +0200 (CEST)",
-      "unread": false,
-      "preview": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xmlns=\"http://www.w3.org/1999/xhtm"
+      "preview": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n<html xmlns=\"http://www.w3.",
+      "unread": false
     },
     {
       "from": "welcome@zoho.eu",
       "subject": "Access from anywhere, anytime!",
       "date": "Mon, 18 May 2026 00:13:35 +0200",
-      "unread": false,
-      "preview": "Hello Alon braun,\r\n\r\n\r\nWe have simplified email accessibility, the admin control panel, email sharing and more with our mobile apps.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nZoho Mail mobile app\r\n\r\nAccess emails, calendars"
-    },
-    {
-      "from": "welcome@zoho.eu",
-      "subject": "Welcome to Zoho Mail",
-      "date": "Mon, 18 May 2026 00:13:35 +0200",
-      "unread": false,
-      "preview": "Hello Alon braun,\r\n\r\n\r\nWe are happy to have you onboard!\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nJoin our webinar sessions to discover the power of Zoho Mail.\r\n\r\nhttps://www.zoho.com/mail/webinars/?src=zmwelcome https://w"
+      "preview": "Hello Alon braun,\r\n\r\n\r\nWe have simplified email accessibility, the admin control panel, email sharing and more with our mobile apps.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+      "unread": false
     }
   ]
 }
