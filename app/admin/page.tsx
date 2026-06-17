@@ -1,6 +1,7 @@
 export const dynamic = "force-dynamic";
 
 import { getAllFiles } from "@/lib/content";
+import InboxManager from "./InboxManager";
 
 const AUDIENCE_ID = process.env.NEUROTECH_AUDIENCE_ID || "";
 const GITHUB_REPO = "alonbraun/neurotech-hub";
@@ -115,78 +116,20 @@ export default async function AdminPage() {
   return (
     <div className="max-w-5xl mx-auto px-5 py-12">
       <div className="mb-10">
-        <span className="text-xs font-semibold tracking-[3px] text-[#1a3d6b] uppercase">Portal Admin</span>
-        <h1 className="text-3xl font-semibold text-gray-900 mt-2">Dashboard</h1>
-        <p className="text-gray-500 mt-1 text-sm">Live stats for NeuroTech.com</p>
-      </div>
-
-      {/* Inbox card — full width at top */}
-      <div className="bg-white border border-gray-100 rounded-2xl p-6 mb-6">
-        <div className="flex items-baseline justify-between mb-5">
-          <div className="flex items-center gap-3">
-            <h2 className="text-sm font-semibold text-gray-900">Inbox — hello@neurotech.com</h2>
-            {inbox.unread_count > 0 && (
-              <span className="text-xs font-bold px-2.5 py-1 rounded-full bg-blue-600 text-white">{inbox.unread_count} unread</span>
-            )}
+        <div className="flex items-start justify-between">
+          <div>
+            <span className="text-xs font-semibold tracking-[3px] text-[#1a3d6b] uppercase">Portal Admin</span>
+            <h1 className="text-3xl font-semibold text-gray-900 mt-2">Dashboard</h1>
+            <p className="text-gray-500 mt-1 text-sm">Live stats for NeuroTech.com</p>
           </div>
-          <span className="text-xs text-gray-400">{inbox.updated_at ? `Updated ${timeAgo(inbox.updated_at)}` : "Not yet synced — run inbox monitor"}</span>
+          <a href="/admin/campaigns" className="flex items-center gap-2 text-sm font-medium px-4 py-2 rounded-lg border border-[#1a3d6b] text-[#1a3d6b] hover:bg-[#1a3d6b] hover:text-white transition-colors mt-2">
+            B2B Campaign Manager →
+          </a>
         </div>
-
-        {/* Unread emails with suggested replies */}
-        {(inbox.unread || []).length > 0 && (
-          <div className="flex flex-col gap-4 mb-6">
-            {(inbox.unread as any[]).map((e: any, i: number) => (
-              <div key={i} className="border border-blue-100 rounded-xl p-4 bg-blue-50/30">
-                <div className="flex items-start justify-between gap-2 mb-2">
-                  <div className="flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-blue-500 shrink-0 mt-1" />
-                    <div>
-                      <p className="text-sm font-semibold text-gray-900">{e.subject || "(no subject)"}</p>
-                      <p className="text-xs text-gray-500">{e.from}</p>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-2 shrink-0">
-                    {e.thread_length > 1 && (
-                      <span className="text-xs text-gray-400 bg-gray-100 px-2 py-0.5 rounded-full">{e.thread_length} in thread</span>
-                    )}
-                    <span className="text-xs text-gray-400">{e.date ? new Date(e.date).toLocaleDateString("en-GB", { day: "numeric", month: "short" }) : ""}</span>
-                  </div>
-                </div>
-                {e.body && <p className="text-xs text-gray-600 bg-white rounded-lg p-3 mb-3 leading-relaxed whitespace-pre-wrap line-clamp-4 border border-gray-100">{e.body}</p>}
-                {e.suggested_reply && (
-                  <div>
-                    <p className="text-xs font-medium text-[#1a3d6b] mb-1.5 uppercase tracking-wide">Suggested reply</p>
-                    <p className="text-xs text-gray-700 bg-white rounded-lg p-3 leading-relaxed whitespace-pre-wrap border border-blue-100">{e.suggested_reply}</p>
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-        )}
-
-        {/* Recent read emails */}
-        {(inbox.recent || []).length > 0 && (
-          <div className="flex flex-col divide-y divide-gray-50">
-            {(inbox.recent as any[]).map((e: any, i: number) => (
-              <div key={i} className="py-3 first:pt-0 last:pb-0 flex items-start gap-3 opacity-60">
-                <span className="w-2 h-2 rounded-full bg-gray-200 block mt-1.5 shrink-0" />
-                <div className="flex-1 min-w-0">
-                  <div className="flex items-baseline justify-between gap-2">
-                    <p className="text-sm font-medium text-gray-600 truncate">{e.subject || "(no subject)"}</p>
-                    <p className="text-xs text-gray-400 shrink-0">{e.date ? new Date(e.date).toLocaleDateString("en-GB", { day: "numeric", month: "short" }) : ""}</p>
-                  </div>
-                  <p className="text-xs text-gray-500 truncate mt-0.5">{e.from}</p>
-                  {e.preview && <p className="text-xs text-gray-400 mt-1 line-clamp-1">{e.preview}</p>}
-                </div>
-              </div>
-            ))}
-          </div>
-        )}
-
-        {(inbox.unread || []).length === 0 && (inbox.recent || []).length === 0 && (
-          <p className="text-sm text-gray-400">No emails yet. Click "Run now" on the inbox monitor scheduled task to sync.</p>
-        )}
       </div>
+
+      {/* Interactive Inbox Manager */}
+      <InboxManager initialData={inbox} />
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
         {[
