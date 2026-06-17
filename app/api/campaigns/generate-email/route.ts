@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 const ANTHROPIC_KEY = process.env.ANTHROPIC_API_KEY || "";
 
 export async function POST(req: Request) {
-  const { client_company, client_description, campaign_goal, lead, sequence_step = 1 } = await req.json();
+  const { client_company, client_description, campaign_goal, lead, sequence_step = 1, article_url, article_title } = await req.json();
 
   const stepContextMap: Record<number, string> = {
     1: "First touch — introduce the company and its value proposition. Be curious, not salesy.",
@@ -12,12 +12,17 @@ export async function POST(req: Request) {
   };
   const stepContext = stepContextMap[sequence_step] || "First touch.";
 
+  const articleContext = article_url
+    ? `\nThere is a feature article about ${client_company} published on NeuroTech.com: "${article_title}" — ${article_url}\nNaturally reference or link to this article in the email as useful reading for the lead.`
+    : "";
+
   const prompt = `You write outreach emails for neurotechnology companies. These emails go out under the NeuroTech.com brand on behalf of a client.
 
 Client company: ${client_company}
 Client description: ${client_description}
 Campaign goal: ${campaign_goal}
 Sequence step: ${sequence_step} — ${stepContext}
+${articleContext}
 
 Lead:
 - Name: ${lead.name}
@@ -29,6 +34,7 @@ Write a personalized email for this specific lead. Rules:
 - Subject line should be specific and intriguing (not generic)
 - Opening should reference something about their role or company — NOT "I hope this email finds you well"
 - Body: 3-4 short paragraphs max
+- If an article URL is provided, mention it naturally as "we recently published a piece on [company] you might find relevant"
 - Clear but soft call to action
 - Signed: "The NeuroTech.com Team, on behalf of ${client_company}"
 - Tone: professional but warm, peer-to-peer, not corporate
