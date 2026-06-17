@@ -2,10 +2,9 @@
 """
 Step 2: Send personalised cold emails to companies found in leads.csv.
 Sends via Resend. Updates leads.csv with contact_date.
-Run again after 5 days to send follow-ups.
 """
 
-import os, csv, json, datetime, urllib.request, urllib.parse, time, random, tempfile, shutil
+import os, csv, json, datetime, urllib.request, urllib.parse, time, random, shutil
 
 RESEND_API_KEY = os.environ.get("RESEND_API_KEY", "re_MA4BSqhJ_HeBKRzoa6mHT77oABnsKBkAh")
 FROM_EMAIL     = "listings@neurotech.com"
@@ -13,10 +12,9 @@ REPLY_TO       = "hello@neurotech.com"
 FROM_NAME      = "NeuroTech.com"
 SITE_URL       = "https://neurotech.com"
 PRICE          = "$199/month"
+JOB_PRICE      = "$250"
 LEADS_CSV      = os.path.join(os.path.dirname(__file__), "leads.csv")
-
-# Safety: max emails per run to avoid hitting Resend limits
-MAX_PER_RUN = 20
+MAX_PER_RUN    = 20
 
 def email_subject(name):
     return f"{name} is listed on NeuroTech.com — claim your featured profile"
@@ -30,13 +28,13 @@ def email_body_html(name, category, slug):
   <p>
     I wanted to let you know that <strong>{name}</strong> is currently listed in the
     <a href="{listing_url}" style="color:#1a3d6b">{category}</a> section of
-    <a href="{SITE_URL}" style="color:#1a3d6b">NeuroTech.com</a> — one of the web's most
+    <a href="{SITE_URL}" style="color:#1a3d6b">NeuroTech.com</a> — one of the web\'s most
     comprehensive neurotechnology directories, tracking 200+ companies across BCIs,
     cognitive health, neuromodulation, psychedelics, and more.
   </p>
 
   <p>
-    We're offering a small number of <strong>Featured Listings</strong> at <strong>{PRICE}</strong>,
+    We\'re offering a small number of <strong>Featured Listings</strong> at <strong>{PRICE}</strong>,
     which includes:
   </p>
   <ul style="padding-left:20px">
@@ -47,9 +45,15 @@ def email_body_html(name, category, slug):
   </ul>
 
   <p>
+    We also offer <strong>Job Listings at {JOB_PRICE} per post</strong> — reach neurotech
+    professionals actively looking for their next role, with your opening promoted in
+    our newsletter and directory.
+  </p>
+
+  <p>
     NeuroTech.com has been the home of the neurotech community since 2020, when we ran
-    one of the world's first dedicated neurotech conferences with speakers from
-    King's College London, Apollo Neuroscience, Intheon, and more.
+    one of the world\'s first dedicated neurotech conferences with speakers from
+    King\'s College London, Apollo Neuroscience, Intheon, and more.
   </p>
 
   <p>
@@ -83,9 +87,11 @@ We're offering Featured Listings at {PRICE}, which includes:
 - Extended company profile with logo and full description
 - Inclusion in our weekly newsletter
 
+We also offer Job Listings at {JOB_PRICE} per post — reach neurotech professionals actively looking, with your opening promoted in our newsletter.
+
 View your current listing: {listing_url}
 
-Reply to this email to claim your featured listing.
+Reply to this email to claim your featured listing or post a job.
 
 NeuroTech.com — The Neurotechnology Industry Hub
 To unsubscribe, reply with "unsubscribe".
@@ -100,15 +106,10 @@ def send_email(to_email, name, category, slug):
         "html": email_body_html(name, category, slug),
         "text": email_body_text(name, category, slug),
     }).encode()
-
     req = urllib.request.Request(
         "https://api.resend.com/emails",
         data=payload,
-        headers={
-            "Authorization": f"Bearer {RESEND_API_KEY}",
-            "Content-Type": "application/json",
-            "User-Agent": "neurotech-outreach/1.0",
-        },
+        headers={"Authorization": f"Bearer {RESEND_API_KEY}", "Content-Type": "application/json", "User-Agent": "neurotech-outreach/1.0"},
         method="POST"
     )
     try:
@@ -120,28 +121,18 @@ def send_email(to_email, name, category, slug):
 
 def main():
     if not os.path.exists(LEADS_CSV):
-        print("leads.csv not found. Run find_emails.py first.")
+        print("leads.csv not found.")
         return
-
     rows = list(csv.DictReader(open(LEADS_CSV)))
     today = datetime.date.today().isoformat()
-
-    # Find candidates: has email, not yet contacted
     to_send = [r for r in rows if r["email"] and r["contacted"] == "no"]
     print(f"{len(to_send)} companies ready to contact (capped at {MAX_PER_RUN} per run)\n")
-
     sent = 0
     for row in to_send:
         if sent >= MAX_PER_RUN:
             break
-
-        name     = row["name"]
-        email    = row["email"]
-        category = row["category"]
-        slug     = row["slug"]
-
-        print(f"  Sending to {name} <{email}>...", end=" ", flush=True)
-        ok = send_email(email, name, category, slug)
+        print(f"  Sending to {row['name']} <{row['email']}>...", end=" ", flush=True)
+        ok = send_email(row["email"], row["name"], row["category"], row["slug"])
         if ok:
             row["contacted"]    = "yes"
             row["contact_date"] = today
@@ -149,20 +140,14 @@ def main():
             sent += 1
         else:
             print("✗ failed")
-
-        time.sleep(random.uniform(1.5, 3.0))  # be gentle on the API
-
-    # Write updated CSV
+        time.sleep(random.uniform(1.5, 3.0))
     tmp = LEADS_CSV + ".tmp"
     with open(tmp, "w", newline="") as f:
-        fieldnames = ["slug","name","category","website","email","email_found","contacted","contact_date","replied"]
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer = csv.DictWriter(f, fieldnames=["slug","name","category","website","email","email_found","contacted","contact_date","replied"])
         writer.writeheader()
         writer.writerows(rows)
     shutil.move(tmp, LEADS_CSV)
-
-    print(f"\nDone. {sent} emails sent today. Run again tomorrow for the next batch.")
-    print(f"To send follow-ups, run: python3 send_followup.py")
+    print(f"\nDone. {sent} emails sent today.")
 
 if __name__ == "__main__":
     main()
