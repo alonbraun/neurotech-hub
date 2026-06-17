@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """
-Fetches upcoming neurotech events from Eventbrite search pages.
-Filters results to keep only neurotech-relevant events by name.
-Saves results to content/events/eventbrite.json
+Fetches upcoming neurotech events from:
+1. Eventbrite search pages (meetups & local events)
+2. 10times.com (conferences & trade shows)
+Filters by relevance. Saves to content/events/eventbrite.json
 """
 
 import os, json, urllib.request, datetime, re, time, random
@@ -18,18 +19,11 @@ CITIES = [
     ("united-arab-emirates--dubai", "Dubai"),
 ]
 
-# Specific enough to return mostly neurotech events
-KEYWORDS = [
-    "neurotech",
-    "neuroscience",
-    "brain-computer-interface",
-    "neurofeedback",
-    "psychedelic-therapy",
-    "mental-health-technology",
-    "neuromodulation",
+EB_KEYWORDS = [
+    "neurotech", "neuroscience", "brain-computer-interface",
+    "neurofeedback", "psychedelic-therapy", "neuromodulation",
 ]
 
-# Filter: event name must contain at least one of these
 RELEVANT = [
     "neuro", "brain", "bci", "cognit", "psychedel", "mental health",
     "neurofeed", "neural", "mind science", "consciousness",
@@ -46,27 +40,28 @@ def is_relevant(name):
     n = name.lower()
     return any(kw in n for kw in RELEVANT)
 
-def fetch_events(city_slug, keyword, city_tag):
+# ── Eventbrite ──────────────────────────────────────────────────────────────
+
+def fetch_eventbrite(city_slug, keyword, city_tag):
     url = f"https://www.eventbrite.com/d/{city_slug}/{keyword}/"
     req = urllib.request.Request(url, headers=HEADERS)
     try:
         with urllib.request.urlopen(req, timeout=20) as r:
             html = r.read().decode("utf-8", errors="ignore")
     except Exception as e:
-        print(f"    Error: {e}")
+        print(f"    EB error: {e}")
         return []
     m = re.search(r'window\.__SERVER_DATA__\s*=\s*(\{.*?\});', html, re.DOTALL)
     if not m:
         return []
     try:
-        data = json.loads(m.group(1))
-        results = data["search_data"]["events"]["results"]
+        results = json.loads(m.group(1))["search_data"]["events"]["results"]
     except Exception:
         return []
     today = datetime.date.today().isoformat()
     events = []
     for e in results:
-        name  = e.get("name", "")
+        name = e.get("name", "")
         if not is_relevant(name):
             continue
         start = (e.get("start_date") or "")[:10]
@@ -76,7 +71,7 @@ def fetch_events(city_slug, keyword, city_tag):
         venue = (e.get("primary_venue") or {})
         addr  = (venue.get("address") or {})
         events.append({
-            "id":       str(e.get("id") or e.get("eid") or ""),
+            "id":       "eb_" + str(e.get("id") or ""),
             "name":     name,
             "date":     start,
             "end_date": end,
@@ -85,29 +80,104 @@ def fetch_events(city_slug, keyword, city_tag):
             "venue":    venue.get("name") or "",
             "url":      e.get("url", ""),
             "free":     e.get("is_free", False),
+            "category": "Meetup",
             "source":   "eventbrite",
             "city_tag": city_tag,
         })
     return events
 
+# ── 10times.com ─────────────────────────────────────────────────────────────
+
+TENTIMES_SEARCHES = [
+    "https://10times.com/neuroscience",
+    "https://10times.com/neurotechnology",
+    "https://10times.com/brain-computer-interface",
+    "https://10times.com/psychedelics",
+    "https://10times.com/cognitive-science",
+]
+
+def fetch_10times(url):
+    req = urllib.request.Request(url, headers=HEADERS)
+    try:
+        with urllib.request.urlopen(req, timeout=20) as r:
+            html = r.read().decode("utf-8", errors="ignore")
+    except Exception as e:
+        print(f"    10times error: {e}")
+        return []
+
+    # Extract JSON-LD events
+    events = []
+    today = datetime.date.today().isoformat()
+    ld_blocks = re.findall(r'<script type="application/ld\+json">(.*?)</script>', html, re.DOTALL)
+    for block in ld_blocks:
+        try:
+            data = json.loads(block)
+            items = data if isinstance(data, list) else [data]
+            for item in items:
+                if item.get("@type") not in ("Event", "BusinessEvent", "EducationEvent"):
+                    continue
+                name  = item.get("name", "")
+                start = (item.get("startDate") or "")[:10]
+                end   = (item.get("endDate") or start)[:10]
+                if not start or start < today:
+                    continue
+                loc   = item.get("location") or {}
+                addr  = loc.get("address") or {}
+                city  = addr.get("addressLocality") or ""
+                events.append({
+                    "id":       "tt_" + re.sub(r"[^a-z0-9]", "", name.lower())[:30],
+                    "name":     name,
+                    "date":     start,
+                    "end_date": end,
+                    "city":     city,
+                    "country":  addr.get("addressCountry") or "",
+                    "venue":    loc.get("name") or "",
+                    "url":      item.get("url") or url,
+                    "free":     False,
+                    "category": "Conference",
+                    "source":   "10times",
+                    "city_tag": city,
+                })
+        except Exception:
+            continue
+    return events
+
+# ── Main ─────────────────────────────────────────────────────────────────────
+
 def main():
-    seen  = set()
+    seen    = set()
     results = []
+
+    # Eventbrite
+    print("\n=== Eventbrite ===")
     for city_slug, city_tag in CITIES:
-        for kw in KEYWORDS:
+        for kw in EB_KEYWORDS:
             print(f"  {city_tag} / {kw}", end=" ... ", flush=True)
-            events = fetch_events(city_slug, kw, city_tag)
+            events = fetch_eventbrite(city_slug, kw, city_tag)
             new = [e for e in events if e["id"] and e["id"] not in seen]
             for e in new:
                 seen.add(e["id"])
                 results.append(e)
             print(f"{len(new)} new")
-            time.sleep(random.uniform(1.5, 3.0))
+            time.sleep(random.uniform(1.5, 2.5))
+
+    # 10times
+    print("\n=== 10times.com ===")
+    for url in TENTIMES_SEARCHES:
+        print(f"  {url}", end=" ... ", flush=True)
+        events = fetch_10times(url)
+        new = [e for e in events if e["id"] and e["id"] not in seen]
+        for e in new:
+            seen.add(e["id"])
+            results.append(e)
+        print(f"{len(new)} new")
+        time.sleep(random.uniform(2.0, 3.5))
+
     results.sort(key=lambda e: e["date"])
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, "w") as f:
         json.dump(results, f, indent=2)
-    print(f"\nSaved {len(results)} relevant events.")
+    print(f"\nTotal saved: {len(results)} events")
 
 if __name__ == "__main__":
     main()
