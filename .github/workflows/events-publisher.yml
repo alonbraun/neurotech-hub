@@ -1,0 +1,35 @@
+name: Events Publisher
+
+on:
+  schedule:
+    - cron: '0 9 * * 1'  # Every Monday 9am UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Scan and add new events
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          mkdir -p content/events
+          python3 scripts/publish_events.py
+
+      - name: Commit new events
+        run: |
+          git config user.name "NeuroTech Bot"
+          git config user.email "bot@neurotech.com"
+          git add content/events/
+          git diff --cached --quiet || git commit -m "Weekly events update $(date +%Y-%m-%d)"
+          git push
