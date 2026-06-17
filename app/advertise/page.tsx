@@ -2,21 +2,18 @@
 import { useState } from "react";
 
 const PLANS = [
-  { id: "premium-listing", name: "Premium Listing", price: "$1,200", per: "/month", highlight: true,
-    paypal: "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick-subscriptions&business=alonbraun@me.com&item_name=NeuroTech+Premium+Listing&a3=1200&p3=1&t3=M&src=1&sra=1",
-    features: ["Full company profile page", "Featured badge in directory", "Priority ranking above free listings", "Contact button for inbound leads", "2 free job posts per month", "Logo on homepage (rotating)"] },
-  { id: "newsletter-sponsor", name: "Newsletter Sponsor", price: "$1,500", per: "/issue", highlight: false,
-    paypal: "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=alonbraun@me.com&item_name=NeuroTech+Newsletter+Sponsor&amount=1500",
-    features: ["Logo + 60-word blurb in NeuroTech Digest", "Sent every Sunday to all subscribers", "Linked to your website or landing page", "Max 2 sponsors per issue", "Archived permanently in newsletter archive"] },
-  { id: "featured-homepage", name: "Featured Homepage", price: "$800", per: "/month", highlight: false,
-    paypal: "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick-subscriptions&business=alonbraun@me.com&item_name=NeuroTech+Featured+Homepage&a3=800&p3=1&t3=M&src=1&sra=1",
-    features: ["Company card on homepage hero section", '"Featured" badge across all pages', "Included in directory featured section", "1 free job post per month"] },
-  { id: "sponsored-article", name: "Sponsored Article", price: "$1,500", per: "/article", highlight: false,
-    paypal: "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=alonbraun@me.com&item_name=NeuroTech+Sponsored+Article&amount=1500",
-    features: ["400–800 word thought leadership piece", "Published in News & Insights section", "Included in weekly newsletter", "Labeled 'Sponsored' for transparency", "Permanent archive on NeuroTech.com"] },
+  { id: "featured-listing", name: "Featured Listing", price: "$199", per: "/month", highlight: true,
+    paypal: "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick-subscriptions&business=alonbraun@me.com&item_name=NeuroTech+Featured+Listing&a3=199&p3=1&t3=M&src=1&sra=1",
+    features: ["Priority placement at top of your category", "Featured badge visible across the site", "Extended company profile with full description", "Inclusion in our weekly newsletter", "Inbound leads via contact button"] },
   { id: "job-posting", name: "Job Posting", price: "$250", per: "/30 days", highlight: false,
     paypal: "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=alonbraun@me.com&item_name=NeuroTech+Job+Posting&amount=250",
-    features: ["30-day listing on NeuroTech Jobs", "Included in next 2 newsletter issues", "Apply link goes directly to your ATS", "Free for Premium listing members"] },
+    features: ["30-day listing on NeuroTech Jobs", "Included in next 2 newsletter issues", "Apply link goes directly to your ATS", "Reach neurotech professionals actively hiring"] },
+  { id: "newsletter-sponsor", name: "Newsletter Sponsor", price: "$500", per: "/issue", highlight: false,
+    paypal: "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=alonbraun@me.com&item_name=NeuroTech+Newsletter+Sponsor&amount=500",
+    features: ["Logo + 60-word blurb in NeuroTech Digest", "Sent every Sunday to all subscribers", "Linked to your website or landing page", "Max 2 sponsors per issue", "Archived permanently in newsletter archive"] },
+  { id: "sponsored-article", name: "Sponsored Article", price: "$500", per: "/article", highlight: false,
+    paypal: "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=alonbraun@me.com&item_name=NeuroTech+Sponsored+Article&amount=500",
+    features: ["400–800 word thought leadership piece", "Published in News & Insights section", "Included in weekly newsletter", "Labeled 'Sponsored' for transparency", "Permanent archive on NeuroTech.com"] },
 ];
 
 export default function AdvertisePage() {
@@ -38,7 +35,7 @@ export default function AdvertisePage() {
           NeuroTech.com is read by founders, investors, researchers, and clinicians in the neurotechnology space. All payments via PayPal — no contract required.
         </p>
       </div>
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-14">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-5 mb-14 max-w-4xl mx-auto">
         {PLANS.map((plan) => (
           <div key={plan.id} id={plan.id}
             className={`rounded-2xl p-6 flex flex-col ${plan.highlight ? "border-2 border-[#1a3d6b] bg-[#eef5fc]" : "border border-gray-100"}`}>
