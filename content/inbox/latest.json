@@ -1,7 +1,21 @@
 {
-  "updated_at": "2026-06-17T10:00:34.387760Z",
-  "unread_count": 1,
+  "updated_at": "2026-06-17T12:41:19.322870Z",
+  "unread_count": 3,
   "emails": [
+    {
+      "from": "Mydecine <info@mydecine.com>",
+      "subject": "Re: Mydecine Innovations is listed on NeuroTech.com \u2014 claim your featured profile",
+      "date": "Wed, 17 Jun 2026 12:20:34 +0000",
+      "unread": true,
+      "preview": "Hello!     Thank you for your business inquiry regarding mydecine.com content placement opportunities. \u00a0      We maintain an active content acceptance policy with the following rate card:  \u2713 Standard "
+    },
+    {
+      "from": "\"help@neurotrack.com\" <help@neurotrack.com>",
+      "subject": "Re: Neurotrack is listed on NeuroTech.com \u2014 claim your featured profile",
+      "date": "Wed, 17 Jun 2026 12:13:07 +0000",
+      "unread": true,
+      "preview": "Hi NeuroTech.com,\r\n\r\n\r\nThank you for reaching out! We\u2019ve received your email and will look into it shortly.\r\n\r\n\r\nRegards,\r\n___\r\n\r\n\r\nNeurotrack Support\r\nhttps://neurotrack.com"
+    },
     {
       "from": "Zoho Team <noreply@zohoaccounts.eu>",
       "subject": "New sign-in to your Zoho account",
