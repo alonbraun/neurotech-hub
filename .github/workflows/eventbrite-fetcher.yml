@@ -1,0 +1,35 @@
+name: Eventbrite Events Fetcher
+
+on:
+  schedule:
+    - cron: '0 6 * * *'  # Daily 6am UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Fetch Eventbrite events
+        env:
+          EVENTBRITE_TOKEN: ${{ secrets.EVENTBRITE_TOKEN }}
+        run: |
+          mkdir -p content/events
+          python3 scripts/fetch_eventbrite.py
+
+      - name: Commit updated events
+        run: |
+          git config user.name "NeuroTech Bot"
+          git config user.email "bot@neurotech.com"
+          git add content/events/eventbrite.json
+          git diff --cached --quiet || git commit -m "Daily Eventbrite events update $(date +%Y-%m-%d)"
+          git push
