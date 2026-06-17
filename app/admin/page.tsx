@@ -72,6 +72,12 @@ async function getLinkedInStats() {
   return { posted };
 }
 
+async function getInbox() {
+  const json = await getGithubFile("content/inbox/latest.json");
+  if (!json) return { updated_at: null, unread_count: 0, emails: [] };
+  try { return JSON.parse(json); } catch { return { updated_at: null, unread_count: 0, emails: [] }; }
+}
+
 function timeAgo(dateStr: string) {
   const diff = Date.now() - new Date(dateStr).getTime();
   const mins = Math.floor(diff / 60000); const hours = Math.floor(mins / 60); const days = Math.floor(hours / 24);
@@ -86,7 +92,9 @@ function StatusBadge({ conclusion, status }: { conclusion: string | null; status
 }
 
 export default async function AdminPage() {
-  const [subscribers, runs, outreach, linkedin] = await Promise.all([getSubscribers(), getAgentRuns(), getOutreachStats(), getLinkedInStats()]);
+  const [subscribers, runs, outreach, linkedin, inbox] = await Promise.all([
+    getSubscribers(), getAgentRuns(), getOutreachStats(), getLinkedInStats(), getInbox()
+  ]);
   const companies = getAllFiles("companies") as any[];
   const news = getAllFiles("news") as any[];
   const jobs = getAllFiles("jobs") as any[];
@@ -103,6 +111,43 @@ export default async function AdminPage() {
         <h1 className="text-3xl font-semibold text-gray-900 mt-2">Dashboard</h1>
         <p className="text-gray-500 mt-1 text-sm">Live stats for NeuroTech.com</p>
       </div>
+
+      {/* Inbox card — full width at top */}
+      <div className="bg-white border border-gray-100 rounded-2xl p-6 mb-6">
+        <div className="flex items-baseline justify-between mb-5">
+          <div className="flex items-center gap-3">
+            <h2 className="text-sm font-semibold text-gray-900">Inbox — hello@neurotech.com</h2>
+            {inbox.unread_count > 0 && (
+              <span className="text-xs font-bold px-2.5 py-1 rounded-full bg-blue-600 text-white">{inbox.unread_count} unread</span>
+            )}
+          </div>
+          <span className="text-xs text-gray-400">{inbox.updated_at ? `Updated ${timeAgo(inbox.updated_at)}` : "Not yet synced — run inbox monitor"}</span>
+        </div>
+        {inbox.emails.length === 0 ? (
+          <p className="text-sm text-gray-400">No emails yet. Click "Run now" on the inbox monitor scheduled task to sync.</p>
+        ) : (
+          <div className="flex flex-col divide-y divide-gray-50">
+            {inbox.emails.map((e: any, i: number) => (
+              <div key={i} className={`py-3 first:pt-0 last:pb-0 flex items-start gap-3 ${e.unread ? "" : "opacity-60"}`}>
+                <div className="mt-1 shrink-0">
+                  {e.unread
+                    ? <span className="w-2 h-2 rounded-full bg-blue-500 block" />
+                    : <span className="w-2 h-2 rounded-full bg-gray-200 block" />}
+                </div>
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-baseline justify-between gap-2">
+                    <p className={`text-sm truncate ${e.unread ? "font-semibold text-gray-900" : "font-medium text-gray-600"}`}>{e.subject || "(no subject)"}</p>
+                    <p className="text-xs text-gray-400 shrink-0">{e.date ? new Date(e.date).toLocaleDateString("en-GB", { day: "numeric", month: "short" }) : ""}</p>
+                  </div>
+                  <p className="text-xs text-gray-500 truncate mt-0.5">{e.from}</p>
+                  {e.preview && <p className="text-xs text-gray-400 mt-1 line-clamp-1">{e.preview}</p>}
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
         {[
           { label: "Subscribers", value: subscribers.count, sub: "active", color: "text-[#1a3d6b]" },
@@ -222,7 +267,6 @@ export default async function AdminPage() {
             )) : <p className="text-xs text-gray-400">No outreach sent yet.</p>}
           </div>
         </div>
-
         <div className="bg-white border border-gray-100 rounded-2xl p-6">
           <div className="flex items-baseline justify-between mb-5">
             <h2 className="text-sm font-semibold text-gray-900">LinkedIn posting</h2>
