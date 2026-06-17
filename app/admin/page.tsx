@@ -74,8 +74,16 @@ async function getLinkedInStats() {
 
 async function getInbox() {
   const json = await getGithubFile("content/inbox/latest.json");
-  if (!json) return { updated_at: null, unread_count: 0, emails: [] };
-  try { return JSON.parse(json); } catch { return { updated_at: null, unread_count: 0, emails: [] }; }
+  if (!json) return { updated_at: null, unread_count: 0, unread: [], recent: [] };
+  try {
+    const data = JSON.parse(json);
+    // Support both old format (emails:[]) and new format (unread:[], recent:[])
+    if (data.emails && !data.unread) {
+      data.unread = data.emails.filter((e: any) => e.unread);
+      data.recent = data.emails.filter((e: any) => !e.unread);
+    }
+    return data;
+  } catch { return { updated_at: null, unread_count: 0, unread: [], recent: [] }; }
 }
 
 function timeAgo(dateStr: string) {
@@ -123,20 +131,48 @@ export default async function AdminPage() {
           </div>
           <span className="text-xs text-gray-400">{inbox.updated_at ? `Updated ${timeAgo(inbox.updated_at)}` : "Not yet synced — run inbox monitor"}</span>
         </div>
-        {inbox.emails.length === 0 ? (
-          <p className="text-sm text-gray-400">No emails yet. Click "Run now" on the inbox monitor scheduled task to sync.</p>
-        ) : (
-          <div className="flex flex-col divide-y divide-gray-50">
-            {inbox.emails.map((e: any, i: number) => (
-              <div key={i} className={`py-3 first:pt-0 last:pb-0 flex items-start gap-3 ${e.unread ? "" : "opacity-60"}`}>
-                <div className="mt-1 shrink-0">
-                  {e.unread
-                    ? <span className="w-2 h-2 rounded-full bg-blue-500 block" />
-                    : <span className="w-2 h-2 rounded-full bg-gray-200 block" />}
+
+        {/* Unread emails with suggested replies */}
+        {(inbox.unread || []).length > 0 && (
+          <div className="flex flex-col gap-4 mb-6">
+            {(inbox.unread as any[]).map((e: any, i: number) => (
+              <div key={i} className="border border-blue-100 rounded-xl p-4 bg-blue-50/30">
+                <div className="flex items-start justify-between gap-2 mb-2">
+                  <div className="flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-blue-500 shrink-0 mt-1" />
+                    <div>
+                      <p className="text-sm font-semibold text-gray-900">{e.subject || "(no subject)"}</p>
+                      <p className="text-xs text-gray-500">{e.from}</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-2 shrink-0">
+                    {e.thread_length > 1 && (
+                      <span className="text-xs text-gray-400 bg-gray-100 px-2 py-0.5 rounded-full">{e.thread_length} in thread</span>
+                    )}
+                    <span className="text-xs text-gray-400">{e.date ? new Date(e.date).toLocaleDateString("en-GB", { day: "numeric", month: "short" }) : ""}</span>
+                  </div>
                 </div>
+                {e.body && <p className="text-xs text-gray-600 bg-white rounded-lg p-3 mb-3 leading-relaxed whitespace-pre-wrap line-clamp-4 border border-gray-100">{e.body}</p>}
+                {e.suggested_reply && (
+                  <div>
+                    <p className="text-xs font-medium text-[#1a3d6b] mb-1.5 uppercase tracking-wide">Suggested reply</p>
+                    <p className="text-xs text-gray-700 bg-white rounded-lg p-3 leading-relaxed whitespace-pre-wrap border border-blue-100">{e.suggested_reply}</p>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
+
+        {/* Recent read emails */}
+        {(inbox.recent || []).length > 0 && (
+          <div className="flex flex-col divide-y divide-gray-50">
+            {(inbox.recent as any[]).map((e: any, i: number) => (
+              <div key={i} className="py-3 first:pt-0 last:pb-0 flex items-start gap-3 opacity-60">
+                <span className="w-2 h-2 rounded-full bg-gray-200 block mt-1.5 shrink-0" />
                 <div className="flex-1 min-w-0">
                   <div className="flex items-baseline justify-between gap-2">
-                    <p className={`text-sm truncate ${e.unread ? "font-semibold text-gray-900" : "font-medium text-gray-600"}`}>{e.subject || "(no subject)"}</p>
+                    <p className="text-sm font-medium text-gray-600 truncate">{e.subject || "(no subject)"}</p>
                     <p className="text-xs text-gray-400 shrink-0">{e.date ? new Date(e.date).toLocaleDateString("en-GB", { day: "numeric", month: "short" }) : ""}</p>
                   </div>
                   <p className="text-xs text-gray-500 truncate mt-0.5">{e.from}</p>
@@ -145,6 +181,10 @@ export default async function AdminPage() {
               </div>
             ))}
           </div>
+        )}
+
+        {(inbox.unread || []).length === 0 && (inbox.recent || []).length === 0 && (
+          <p className="text-sm text-gray-400">No emails yet. Click "Run now" on the inbox monitor scheduled task to sync.</p>
         )}
       </div>
 
