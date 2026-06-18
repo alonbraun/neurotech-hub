@@ -66,10 +66,12 @@ export async function POST() {
       });
     }
 
-    // Fetch from Sent
+    // Fetch from Sent (try multiple folder names Zoho may use)
     const sentMsgs: any[] = [];
     try {
-      await client.mailboxOpen("Sent");
+      let sentFolder = "Sent";
+      try { await client.mailboxOpen("Sent"); }
+      catch { await client.mailboxOpen("Sent Items"); sentFolder = "Sent Items"; }
       for await (const msg of client.fetch("1:*", { envelope: true, source: true })) {
         const source = msg.source?.toString() || "";
         const body = source.replace(/^[\s\S]*?\r?\n\r?\n/, "").replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim().slice(0, 800);
