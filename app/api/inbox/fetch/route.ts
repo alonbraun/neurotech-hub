@@ -94,14 +94,17 @@ export async function POST() {
 
     await client.logout();
 
-    // Also load Resend sent-log from GitHub (replies sent via the admin UI)
+    // Load Resend sent-log via GitHub API (not raw.githubusercontent.com — that's CDN-cached)
     let resendLog: { to: string; sent_at: string }[] = [];
     try {
       const logRes = await fetch(
-        `https://raw.githubusercontent.com/${REPO}/main/content/inbox/sent-log.json`,
-        { headers: { "User-Agent": "neurotech/1.0" } }
+        `https://api.github.com/repos/${REPO}/contents/content/inbox/sent-log.json`,
+        { headers: { Authorization: `token ${GITHUB_TOKEN}`, "User-Agent": "neurotech/1.0" } }
       );
-      if (logRes.ok) resendLog = await logRes.json();
+      if (logRes.ok) {
+        const file = await logRes.json();
+        resendLog = JSON.parse(Buffer.from(file.content, "base64").toString());
+      }
     } catch {}
 
     const allMsgs = [...inboxMsgs, ...sentMsgs];
