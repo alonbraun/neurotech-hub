@@ -40,7 +40,9 @@ Return only valid JSON array, no other text.`;
       }),
     });
     const data = await res.json();
-    const text = data.content?.[0]?.text?.trim() || "[]";
+    if (data.error) return NextResponse.json({ error: data.error.message || JSON.stringify(data.error) }, { status: 500 });
+    let text = data.content?.[0]?.text?.trim() || "[]";
+    text = text.replace(/^```(?:json)?\s*/i, "").replace(/\s*```$/, "");
     const leads = JSON.parse(text);
     return NextResponse.json({ leads });
   } catch (err: any) {

@@ -86,6 +86,7 @@ export default function CampaignsPage() {
   });
   const [leads, setLeads] = useState<Lead[]>([]);
   const [generatingLeads, setGeneratingLeads] = useState(false);
+  const [leadGenError, setLeadGenError] = useState("");
   const [leadGenTarget, setLeadGenTarget] = useState("");
   const [leadGenCount, setLeadGenCount] = useState(20);
   const [activeTab, setActiveTab] = useState<"setup" | "content" | "leads" | "preview" | "send">("setup");
@@ -120,6 +121,7 @@ export default function CampaignsPage() {
   async function handleGenerateLeads() {
     if (!leadGenTarget || !campaign.client_company) return;
     setGeneratingLeads(true);
+    setLeadGenError("");
     try {
       const res = await fetch("/api/campaigns/generate-leads", {
         method: "POST",
@@ -127,7 +129,9 @@ export default function CampaignsPage() {
         body: JSON.stringify({ company: campaign.client_company, target_description: leadGenTarget, count: leadGenCount }),
       });
       const json = await res.json();
-      if (json.leads) setLeads(json.leads.map((l: Lead) => ({ ...l, status: "pending" })));
+      if (json.error) setLeadGenError(json.error);
+      else if (json.leads) setLeads(json.leads.map((l: Lead) => ({ ...l, status: "pending" })));
+      else setLeadGenError("No leads returned — try again.");
     } finally {
       setGeneratingLeads(false);
     }
@@ -522,6 +526,7 @@ export default function CampaignsPage() {
                     : "Generate leads"}
                 </button>
               </div>
+              {leadGenError && <p className="text-xs text-red-600 mt-2">{leadGenError}</p>}
             </div>
           </div>
 
