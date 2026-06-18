@@ -89,6 +89,16 @@ export default function CampaignsPage() {
   const [leadGenError, setLeadGenError] = useState("");
   const [leadGenTarget, setLeadGenTarget] = useState("");
   const [leadGenCount, setLeadGenCount] = useState(20);
+  const [previouslySent, setPreviouslySent] = useState<Set<string>>(new Set());
+
+  // Load previously contacted emails when entering leads tab
+  async function loadSentLeads() {
+    try {
+      const res = await fetch("/api/campaigns/check-sent");
+      const json = await res.json();
+      if (json.emails) setPreviouslySent(new Set(json.emails));
+    } catch {}
+  }
   const [remarks, setRemarks] = useState<Record<string, string>>({});
   const [voiceGuidelines, setVoiceGuidelines] = useState("");
   const [savingVoice, setSavingVoice] = useState(false);
@@ -509,7 +519,7 @@ export default function CampaignsPage() {
             )}
           </div>
 
-          <button onClick={() => setActiveTab("leads")}
+          <button onClick={() => { setActiveTab("leads"); loadSentLeads(); }}
             className="w-full text-sm font-semibold py-2.5 rounded-xl bg-[#1a3d6b] text-white hover:bg-[#152f54] transition-colors">
             {content.article_published ? "Continue to leads →" : "Skip to leads (no article) →"}
           </button>
@@ -559,11 +569,26 @@ export default function CampaignsPage() {
           {leads.length > 0 && (
             <div className="bg-white border border-gray-100 rounded-2xl p-6">
               <div className="flex items-center justify-between mb-4">
-                <h2 className="text-sm font-semibold text-gray-900">{leads.length} leads loaded</h2>
-                <button onClick={() => setActiveTab("preview")}
-                  className="text-xs font-medium px-3 py-1.5 rounded-lg bg-[#1a3d6b] text-white hover:bg-[#152f54] transition-colors">
-                  Next: generate emails →
-                </button>
+                <div>
+                  <h2 className="text-sm font-semibold text-gray-900">{leads.length} leads loaded</h2>
+                  {previouslySent.size > 0 && leads.filter(l => previouslySent.has(l.email.toLowerCase())).length > 0 && (
+                    <p className="text-xs text-amber-600 mt-0.5">
+                      ⚠ {leads.filter(l => previouslySent.has(l.email.toLowerCase())).length} already emailed in a previous campaign — remove them or they'll get a duplicate
+                    </p>
+                  )}
+                </div>
+                <div className="flex items-center gap-2">
+                  {leads.some(l => previouslySent.has(l.email.toLowerCase())) && (
+                    <button onClick={() => setLeads(leads.filter(l => !previouslySent.has(l.email.toLowerCase())))}
+                      className="text-xs font-medium px-3 py-1.5 rounded-lg bg-amber-100 text-amber-700 hover:bg-amber-200 transition-colors">
+                      Remove duplicates
+                    </button>
+                  )}
+                  <button onClick={() => setActiveTab("preview")}
+                    className="text-xs font-medium px-3 py-1.5 rounded-lg bg-[#1a3d6b] text-white hover:bg-[#152f54] transition-colors">
+                    Next: generate emails →
+                  </button>
+                </div>
               </div>
               <div className="overflow-x-auto">
                 <table className="w-full text-xs">
@@ -577,9 +602,14 @@ export default function CampaignsPage() {
                     </tr>
                   </thead>
                   <tbody>
-                    {leads.map((lead, i) => (
-                      <tr key={i} className="border-b border-gray-50 hover:bg-gray-50/50">
-                        <td className="py-2 font-medium text-gray-800">{lead.name}</td>
+                    {leads.map((lead, i) => {
+                      const alreadySent = previouslySent.has(lead.email.toLowerCase());
+                      return (
+                      <tr key={i} className={`border-b border-gray-50 ${alreadySent ? "bg-amber-50/50" : "hover:bg-gray-50/50"}`}>
+                        <td className="py-2 font-medium text-gray-800">
+                          {lead.name}
+                          {alreadySent && <span className="ml-1.5 text-amber-600 text-[10px] font-semibold">already sent</span>}
+                        </td>
                         <td className="py-2 text-gray-500">{lead.title}<br /><span className="text-gray-400">{lead.company}</span></td>
                         <td className="py-2 text-gray-500">{lead.email}</td>
                         <td className="py-2 text-gray-400 max-w-[200px] truncate">{lead.relevance}</td>
@@ -587,7 +617,8 @@ export default function CampaignsPage() {
                           <button onClick={() => setLeads(leads.filter((_, j) => j !== i))} className="text-gray-300 hover:text-red-500 transition-colors">✕</button>
                         </td>
                       </tr>
-                    ))}
+                      );
+                    })}
                   </tbody>
                 </table>
               </div>
