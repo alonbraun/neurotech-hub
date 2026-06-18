@@ -1,6 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
+const DISMISSED_KEY = "neurotech_inbox_dismissed";
 
 interface ThreadMsg {
   folder: string;
@@ -58,6 +60,20 @@ export default function InboxManager({ initialData }: { initialData: InboxData }
   const [sent, setSent] = useState<Record<string, boolean>>({});
   const [sendErrors, setSendErrors] = useState<Record<string, string>>({});
   const [expanded, setExpanded] = useState<Record<string, boolean>>({});
+  const [dismissed, setDismissed] = useState<Set<string>>(() => {
+    if (typeof window === "undefined") return new Set();
+    try { return new Set(JSON.parse(localStorage.getItem(DISMISSED_KEY) || "[]")); }
+    catch { return new Set(); }
+  });
+
+  function dismissEmail(addr: string) {
+    setDismissed(prev => {
+      const next = new Set(prev);
+      next.add(addr);
+      try { localStorage.setItem(DISMISSED_KEY, JSON.stringify([...next])); } catch {}
+      return next;
+    });
+  }
   const [showThread, setShowThread] = useState<Record<string, boolean>>({});
 
   async function handleFetch() {
@@ -125,10 +141,10 @@ export default function InboxManager({ initialData }: { initialData: InboxData }
   }
 
   const displayed = filter === "needs_reply"
-    ? data.unread.filter(e => e.needs_reply)
+    ? data.unread.filter(e => e.needs_reply && !dismissed.has(e.from_addr))
     : data.unread;
 
-  const needsReplyCount = data.unread.filter(e => e.needs_reply).length;
+  const needsReplyCount = data.unread.filter(e => e.needs_reply && !dismissed.has(e.from_addr)).length;
 
   return (
     <div className="bg-white border border-gray-100 rounded-2xl p-6 mb-6">
@@ -266,10 +282,7 @@ export default function InboxManager({ initialData }: { initialData: InboxData }
                           <p className="text-xs font-semibold text-gray-700 uppercase tracking-wide">Reply</p>
                           <div className="flex items-center gap-2">
                           <button
-                            onClick={async () => {
-                              await fetch("/api/inbox/mark-replied", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ from_addr: email.from_addr }) });
-                              setData(d => ({ ...d, unread: d.unread.map(e => e.from_addr === key ? { ...e, needs_reply: false } : e) }));
-                            }}
+                            onClick={() => dismissEmail(email.from_addr)}
                             className="text-xs font-medium px-3 py-1.5 rounded-lg bg-gray-100 text-gray-500 hover:bg-gray-200 transition-colors"
                           >
                             Already replied ✓
