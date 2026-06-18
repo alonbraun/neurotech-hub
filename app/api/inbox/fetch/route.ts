@@ -66,12 +66,16 @@ export async function POST() {
       });
     }
 
-    // Fetch from Sent (try multiple folder names Zoho may use)
+    // Auto-detect Sent folder name from mailbox list
     const sentMsgs: any[] = [];
+    let sentFolderName = "";
     try {
-      let sentFolder = "Sent";
-      try { await client.mailboxOpen("Sent"); }
-      catch { await client.mailboxOpen("Sent Items"); sentFolder = "Sent Items"; }
+      const mailboxes = await client.list();
+      const sentBox = mailboxes.find((m: any) =>
+        /sent/i.test(m.name) || (m.specialUse && m.specialUse === "\\Sent")
+      );
+      sentFolderName = sentBox?.path || sentBox?.name || "Sent";
+      await client.mailboxOpen(sentFolderName);
       for await (const msg of client.fetch("1:*", { envelope: true, source: true })) {
         const source = msg.source?.toString() || "";
         const body = source.replace(/^[\s\S]*?\r?\n\r?\n/, "").replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim().slice(0, 800);
@@ -137,6 +141,8 @@ export async function POST() {
     const result = {
       updated_at: new Date().toISOString(),
       unread_count: unread.filter(e => e.needs_reply).length,
+      sent_count: sentMsgs.length,
+      sent_folder_used: sentFolderName,
       unread,
       recent: inboxSorted.slice(0, 20).map(m => ({
         from: m.from_name ? `${m.from_name} <${m.from}>` : m.from,
