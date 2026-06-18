@@ -1,152 +1,493 @@
 {
-  "updated_at": "2026-06-17T14:18:27.888132Z",
-  "unread_count": 4,
+  "updated_at": "2026-06-18T15:22:25.061Z",
+  "unread_count": 13,
+  "sent_count": 2,
+  "sent_folder_used": "Sent",
   "unread": [
+    {
+      "from": "Resend <team@notifications.resend.com>",
+      "from_addr": "team@notifications.resend.com",
+      "subject": "You have reached 80% of your daily quota for the team neurotech",
+      "date": "2026-06-18T15:21:31.000Z",
+      "body": "----_NmP-cebfe1668082b4d9-Part_1 Content-Type: text/plain; charset=utf-8 Content-Transfer-Encoding: base64 WW91IGhhdmUgcmVhY2hlZCA4MCUgb2YgeW91ciBkYWlseSBxdW90YSBmb3IgdGhlIHRlYW0gbmV1 cm90ZWNoCgrCoOKAjCDigI3igI7igI/vu7/CoOKAjCDigI3igI7igI/vu7/CoOKAjCDigI3igI7i gI/vu7/CoOKAjCDigI3igI7igI/vu7/CoOKAjCDigI3igI7igI/vu7/CoOKAjCDigI3igI7igI/v u7/CoOKAjCDigI3igI7igI/vu7/CoOKAjCDigI3igI7igI/vu7/CoOKAjCDigI3igI7igI/vu7/C oOKAjCDigI3igI7igI/vu7/CoOKAjCDigI3igI7igI/vu7/CoOKAjCDigI3igI7igI/vu7/CoOKA jCDigI3igI7igI/vu7/CoOKAjCDigI3igI7igI/vu7/CoOKAjCDigI3igI7igI/vu7/CoOKAjCDi gI3igI7igI/vu7/CoOKAjCDigI3igI7igI/vu7/CoOKAjCDigI3igI7igI/vu7/CoOKAjCDigI3i gI7igI/vu7/CoOKAjCDigI3igI7igI/vu7/CoOKAjCDigI3igI7igI/vu7/CoOKAjCDigI3igI7i gI/vu7/CoOKAjCDigI3igI7igI/vu7/CoOKAjCDigI3igI7igI/vu7/CoOKAjCDigI3igI7igI/v ",
+      "message_id": "<0102019edb52b46c-522d6584-c341-479f-80de-a0ad2bffc0a3-000000@eu-west-1.amazonses.com>",
+      "needs_reply": true,
+      "thread_length": 2,
+      "thread": [
+        {
+          "folder": "INBOX",
+          "from": "team@notifications.resend.com",
+          "to": "hello@neurotech.com",
+          "subject": "Confirm your Resend account",
+          "date": "2026-06-15T08:11:02.000Z",
+          "body": "----_NmP-db05a2614cfa55bf-Part_1 Content-Type: text/plain; charset=utf-8 Content-Transfer-Encoding: quoted-printable Confirm your account Thank you for signing up for Resend. To confirm your = account, please click the button below. Confirm account https://resend.= com/auth/confirm-account?token=3D248616709242157fec7c50cc895085ab9f339f8b2f= 8332b8e9d9c145&redirect_to=3D/onboarding 2261 Market Street #5039 San Francisco, CA 94114 ----_NmP-db05a2614cfa55bf-Part_1 Content-Type: text/html; charset=utf-8 Content-Transfer-Encoding: quoted-printable Before we can get = started, we need to confirm you"
+        },
+        {
+          "folder": "INBOX",
+          "from": "team@notifications.resend.com",
+          "to": "hello@neurotech.com",
+          "subject": "You have reached 80% of your daily quota for the team neurotech",
+          "date": "2026-06-18T15:21:31.000Z",
+          "body": "----_NmP-cebfe1668082b4d9-Part_1 Content-Type: text/plain; charset=utf-8 Content-Transfer-Encoding: base64 WW91IGhhdmUgcmVhY2hlZCA4MCUgb2YgeW91ciBkYWlseSBxdW90YSBmb3IgdGhlIHRlYW0gbmV1 cm90ZWNoCgrCoOKAjCDigI3igI7igI/vu7/CoOKAjCDigI3igI7igI/vu7/CoOKAjCDigI3igI7i gI/vu7/CoOKAjCDigI3igI7igI/vu7/CoOKAjCDigI3igI7igI/vu7/CoOKAjCDigI3igI7igI/v u7/CoOKAjCDigI3igI7igI/vu7/CoOKAjCDigI3igI7igI/vu7/CoOKAjCDigI3igI7igI/vu7/C oOKAjCDigI3igI7igI/vu7/CoOKAjCDigI3igI7igI/vu7/CoOKAjCDigI3igI7igI/vu7/CoOKA jCDigI3igI7igI/vu7/CoOKAjCDigI3igI7igI/vu7/CoOKAjCDigI3igI7igI/vu7/CoOKAjCDi gI3igI7igI/vu7/CoOKAjCDigI3igI7"
+        }
+      ]
+    },
+    {
+      "from": "Tina Chang <tina_chang@Hipposcreen-nc.com>",
+      "from_addr": "tina_chang@hipposcreen-nc.com",
+      "subject": "自動回覆: HippoScreen + NeuroTech.com community",
+      "date": "2026-06-18T15:20:27.000Z",
+      "body": "--_000_525e596f960941ca9990b23c8cee0663TYZPR03MB9075apcprd03pr_ Content-Type: text/plain; charset=\"big5\" Content-Transfer-Encoding: base64 U3RhdHVzIFVwZGF0ZSBmcm9tIFRpbmEgLyDC98K+peaxtbtQt1DBwg0KDQpEZWFyIFNlbmRlcnMs DQpUaGFuayB5b3UgZm9yIHlvdXIgbWVzc2FnZS4gIFBsZWFzZSBiZSBpbmZvcm1lZCB0aGF0IEkg YW0gbm8gbG9uZ2VyIHdpdGggSGlwcG9TY3JlZW4gTmV1cm90ZWNoIGFzIG9mIG1pZC1KdW5lIDIw MjYuDQoNCkl0IGhhcyBiZWVuIGEgcHJpdmlsZWdlIHdvcmtpbmcgd2l0aCB5b3UgZHVyaW5nIG15 IHRlbnVyZS4gVG8gbWFrZSBzdXJlIHlvdXIgcmVxdWVzdHMgYXJlIHdlbGwgdGFrZW4gY2FyZSBv ZiwgcGxlYXNlIGZlZWwgZnJlZSB0byBjb250YWN0IG91ciB0ZWFtIGxlYWRzIGRpcmVjdGx5Og0K KiAqKlRhaXdhbiBEb21lc3RpYyBNYXJrZXQgKEVBUCAmIE1hcmtldGluZyk6KioNCiAgIFBsZWFz ZSByZWFjaCBvdXQgdG8gKipBbXkgVHNlbmcqKiBhdCBhbXlfdHNlbmdAY29tcGFsLmNvbQ0KKiAq KkludGVybmF0aW9uYWwgQnVzaW5lc3M6KioNCiAgIFBsZ",
+      "message_id": "<525e596f960941ca9990b23c8cee0663@TYZPR03MB9075.apcprd03.prod.outlook.com>",
+      "needs_reply": true,
+      "thread_length": 1,
+      "thread": [
+        {
+          "folder": "INBOX",
+          "from": "tina_chang@Hipposcreen-nc.com",
+          "to": "hello@neurotech.com",
+          "subject": "自動回覆: HippoScreen + NeuroTech.com community",
+          "date": "2026-06-18T15:20:27.000Z",
+          "body": "--_000_525e596f960941ca9990b23c8cee0663TYZPR03MB9075apcprd03pr_ Content-Type: text/plain; charset=\"big5\" Content-Transfer-Encoding: base64 U3RhdHVzIFVwZGF0ZSBmcm9tIFRpbmEgLyDC98K+peaxtbtQt1DBwg0KDQpEZWFyIFNlbmRlcnMs DQpUaGFuayB5b3UgZm9yIHlvdXIgbWVzc2FnZS4gIFBsZWFzZSBiZSBpbmZvcm1lZCB0aGF0IEkg YW0gbm8gbG9uZ2VyIHdpdGggSGlwcG9TY3JlZW4gTmV1cm90ZWNoIGFzIG9mIG1pZC1KdW5lIDIw MjYuDQoNCkl0IGhhcyBiZWVuIGEgcHJpdmlsZWdlIHdvcmtpbmcgd2l0aCB5b3UgZHVyaW5nIG15 IHRlbnVyZS4gVG8gbWFrZSBzdXJlIHlvdXIgcmVxdWVzdHMgYXJlIHdlbGwgdGFrZW4gY2FyZSBv ZiwgcGxlYXNlIGZlZWwgZnJlZSB0byBjb250YWN0IG91ciB0ZWFtIGxlYWRzIGRpcmVjdGx5Og0K"
+        }
+      ]
+    },
+    {
+      "from": "Zoho Europe <uk@zohotimes.com>",
+      "from_addr": "uk@zohotimes.com",
+      "subject": "Zoho Times: Meet Nathu La, Zoho's first-ever in-house designed server!",
+      "date": "2026-06-18T09:02:20.000Z",
+      "body": "------=_Part_3554784_925017439.1781773340621 Content-Type: text/plain;charset=\"UTF-8\" Content-Transfer-Encoding: quoted-printable =20 =20 =20 =20 Edition 36 | June 2026 - United Kingdom =20 =20 =20 Unveiling Nathu La, Zoho's first in-house designed server! =20 The result of five years of R&D and collaboration with Intel (Intel=C2=AE X= eon=C2=AE 6 processors), Nathu La cuts power consumption by 12=E2=80=9318% = and total cost of ownership by 20=E2=80=9330%. A key milestone in our journ= ey toward building Zoho's full technology stack, from the hardware layer to= the software applications. =20 https://www.zoho.com/news/zoho-corporation-unveils-nathu-la-a-designed-in= -house-server-in-a-move-towards-technological-sovereignty-and-inference-cos= t-reduction.html?zwcDate=3Djun%2010 Check it out",
+      "message_id": "<zcb.3z6e2124efaaa8f675911317271e43e8f9.1f3042be76ad197.1781773340622@mail2.zgph.zcsend.eu>",
+      "needs_reply": true,
+      "thread_length": 1,
+      "thread": [
+        {
+          "folder": "INBOX",
+          "from": "uk@zohotimes.com",
+          "to": "hello@neurotech.com",
+          "subject": "Zoho Times: Meet Nathu La, Zoho's first-ever in-house designed server!",
+          "date": "2026-06-18T09:02:20.000Z",
+          "body": "------=_Part_3554784_925017439.1781773340621 Content-Type: text/plain;charset=\"UTF-8\" Content-Transfer-Encoding: quoted-printable =20 =20 =20 =20 Edition 36 | June 2026 - United Kingdom =20 =20 =20 Unveiling Nathu La, Zoho's first in-house designed server! =20 The result of five years of R&D and collaboration with Intel (Intel=C2=AE X= eon=C2=AE 6 processors), Nathu La cuts power consumption by 12=E2=80=9318% = and total cost of ownership by 20=E2=80=9330%. A key milestone in our journ= ey toward building Zoho's full technology stack, from the hardware layer to= the software applications. =20 "
+        }
+      ]
+    },
+    {
+      "from": "Catherine <catherine@brainbit.com>",
+      "from_addr": "catherine@brainbit.com",
+      "subject": "Re: BrainBit profile updated — and a quick opportunity",
+      "date": "2026-06-17T16:29:59.000Z",
+      "body": "--000000000000ea86f706547592cf Content-Type: multipart/alternative; boundary=\"000000000000ea86f506547592cd\" --000000000000ea86f506547592cd Content-Type: text/plain; charset=\"UTF-8\" Content-Transfer-Encoding: quoted-printable Hello, Thank you for your support in updating BrainBit's location on Neurotech Directory. Please replace the existing company overview with the updated description provided below. Regarding the Featured Listing option, we will certainly consider it. If you have any analytics or audience data available such as monthly website traffic, directory views, newsletter subscriber count, audience demographics, engagement metrics, or any other relevant statistics, we would be happy to review them to help us evaluate the opportunity and make an informed decision. Thank you, and w",
+      "message_id": "<CAFGGYo4WaVP42B68iNnvHYCPjz3oEJ-bmHLf5=kKz7VDVMhoJg@mail.gmail.com>",
+      "needs_reply": true,
+      "thread_length": 1,
+      "thread": [
+        {
+          "folder": "INBOX",
+          "from": "catherine@brainbit.com",
+          "to": "hello@neurotech.com",
+          "subject": "Re: BrainBit profile updated — and a quick opportunity",
+          "date": "2026-06-17T16:29:59.000Z",
+          "body": "--000000000000ea86f706547592cf Content-Type: multipart/alternative; boundary=\"000000000000ea86f506547592cd\" --000000000000ea86f506547592cd Content-Type: text/plain; charset=\"UTF-8\" Content-Transfer-Encoding: quoted-printable Hello, Thank you for your support in updating BrainBit's location on Neurotech Directory. Please replace the existing company overview with the updated description provided below. Regarding the Featured Listing option, we will certainly consider it. If you have any analytics or audience data available such as monthly website traffic, directory views, newsletter subscriber "
+        }
+      ]
+    },
+    {
+      "from": "Mydecine <info@mydecine.com>",
+      "from_addr": "info@mydecine.com",
+      "subject": "Re: Re: Mydecine Innovations listing on NeuroTech.com",
+      "date": "2026-06-17T13:21:49.000Z",
+      "body": "----==_mimepart_6a329f6cf16d4_24e630ec4082b7 Content-Type: text/plain; charset=UTF-8 Content-Transfer-Encoding: quoted-printable Hello! Thank you for your business inquiry regarding mydecine.com con= tent placement opportunities. =C2=A0 We maintain an active content a= cceptance policy with the following rate card: =E2=9C=93 Standard Guest = Post:=C2=A0$100 =E2=9C=93 Sensitive Guest Post:=C2=A0$130 =E2=9C=93 Sta= ndard Link Insertion:=C2=A0$60 =E2=9C=93 Sensitive Link Insertion:=C2=A0= $90 Banner/Homepage Links: =C2=A0$100/month. (quarterly, semi-annual= , or annual terms available) If you want faster pickup, we can also bu= ild Tier-2 links to your Tier-1 pages. Most campaigns start with 25 Tier-= 2 links at $360. For a smaller start, choose 10 links for $170. For the s= trongest push, ch",
+      "message_id": "<0100019ed5bec31f-0a13e44e-82cc-4bec-9508-90243279957f-000000@email.amazonses.com>",
+      "needs_reply": true,
+      "thread_length": 2,
+      "thread": [
+        {
+          "folder": "INBOX",
+          "from": "info@mydecine.com",
+          "to": "hello@neurotech.com",
+          "subject": "Re: Mydecine Innovations is listed on NeuroTech.com — claim your featured profile",
+          "date": "2026-06-17T12:20:34.000Z",
+          "body": "----==_mimepart_6a3291126c101_250f81c0e09640bf Content-Type: text/plain; charset=UTF-8 Content-Transfer-Encoding: quoted-printable Hello! Thank you for your business inquiry regarding mydecine.com con= tent placement opportunities. =C2=A0 We maintain an active content a= cceptance policy with the following rate card: =E2=9C=93 Standard Guest = Post:=C2=A0$100 =E2=9C=93 Sensitive Guest Post:=C2=A0$130 =E2=9C=93 Sta= ndard Link Insertion:=C2=A0$60 =E2=9C=93 Sensitive Link Insertion:=C2=A0= $90 Banner/Homepage Links: =C2=A0$100/month. (quarterly, semi-annual= , or annual terms available) If you w"
+        },
+        {
+          "folder": "INBOX",
+          "from": "info@mydecine.com",
+          "to": "hello@neurotech.com",
+          "subject": "Re: Re: Mydecine Innovations listing on NeuroTech.com",
+          "date": "2026-06-17T13:21:49.000Z",
+          "body": "----==_mimepart_6a329f6cf16d4_24e630ec4082b7 Content-Type: text/plain; charset=UTF-8 Content-Transfer-Encoding: quoted-printable Hello! Thank you for your business inquiry regarding mydecine.com con= tent placement opportunities. =C2=A0 We maintain an active content a= cceptance policy with the following rate card: =E2=9C=93 Standard Guest = Post:=C2=A0$100 =E2=9C=93 Sensitive Guest Post:=C2=A0$130 =E2=9C=93 Sta= ndard Link Insertion:=C2=A0$60 =E2=9C=93 Sensitive Link Insertion:=C2=A0= $90 Banner/Homepage Links: =C2=A0$100/month. (quarterly, semi-annual= , or annual terms available) If you wan"
+        }
+      ]
+    },
+    {
+      "from": "help@neurotrack.com <help@neurotrack.com>",
+      "from_addr": "help@neurotrack.com",
+      "subject": "Re: Neurotrack is listed on NeuroTech.com — claim your featured profile",
+      "date": "2026-06-17T12:13:07.000Z",
+      "body": "----_NmP-6995a1b88d317693-Part_1 Content-Type: text/plain; charset=utf-8 Content-Transfer-Encoding: quoted-printable Hi NeuroTech.com, Thank you for reaching out! We=E2=80=99ve received your= email and will look into it shortly. Regards, ___ Neurotrack Support https://neurotrack.com ----_NmP-6995a1b88d317693-Part_1 Content-Type: text/html; charset=utf-8 Content-Transfer-Encoding: quoted-printable Hi NeuroTech.com, Thank you for reaching = out! We=E2=80=99ve received your email and will look into it shortly.= Regards, ___ Neurotrack = Support https://neurotrack.= com &nbsp; ----_NmP-6995a1b88d317693-Part_1--",
+      "message_id": "<6d7a3953f4fab5c0654f73ff905ecc20@frontapp.com>",
+      "needs_reply": true,
+      "thread_length": 1,
+      "thread": [
+        {
+          "folder": "INBOX",
+          "from": "help@neurotrack.com",
+          "to": "hello@neurotech.com",
+          "subject": "Re: Neurotrack is listed on NeuroTech.com — claim your featured profile",
+          "date": "2026-06-17T12:13:07.000Z",
+          "body": "----_NmP-6995a1b88d317693-Part_1 Content-Type: text/plain; charset=utf-8 Content-Transfer-Encoding: quoted-printable Hi NeuroTech.com, Thank you for reaching out! We=E2=80=99ve received your= email and will look into it shortly. Regards, ___ Neurotrack Support https://neurotrack.com ----_NmP-6995a1b88d317693-Part_1 Content-Type: text/html; charset=utf-8 Content-Transfer-Encoding: quoted-printable Hi NeuroTech.com, Thank you for reaching = out! We=E2=80=99ve received your email and will look into it shortly.= Regards, ___ Neurotrack = Support https://neurotrack.= com &nbsp; ----_NmP-6995a1b88d3"
+        }
+      ]
+    },
     {
       "from": "Zoho Team <noreply@zohoaccounts.eu>",
       "from_addr": "noreply@zohoaccounts.eu",
       "subject": "New sign-in to your Zoho account",
-      "date": "Wed, 17 Jun 2026 10:42:22 +0200 (CEST)",
-      "body": "Hi Alon braun,    \r\n   There&#39;s been a new sign-in to your Zoho account hello@neurotech.com on Wednesday, June 17 2026 09:42:20 AM BST.   \r\n   Device Mac OS X   \r\n   App Safari   \r\n   Location Hillingdon, United Kingdom \r\n (Location is approximated based on the accessed IP Address: 31.205.227.118)   \r\n   If this wasn&#39;t you, you need to change your Zoho account password to protect your accou",
+      "date": "2026-06-17T08:42:22.000Z",
+      "body": "------=_Part_20756578_2099470052.1781685742761 Content-Type: multipart/alternative; boundary=\"----=_Part_20756579_40039352.1781685742761\" ------=_Part_20756579_40039352.1781685742761 Content-Type: text/plain; charset=\"UTF-8\" Content-Transfer-Encoding: quoted-printable Hi Alon braun, =20 There&#39;s been a new sign-in to your Zoho account hello@neurotech.com = on Wednesday, June 17 2026 09:42:20 AM BST. =20 Device Mac OS X =20 App Safari =20 Location Hillingdon, United Kingdom=20 (Location is approximated based on the accessed IP Address: 31.205.227.118= ) =20 If this wasn&#39;t you, you need to change your Zoho account password to= protect your account. =20 If you want to view your sign-in history and active sessions, refer to y= our Sessions page. =20 Please contact support@eu.zohoaccount",
+      "message_id": "<13ef.4aa17de26.m1.7460e7e0-6a28-11f1-b4fe-dad70ff08860.19ed4bee55e@eualert.mailer-zaccounts.com>",
+      "needs_reply": true,
       "thread_length": 2,
-      "suggested_reply": "Hi Alon,\n\nJust wanted to check in \u2013 we noticed you signed into your NeuroTech.com account from Hillingdon last week. Everything good on your end? If you have any questions about your listing or want to explore our featured options, we're here to help.\n\nThe NeuroTech.com Team",
-      "unread": true
+      "thread": [
+        {
+          "folder": "INBOX",
+          "from": "noreply@zohoaccounts.eu",
+          "to": "hello@neurotech.com",
+          "subject": "Verify your email address",
+          "date": "2026-05-17T22:01:14.000Z",
+          "body": "------=_Part_51863122_179212552.1779055274105 Content-Type: multipart/alternative; boundary=\"----=_Part_51863123_1819516561.1779055274105\" ------=_Part_51863123_1819516561.1779055274105 Content-Type: text/plain; charset=\"UTF-8\" Content-Transfer-Encoding: quoted-printable Hello Alon braun, Thank you for signing up with us. We&#39;d love for you to explore our so= ftware suite, and discover how our technology stack can help you meet your = business needs. =20 To receive important announcements, notifications, and alerts from Z= oho, please verify your email address.=20 Verify Email Address =20 ="
+        },
+        {
+          "folder": "INBOX",
+          "from": "noreply@zohoaccounts.eu",
+          "to": "hello@neurotech.com",
+          "subject": "New sign-in to your Zoho account",
+          "date": "2026-06-17T08:42:22.000Z",
+          "body": "------=_Part_20756578_2099470052.1781685742761 Content-Type: multipart/alternative; boundary=\"----=_Part_20756579_40039352.1781685742761\" ------=_Part_20756579_40039352.1781685742761 Content-Type: text/plain; charset=\"UTF-8\" Content-Transfer-Encoding: quoted-printable Hi Alon braun, =20 There&#39;s been a new sign-in to your Zoho account hello@neurotech.com = on Wednesday, June 17 2026 09:42:20 AM BST. =20 Device Mac OS X =20 App Safari =20 Location Hillingdon, United Kingdom=20 (Location is approximated based on the accessed IP Address: 31.205.227.118= ) =20 If this wasn&#39;t you, you need t"
+        }
+      ]
     },
     {
-      "from": "\"help@neurotrack.com\" <help@neurotrack.com>",
-      "from_addr": "help@neurotrack.com",
-      "subject": "Re: Neurotrack is listed on NeuroTech.com \u2014 claim your featured profile",
-      "date": "Wed, 17 Jun 2026 12:13:07 +0000",
-      "body": "Hi NeuroTech.com,\r\n\r\n\r\nThank you for reaching out! We\u2019ve received your email and will look into it shortly.\r\n\r\n\r\nRegards,\r\n___\r\n\r\n\r\nNeurotrack Support\r\nhttps://neurotrack.com",
+      "from": "alonbraun@me.com",
+      "from_addr": "alonbraun@me.com",
+      "subject": "Re: Test — reply to this email",
+      "date": "2026-06-17T07:54:06.000Z",
+      "body": "--6a3252aa_575f3a9b_2aaf Content-Type: text/plain; charset=\"utf-8\" Content-Transfer-Encoding: 7bit Content-Disposition: inline Nice to meet you On 17 Jun 2026 at 8:53 +0100, NeuroTech.com , wrote: > This is a test email from NeuroTech.com outreach. > Please hit Reply and check that your reply goes to hello@neurotech.com. > NeuroTech.com Team --6a3252aa_575f3a9b_2aaf Content-Type: text/html; charset=\"utf-8\" Content-Transfer-Encoding: quoted-printable Content-Disposition: inline Nice to meet you On 17 Jun 2026 at 8:53 +0100, Neuro= Tech.com &lt;listings=40neurotech.com&gt;, wrote: This is a test email from NeuroTech.com outreach. Please hit Reply and check that your reply goes to hello=40neurotech.com . NeuroTech.com Team --6a3252aa_575f3a9b_2aaf--",
+      "message_id": "<cd0dd007-89ec-442d-a9f2-3779ea122905@Spark>",
+      "needs_reply": true,
+      "thread_length": 2,
+      "thread": [
+        {
+          "folder": "INBOX",
+          "from": "alonbraun@me.com",
+          "to": "hello@neurotech.com",
+          "subject": "Test",
+          "date": "2026-05-18T07:40:42.000Z",
+          "body": "--6a0ac27d_3cae8d0_631b Content-Type: text/plain; charset=\"utf-8\" Content-Transfer-Encoding: 7bit Content-Disposition: inline Test --6a0ac27d_3cae8d0_631b Content-Type: text/html; charset=\"utf-8\" Content-Transfer-Encoding: quoted-printable Content-Disposition: inline Test --6a0ac27d_3cae8d0_631b--"
+        },
+        {
+          "folder": "INBOX",
+          "from": "alonbraun@me.com",
+          "to": "hello@neurotech.com",
+          "subject": "Re: Test — reply to this email",
+          "date": "2026-06-17T07:54:06.000Z",
+          "body": "--6a3252aa_575f3a9b_2aaf Content-Type: text/plain; charset=\"utf-8\" Content-Transfer-Encoding: 7bit Content-Disposition: inline Nice to meet you On 17 Jun 2026 at 8:53 +0100, NeuroTech.com , wrote: > This is a test email from NeuroTech.com outreach. > Please hit Reply and check that your reply goes to hello@neurotech.com. > NeuroTech.com Team --6a3252aa_575f3a9b_2aaf Content-Type: text/html; charset=\"utf-8\" Content-Transfer-Encoding: quoted-printable Content-Disposition: inline Nice to meet you On 17 Jun 2026 at 8:53 +0100, Neuro= Tech.com &lt;listings=40neurotech.com&gt;, wrote: This is a test"
+        }
+      ]
+    },
+    {
+      "from": "Alpha CM <csmitchell@alphaneuroscience.com>",
+      "from_addr": "csmitchell@alphaneuroscience.com",
+      "subject": "RE: Hello from Alpha Neuroscience",
+      "date": "2026-06-15T14:48:38.000Z",
+      "body": "--_004_CH3PPF3593851D24DF651C98F49C551B9B4D8E62CH3PPF3593851D2_ Content-Type: multipart/alternative; boundary=\"_000_CH3PPF3593851D24DF651C98F49C551B9B4D8E62CH3PPF3593851D2_\" --_000_CH3PPF3593851D24DF651C98F49C551B9B4D8E62CH3PPF3593851D2_ Content-Type: text/plain; charset=\"utf-8\" Content-Transfer-Encoding: base64 R29vZCBtb3JuaW5nIEFsb24NCg0KVGhhbmsgeW91IGZvciByZXNwb25kaW5nIHRvIG15IGVtYWls IHJlcXVlc3QuDQpSZWdhcmRpbmcgYW4gaW50cm9kdWN0aW9uIGNhbGwsIEkgY2FuIGJlIGF2YWls YWJsZSB0aGlzIGFmdGVybm9vbiBhbmQgdG9tb3Jyb3cgYW5kIHZpYSBwaG9uZSBvbmx5IG9uIFdl ZG5lc2RheS4NCkRvIGFueSBvZiB0aGVzZSBkYXlzIHdvcmsgZm9yIHlvdT8gIEkgY2FuIGNlcnRh aW5seSBtb3ZlIHRoaW5ncyBhcm91bmQgZm9yIHRpbWUgYWNjb3JkaW5nIHRvIHlvdXIgYXZhaWxh YmlsaXR5DQoNClRoYW5rIHlvdSBhbmQgbG9va2luZyBmb3J3YXJkIHRvIGhlYXJpbmcgZnJvbSB5 b3Ugc29vbg0KDQpCZXN0IHJl",
+      "message_id": "<CH3PPF3593851D24DF651C98F49C551B9B4D8E62@CH3PPF3593851D2.namprd07.prod.outlook.com>",
+      "needs_reply": false,
+      "thread_length": 4,
+      "thread": [
+        {
+          "folder": "INBOX",
+          "from": "csmitchell@alphaneuroscience.com",
+          "to": "hello@neurotech.com",
+          "subject": "Hello from Alpha Neuroscience",
+          "date": "2026-06-12T14:43:00.000Z",
+          "body": "--_004_CH3PPF3593851D2FFC9F7772E140843347BD8182CH3PPF3593851D2_ Content-Type: multipart/alternative; boundary=\"_000_CH3PPF3593851D2FFC9F7772E140843347BD8182CH3PPF3593851D2_\" --_000_CH3PPF3593851D2FFC9F7772E140843347BD8182CH3PPF3593851D2_ Content-Type: text/plain; charset=\"us-ascii\" Content-Transfer-Encoding: quoted-printable Good morning My name is Cameron Mitchell, partner and founder of Alpha Neuroscience LLC.= We are an interventional Neuro treatment company and would like to learn = more about your technology. As we are a distributor of many of our products, we develop our own softwar= e t"
+        },
+        {
+          "folder": "Sent",
+          "from": "hello@neurotech.com",
+          "to": "csmitchell@alphaneuroscience.com",
+          "subject": "Re: Hello from Alpha Neuroscience",
+          "date": "2026-06-15T09:35:15.000Z",
+          "body": "------=_Part_2814385_1344863985.1781516115371 Content-Type: text/plain; charset=\"UTF-8\" Content-Transfer-Encoding: quoted-printable Hi Cameron, Thank you for reaching out. http://neurotech.com/ is developing into a global industry portal and comm= unity for the neurotechnology sector, bringing together companies, research= ers, investors, clinicians, and innovators. We are particularly interested in technologies involving brain-computer int= erfaces, physiological sensing, neurofeedback, digital therapeutics, AI app= lications, and emerging neuroscience ventures. I=E2=80=99d love to learn more"
+        },
+        {
+          "folder": "INBOX",
+          "from": "csmitchell@alphaneuroscience.com",
+          "to": "hello@neurotech.com",
+          "subject": "RE: Hello from Alpha Neuroscience",
+          "date": "2026-06-15T14:48:38.000Z",
+          "body": "--_004_CH3PPF3593851D24DF651C98F49C551B9B4D8E62CH3PPF3593851D2_ Content-Type: multipart/alternative; boundary=\"_000_CH3PPF3593851D24DF651C98F49C551B9B4D8E62CH3PPF3593851D2_\" --_000_CH3PPF3593851D24DF651C98F49C551B9B4D8E62CH3PPF3593851D2_ Content-Type: text/plain; charset=\"utf-8\" Content-Transfer-Encoding: base64 R29vZCBtb3JuaW5nIEFsb24NCg0KVGhhbmsgeW91IGZvciByZXNwb25kaW5nIHRvIG15IGVtYWls IHJlcXVlc3QuDQpSZWdhcmRpbmcgYW4gaW50cm9kdWN0aW9uIGNhbGwsIEkgY2FuIGJlIGF2YWls YWJsZSB0aGlzIGFmdGVybm9vbiBhbmQgdG9tb3Jyb3cgYW5kIHZpYSBwaG9uZSBvbmx5IG9uIFdl ZG5lc2RheS4NCkRvIGFueSBvZiB0aGVzZSBkYXlzIHdvcmsgZm9yIHl"
+        },
+        {
+          "folder": "Sent",
+          "from": "hello@neurotech.com",
+          "to": "csmitchell@alphaneuroscience.com",
+          "subject": "RE: Hello from Alpha Neuroscience",
+          "date": "2026-06-15T19:03:54.000Z",
+          "body": "------=_Part_2398821_1733997325.1781550234569 Content-Type: text/plain; charset=\"UTF-8\" Content-Transfer-Encoding: quoted-printable Hey=C2=A0 I am not sure which timezone you are i will be free at 22:30 today uk time = . Will that work? My whatsapp is +447393382831 You welcome to ping me there this way i see it faster . Alon=C2=A0 ---- On Mon, 15 Jun 2026 15:48:38 +0100 Alpha CM wrote ---- Good morning Alon =C2=A0 Thank you for responding to my email request. Regarding an introduction call, I can be available this afternoon and tomor= row and via phone only on Wednesday. Do any of these days w"
+        }
+      ]
+    },
+    {
+      "from": "shevronvictor@gmail.com",
+      "from_addr": "shevronvictor@gmail.com",
+      "subject": "Expert Written Guest Post for Your Website",
+      "date": "2026-06-15T09:55:29.000Z",
+      "body": "--0000000000009fd08a065447d33d Content-Type: text/plain; charset=\"UTF-8\" Content-Transfer-Encoding: quoted-printable Hi, I was exploring your website and was impressed by both the content quality and the overall design. It's clean and easy to navigate. I have a relevant blog that could add value to your audience. I can write a well-researched, SEO optimized article, ready to publish and created specifically for your site, with no charges involved. Best regards, Victor Shevron Reply =E2=80=9Cunsubscribe=E2=80=9D to stop future emails. --0000000000009fd08a065447d33d Content-Type: text/html; charset=\"UTF-8\" Content-Transfer-Encoding: quoted-printable Hi, I was exploring your website and w= as impressed by both the content quality and the overall design. It&#39;s c= lean and easy to navigate. ",
+      "message_id": "<CALt-QHtjt0jMdVwnPMRV7FYeb2id=jdqw26vf7hZ3=ON5RuHVg@mail.gmail.com>",
+      "needs_reply": true,
       "thread_length": 1,
-      "suggested_reply": "Thanks for getting back to us! We appreciate you taking the time to look into it. If you have any questions about the featured listing or want to move forward, just head over to https://neurotech.com/advertise to get set up. Happy to help if you need anything else!\n\nThe NeuroTech.com Team",
-      "unread": true
+      "thread": [
+        {
+          "folder": "INBOX",
+          "from": "shevronvictor@gmail.com",
+          "to": "hello@neurotech.com",
+          "subject": "Expert Written Guest Post for Your Website",
+          "date": "2026-06-15T09:55:29.000Z",
+          "body": "--0000000000009fd08a065447d33d Content-Type: text/plain; charset=\"UTF-8\" Content-Transfer-Encoding: quoted-printable Hi, I was exploring your website and was impressed by both the content quality and the overall design. It's clean and easy to navigate. I have a relevant blog that could add value to your audience. I can write a well-researched, SEO optimized article, ready to publish and created specifically for your site, with no charges involved. Best regards, Victor Shevron Reply =E2=80=9Cunsubscribe=E2=80=9D to stop future emails. --0000000000009fd08a065447d33d Content-Type: text/html; char"
+        }
+      ]
     },
     {
-      "from": "Mydecine <info@mydecine.com>",
-      "from_addr": "info@mydecine.com",
-      "subject": "Re: Mydecine Innovations is listed on NeuroTech.com \u2014 claim your featured profile",
-      "date": "Wed, 17 Jun 2026 12:20:34 +0000",
-      "body": "Hello!     Thank you for your business inquiry regarding mydecine.com content placement opportunities. \u00a0      We maintain an active content acceptance policy with the following rate card:  \u2713 Standard Guest Post:\u00a0$100  \u2713 Sensitive Guest Post:\u00a0$130  \u2713 Standard Link Insertion:\u00a0$60  \u2713 Sensitive Link Insertion:\u00a0$90      Banner/Homepage Links: \u00a0$100/month. (quarterly, semi-annual, or annual terms availa",
-      "thread_length": 2,
-      "suggested_reply": "Hi there,\n\nThanks for reaching out. I think there may be some confusion\u2014we're actually NeuroTech.com, the directory where *your company* (Mydecine Innovations) is already listed. It looks like you've sent us a content placement rate card, but we're the platform listing neurotechnology companies, not the other way around.\n\nIf Mydecine is interested in upgrading to a featured listing ($199/month) or posting a job opening ($250), I'd be happy to help with that. Otherwise, if you have questions about your current listing, just let me know!\n\nBest,\nThe NeuroTech.com Team",
-      "unread": true
+      "from": "Zeno Rocha <zeno.rocha@resend.com>",
+      "from_addr": "zeno.rocha@resend.com",
+      "subject": "Welcome to Resend!",
+      "date": "2026-06-15T08:12:22.000Z",
+      "body": "----_NmP-7a63e8cfe4318cbe-Part_1 Content-Type: text/plain; charset=utf-8 Content-Transfer-Encoding: quoted-printable Hey, My name is Zeno =E2=80=94 I'm the founder and CEO of Resend. We started Resend because we wanted a better email API for developers. A simple, fast, and elegant interface that just works. Here are 3 tips to get started. 1. Send your first email https://resend.= com/onboarding 2. Add your domain https://resend.com/domains 3. Check the docs https://resend.com/docs P.S.: Why did you sign up? What= brought you here? Hit \"Reply\" and let me know. I read and reply to every = email. Cheers, Zeno ----_NmP-7a63e8cfe4318cbe-Part_1 Content-Type: text/html; charset=utf-8 Content-Transfer-Encoding: quoted-printable Hey, = My = name is Zeno =E2=80=94 I&#x27;m the founder and CEO of Res",
+      "message_id": "<0100019eca56bde3-56b3c684-04fa-4611-b9e2-89b342583cda-000000@email.amazonses.com>",
+      "needs_reply": true,
+      "thread_length": 1,
+      "thread": [
+        {
+          "folder": "INBOX",
+          "from": "zeno.rocha@resend.com",
+          "to": "hello@neurotech.com",
+          "subject": "Welcome to Resend!",
+          "date": "2026-06-15T08:12:22.000Z",
+          "body": "----_NmP-7a63e8cfe4318cbe-Part_1 Content-Type: text/plain; charset=utf-8 Content-Transfer-Encoding: quoted-printable Hey, My name is Zeno =E2=80=94 I'm the founder and CEO of Resend. We started Resend because we wanted a better email API for developers. A simple, fast, and elegant interface that just works. Here are 3 tips to get started. 1. Send your first email https://resend.= com/onboarding 2. Add your domain https://resend.com/domains 3. Check the docs https://resend.com/docs P.S.: Why did you sign up? What= brought you here? Hit \"Reply\" and let me know. I read and reply to every = email."
+        }
+      ]
     },
     {
-      "from": "Mydecine <info@mydecine.com>",
-      "from_addr": "info@mydecine.com",
-      "subject": "Re: Re: Mydecine Innovations listing on NeuroTech.com",
-      "date": "Wed, 17 Jun 2026 13:21:49 +0000",
-      "body": "Hello!     Thank you for your business inquiry regarding mydecine.com content placement opportunities. \u00a0      We maintain an active content acceptance policy with the following rate card:  \u2713 Standard Guest Post:\u00a0$100  \u2713 Sensitive Guest Post:\u00a0$130  \u2713 Standard Link Insertion:\u00a0$60  \u2713 Sensitive Link Insertion:\u00a0$90      Banner/Homepage Links: \u00a0$100/month. (quarterly, semi-annual, or annual terms availa",
+      "from": "Accounts Receivable <ar.zsuk@eu.zohocorp.com>",
+      "from_addr": "ar.zsuk@eu.zohocorp.com",
+      "subject": "Invoice - 80030876898 from Zoho Corporation Limited.",
+      "date": "2026-05-17T22:20:09.000Z",
+      "body": "------=_Part_51876136_1485112609.1779056409256 Content-Type: multipart/alternative; boundary=\"----=_Part_51876137_814622319.1779056409256\" ------=_Part_51876137_814622319.1779056409256 Content-Type: text/plain; charset=\"UTF-8\" Content-Transfer-Encoding: quoted-printable Dear Customer, Thank&nbsp;you&nbsp;for subscribing&nbsp;to&nbsp;Zoho service. We&nbsp;have attached&nbsp;the invoice&nbsp;for&nbsp;your subscription paid= &nbsp;on&nbsp;18 May 2026&nbsp;with&nbsp;this email.If&nbsp;you&nbsp;have&n= bsp;any questions, please e-mail&nbsp;us&nbsp;at payments@zohocorp.com&nbsp= ;or call&nbsp;us&nbsp;at&nbsp;our toll free&nbsp;number listed in this link= &nbsp;https://www.zoho.eu/contactus.html. Thanks&nbsp;for&nbsp;your business. Accounts ReceivablesZoho Corporation Limited.Phone +44 203 788 12",
+      "message_id": "<13ef.4a819e5d4.m1.9042c160-523e-11f1-a8ce-76699466976f.19e38067876@eu-sender.zohobooks.com>",
+      "needs_reply": true,
+      "thread_length": 1,
+      "thread": [
+        {
+          "folder": "INBOX",
+          "from": "ar.zsuk@eu.zohocorp.com",
+          "to": "hello@neurotech.com",
+          "subject": "Invoice - 80030876898 from Zoho Corporation Limited.",
+          "date": "2026-05-17T22:20:09.000Z",
+          "body": "------=_Part_51876136_1485112609.1779056409256 Content-Type: multipart/alternative; boundary=\"----=_Part_51876137_814622319.1779056409256\" ------=_Part_51876137_814622319.1779056409256 Content-Type: text/plain; charset=\"UTF-8\" Content-Transfer-Encoding: quoted-printable Dear Customer, Thank&nbsp;you&nbsp;for subscribing&nbsp;to&nbsp;Zoho service. We&nbsp;have attached&nbsp;the invoice&nbsp;for&nbsp;your subscription paid= &nbsp;on&nbsp;18 May 2026&nbsp;with&nbsp;this email.If&nbsp;you&nbsp;have&n= bsp;any questions, please e-mail&nbsp;us&nbsp;at payments@zohocorp.com&nbsp= ;or call&nbsp;us&nbs"
+        }
+      ]
+    },
+    {
+      "from": "welcome@zoho.eu",
+      "from_addr": "welcome@zoho.eu",
+      "subject": "Welcome to Zoho Mail",
+      "date": "2026-05-17T22:13:35.000Z",
+      "body": "------=_Part_565525_675833552.1665384326498 Content-Type: text/plain; charset=\"UTF-8\" Content-Transfer-Encoding: quoted-printable Hello Alon braun, We are happy to have you onboard! Join our webinar sessions to discover the power of Zoho Mail. https://www.zoho.com/mail/webinars/?src=3Dzmwelcome https://www.zoho.com/ma= il/webinars/recorded-webinars.html?src=3Dzmwelcome These are some additional resources you can use to help kick start your jou= rney with Zoho Mail. https://www.zoho.com/mail/complete-guide-to-setup-zohomail.html?src=3Dzmwel= come https://www.zoho.com/mail/deployment/?src=3Dzmwelcome https://www.zoho.com/mail/migration/?src=3Dzmwelcome We roll out feature enhancements every day. You can catch up with all our latest updates here. https://www.zoho.com/mail/whats-new.html?src=3",
+      "message_id": "<1208029088.2915.1779056015433@[10.167.38.108]>",
+      "needs_reply": true,
       "thread_length": 2,
-      "suggested_reply": "Hi there,\n\nI appreciate you sending over your content placement rates, but I think there may be some confusion\u2014you're actually reaching out to NeuroTech.com, the neurotechnology industry directory. We're the ones offering featured listings and job postings to companies like Mydecine, not the other way around!\n\nIf you're interested in upgrading Mydecine's presence on our platform or posting job openings, feel free to check out our options at https://neurotech.com/advertise.\n\nBest,\nThe NeuroTech.com Team",
-      "unread": true
+      "thread": [
+        {
+          "folder": "INBOX",
+          "from": "welcome@zoho.eu",
+          "to": "hello@neurotech.com",
+          "subject": "Welcome to Zoho Mail",
+          "date": "2026-05-17T22:13:35.000Z",
+          "body": "------=_Part_565525_675833552.1665384326498 Content-Type: text/plain; charset=\"UTF-8\" Content-Transfer-Encoding: quoted-printable Hello Alon braun, We are happy to have you onboard! Join our webinar sessions to discover the power of Zoho Mail. https://www.zoho.com/mail/webinars/?src=3Dzmwelcome https://www.zoho.com/ma= il/webinars/recorded-webinars.html?src=3Dzmwelcome These are some additional resources you can use to help kick start your jou= rney with Zoho Mail. https://www.zoho.com/mail/complete-guide-to-setup-zohomail.html?src=3Dzmwel= come https://www.zoho.com/mail/deployment/?src=3Dzmwe"
+        },
+        {
+          "folder": "INBOX",
+          "from": "welcome@zoho.eu",
+          "to": "hello@neurotech.com",
+          "subject": "Access from anywhere, anytime!",
+          "date": "2026-05-17T22:13:35.000Z",
+          "body": "------=_Part_565822_575056409.1665384611448 Content-Type: text/plain; charset=\"UTF-8\" Content-Transfer-Encoding: quoted-printable Hello Alon braun, We have simplified email accessibility, the admin control panel, email shar= ing and more with our mobile apps. Zoho Mail mobile app Access emails, calendars, contacts and files from one app. https://play.google.com/store/apps/details?id=3Dcom.zoho.mail https://apps.= apple.com/us/app/zoho-mail-email-calendar-contacts/id909262651?ls=3D1 Zoho Mail Admin mobile app Reset passwords, manage storage and users, moderate emails and accomplish m= ore with "
+        }
+      ]
+    },
+    {
+      "from": "Zoho Store Notification <notification@zohostore.eu>",
+      "from_addr": "notification@zohostore.eu",
+      "subject": "Zoho Workplace - Your subscription to Zoho Workplace was successful",
+      "date": "2026-05-17T22:11:17.000Z",
+      "body": "Zoho Workplace a:hover { text-decoration: underline !important; } .zs_mail_content {margin-right: auto; margin-left: auto; margin-bot= tom: 0; margin-top: 0; max-width: 712px; width: 100%; padding-bottom: 50px;= padding-left: 50px; padding-top: 50px; padding-right: 50px; border-top-col= or: #c6c6c6; border-left-width: 1px; border-bottom-width: 1px; border-right= -color: #c6c6c6; border-bottom-color: #c6c6c6; border-left-color: #c6c6c6; = border-top-style: solid; border-right-width: 1px; border-bottom-style: soli= d; border-left-style: solid; border-top-width: 1px; border-right-style: sol= id; background-color: #fbfbfb; color: #333;} .plan_box, .addons_box, .addons_box2, .apps_box {background-color: = #f1f1f1; color: #333;} .content_div {display:none;} .content_div.zakya {display:none; heig",
+      "message_id": "<13ef.4aba45a29.m1.536a8ad0-523d-11f1-9633-e23f717f7d6f.19e37fe5bfd@notification.zohostore.eu>",
+      "needs_reply": true,
+      "thread_length": 1,
+      "thread": [
+        {
+          "folder": "INBOX",
+          "from": "notification@zohostore.eu",
+          "to": "hello@neurotech.com",
+          "subject": "Zoho Workplace - Your subscription to Zoho Workplace was successful",
+          "date": "2026-05-17T22:11:17.000Z",
+          "body": "Zoho Workplace a:hover { text-decoration: underline !important; } .zs_mail_content {margin-right: auto; margin-left: auto; margin-bot= tom: 0; margin-top: 0; max-width: 712px; width: 100%; padding-bottom: 50px;= padding-left: 50px; padding-top: 50px; padding-right: 50px; border-top-col= or: #c6c6c6; border-left-width: 1px; border-bottom-width: 1px; border-right= -color: #c6c6c6; border-bottom-color: #c6c6c6; border-left-color: #c6c6c6; = border-top-style: solid; border-right-width: 1px; border-bottom-style: soli= d; border-left-style: solid; border-top-width: 1px; border-right-style: sol= id; "
+        }
+      ]
     }
   ],
   "recent": [
     {
+      "from": "Resend <team@notifications.resend.com>",
+      "subject": "You have reached 80% of your daily quota for the team neurotech",
+      "date": "2026-06-18T15:21:31.000Z",
+      "preview": "----_NmP-cebfe1668082b4d9-Part_1 Content-Type: text/plain; charset=utf-8 Content-Transfer-Encoding: base64 WW91IGhhdmUgcmVhY2hlZCA4MCUgb2YgeW91ciBkYWl",
+      "unread": false
+    },
+    {
+      "from": "Tina Chang <tina_chang@Hipposcreen-nc.com>",
+      "subject": "自動回覆: HippoScreen + NeuroTech.com community",
+      "date": "2026-06-18T15:20:27.000Z",
+      "preview": "--_000_525e596f960941ca9990b23c8cee0663TYZPR03MB9075apcprd03pr_ Content-Type: text/plain; charset=\"big5\" Content-Transfer-Encoding: base64 U3RhdHVzIFV",
+      "unread": false
+    },
+    {
+      "from": "Zoho Europe <uk@zohotimes.com>",
+      "subject": "Zoho Times: Meet Nathu La, Zoho's first-ever in-house designed server!",
+      "date": "2026-06-18T09:02:20.000Z",
+      "preview": "------=_Part_3554784_925017439.1781773340621 Content-Type: text/plain;charset=\"UTF-8\" Content-Transfer-Encoding: quoted-printable =20 =20 =20 =20 Edit",
+      "unread": false
+    },
+    {
+      "from": "Catherine <catherine@brainbit.com>",
+      "subject": "Re: BrainBit profile updated — and a quick opportunity",
+      "date": "2026-06-17T16:29:59.000Z",
+      "preview": "--000000000000ea86f706547592cf Content-Type: multipart/alternative; boundary=\"000000000000ea86f506547592cd\" --000000000000ea86f506547592cd Content-Typ",
+      "unread": false
+    },
+    {
       "from": "Mydecine <info@mydecine.com>",
       "subject": "Re: Re: Mydecine Innovations listing on NeuroTech.com",
-      "date": "Wed, 17 Jun 2026 13:21:49 +0000",
-      "preview": "Hello!     Thank you for your business inquiry regarding mydecine.com content placement opportunities. \u00a0      We maintain an active content acceptance",
+      "date": "2026-06-17T13:21:49.000Z",
+      "preview": "----==_mimepart_6a329f6cf16d4_24e630ec4082b7 Content-Type: text/plain; charset=UTF-8 Content-Transfer-Encoding: quoted-printable Hello! Thank you for ",
       "unread": false
     },
     {
       "from": "Mydecine <info@mydecine.com>",
-      "subject": "Re: Mydecine Innovations is listed on NeuroTech.com \u2014 claim your featured profile",
-      "date": "Wed, 17 Jun 2026 12:20:34 +0000",
-      "preview": "Hello!     Thank you for your business inquiry regarding mydecine.com content placement opportunities. \u00a0      We maintain an active content acceptance",
+      "subject": "Re: Mydecine Innovations is listed on NeuroTech.com — claim your featured profile",
+      "date": "2026-06-17T12:20:34.000Z",
+      "preview": "----==_mimepart_6a3291126c101_250f81c0e09640bf Content-Type: text/plain; charset=UTF-8 Content-Transfer-Encoding: quoted-printable Hello! Thank you fo",
       "unread": false
     },
     {
-      "from": "\"help@neurotrack.com\" <help@neurotrack.com>",
-      "subject": "Re: Neurotrack is listed on NeuroTech.com \u2014 claim your featured profile",
-      "date": "Wed, 17 Jun 2026 12:13:07 +0000",
-      "preview": "Hi NeuroTech.com,\r\n\r\n\r\nThank you for reaching out! We\u2019ve received your email and will look into it shortly.\r\n\r\n\r\nRegards,\r\n___\r\n\r\n\r\nNeurotrack Support",
+      "from": "help@neurotrack.com <help@neurotrack.com>",
+      "subject": "Re: Neurotrack is listed on NeuroTech.com — claim your featured profile",
+      "date": "2026-06-17T12:13:07.000Z",
+      "preview": "----_NmP-6995a1b88d317693-Part_1 Content-Type: text/plain; charset=utf-8 Content-Transfer-Encoding: quoted-printable Hi NeuroTech.com, Thank you for r",
       "unread": false
     },
     {
       "from": "Zoho Team <noreply@zohoaccounts.eu>",
       "subject": "New sign-in to your Zoho account",
-      "date": "Wed, 17 Jun 2026 10:42:22 +0200 (CEST)",
-      "preview": "Hi Alon braun,    \r\n   There&#39;s been a new sign-in to your Zoho account hello@neurotech.com on Wednesday, June 17 2026 09:42:20 AM BST.   \r\n   Devi",
+      "date": "2026-06-17T08:42:22.000Z",
+      "preview": "------=_Part_20756578_2099470052.1781685742761 Content-Type: multipart/alternative; boundary=\"----=_Part_20756579_40039352.1781685742761\" ------=_Part",
       "unread": false
     },
     {
       "from": "alonbraun@me.com",
-      "subject": "Re: Test \u2014 reply to this email",
-      "date": "Wed, 17 Jun 2026 08:54:06 +0100",
-      "preview": "Nice to meet you\r\nOn 17 Jun 2026 at 8:53 +0100, NeuroTech.com <listings@neurotech.com>, wrote:\r\n> This is a test email from NeuroTech.com outreach.\r\n>",
+      "subject": "Re: Test — reply to this email",
+      "date": "2026-06-17T07:54:06.000Z",
+      "preview": "--6a3252aa_575f3a9b_2aaf Content-Type: text/plain; charset=\"utf-8\" Content-Transfer-Encoding: 7bit Content-Disposition: inline Nice to meet you On 17 ",
       "unread": false
     },
     {
       "from": "Alpha CM <csmitchell@alphaneuroscience.com>",
       "subject": "RE: Hello from Alpha Neuroscience",
-      "date": "Mon, 15 Jun 2026 14:48:38 +0000",
-      "preview": "Good morning Alon\r\n\r\nThank you for responding to my email request.\r\nRegarding an introduction call, I can be available this afternoon and tomorrow and",
+      "date": "2026-06-15T14:48:38.000Z",
+      "preview": "--_004_CH3PPF3593851D24DF651C98F49C551B9B4D8E62CH3PPF3593851D2_ Content-Type: multipart/alternative; boundary=\"_000_CH3PPF3593851D24DF651C98F49C551B9B",
       "unread": false
     },
     {
       "from": "shevronvictor@gmail.com",
       "subject": "Expert Written Guest Post for Your Website",
-      "date": "Mon, 15 Jun 2026 02:55:29 -0700",
-      "preview": " Hi,\r\nI was exploring your website and was impressed by both the content quality\r\nand the overall design. It's clean and easy to navigate.\r\nI have a r",
+      "date": "2026-06-15T09:55:29.000Z",
+      "preview": "--0000000000009fd08a065447d33d Content-Type: text/plain; charset=\"UTF-8\" Content-Transfer-Encoding: quoted-printable Hi, I was exploring your website ",
       "unread": false
     },
     {
       "from": "Zeno Rocha <zeno.rocha@resend.com>",
       "subject": "Welcome to Resend!",
-      "date": "Mon, 15 Jun 2026 08:12:22 +0000",
-      "preview": "Hey,\r\n\r\nMy name is Zeno \u2014 I'm the founder and CEO of Resend.\r\n\r\nWe started Resend because we wanted a better email API for developers.\r\nA simple, fast",
+      "date": "2026-06-15T08:12:22.000Z",
+      "preview": "----_NmP-7a63e8cfe4318cbe-Part_1 Content-Type: text/plain; charset=utf-8 Content-Transfer-Encoding: quoted-printable Hey, My name is Zeno =E2=80=94 I'",
       "unread": false
     },
     {
       "from": "Resend <team@notifications.resend.com>",
       "subject": "Confirm your Resend account",
-      "date": "Mon, 15 Jun 2026 08:11:02 +0000",
-      "preview": "Confirm your account\r\n\r\nThank you for signing up for Resend. To confirm your account, please click the button below.\r\n\r\nConfirm account https://resend",
+      "date": "2026-06-15T08:11:02.000Z",
+      "preview": "----_NmP-db05a2614cfa55bf-Part_1 Content-Type: text/plain; charset=utf-8 Content-Transfer-Encoding: quoted-printable Confirm your account Thank you fo",
       "unread": false
     },
     {
       "from": "Alpha CM <csmitchell@alphaneuroscience.com>",
       "subject": "Hello from Alpha Neuroscience",
-      "date": "Fri, 12 Jun 2026 14:43:00 +0000",
-      "preview": "Good morning\r\n\r\nMy name is Cameron Mitchell, partner and founder of Alpha Neuroscience LLC.  We are an interventional Neuro treatment company and woul",
+      "date": "2026-06-12T14:43:00.000Z",
+      "preview": "--_004_CH3PPF3593851D2FFC9F7772E140843347BD8182CH3PPF3593851D2_ Content-Type: multipart/alternative; boundary=\"_000_CH3PPF3593851D2FFC9F7772E140843347",
       "unread": false
     },
     {
       "from": "alonbraun@me.com",
       "subject": "Test",
-      "date": "Mon, 18 May 2026 08:40:42 +0100",
-      "preview": "Test\r\n",
-      "unread": false
-    },
-    {
-      "from": "Zoho Team <noreply@zohoaccounts.eu>",
-      "subject": "Verify your email address",
-      "date": "Mon, 18 May 2026 00:01:14 +0200 (CEST)",
-      "preview": "Hello Alon braun,\r\n Thank you for signing up with us.  We&#39;d love for you to explore our software suite, and discover how our technology stack can ",
+      "date": "2026-05-18T07:40:42.000Z",
+      "preview": "--6a0ac27d_3cae8d0_631b Content-Type: text/plain; charset=\"utf-8\" Content-Transfer-Encoding: 7bit Content-Disposition: inline Test --6a0ac27d_3cae8d0_",
       "unread": false
     },
     {
       "from": "Accounts Receivable <ar.zsuk@eu.zohocorp.com>",
       "subject": "Invoice - 80030876898 from Zoho Corporation Limited.",
-      "date": "Mon, 18 May 2026 00:20:09 +0200 (CEST)",
-      "preview": "Dear Customer,\r\nThank&nbsp;you&nbsp;for subscribing&nbsp;to&nbsp;Zoho service.\r\nWe&nbsp;have attached&nbsp;the invoice&nbsp;for&nbsp;your subscription",
+      "date": "2026-05-17T22:20:09.000Z",
+      "preview": "------=_Part_51876136_1485112609.1779056409256 Content-Type: multipart/alternative; boundary=\"----=_Part_51876137_814622319.1779056409256\" ------=_Par",
       "unread": false
     },
     {
-      "from": "Zoho Store Notification <notification@zohostore.eu>",
-      "subject": "Zoho Workplace - Your subscription to Zoho Workplace was successful",
-      "date": "Mon, 18 May 2026 00:11:17 +0200 (CEST)",
-      "preview": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n<html xmlns=\"http://www.w3.",
+      "from": "welcome@zoho.eu",
+      "subject": "Welcome to Zoho Mail",
+      "date": "2026-05-17T22:13:35.000Z",
+      "preview": "------=_Part_565525_675833552.1665384326498 Content-Type: text/plain; charset=\"UTF-8\" Content-Transfer-Encoding: quoted-printable Hello Alon braun, We",
       "unread": false
     },
     {
       "from": "welcome@zoho.eu",
       "subject": "Access from anywhere, anytime!",
-      "date": "Mon, 18 May 2026 00:13:35 +0200",
-      "preview": "Hello Alon braun,\r\n\r\n\r\nWe have simplified email accessibility, the admin control panel, email sharing and more with our mobile apps.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+      "date": "2026-05-17T22:13:35.000Z",
+      "preview": "------=_Part_565822_575056409.1665384611448 Content-Type: text/plain; charset=\"UTF-8\" Content-Transfer-Encoding: quoted-printable Hello Alon braun, We",
+      "unread": false
+    },
+    {
+      "from": "Zoho Store Notification <notification@zohostore.eu>",
+      "subject": "Zoho Workplace - Your subscription to Zoho Workplace was successful",
+      "date": "2026-05-17T22:11:17.000Z",
+      "preview": "Zoho Workplace a:hover { text-decoration: underline !important; } .zs_mail_content {margin-right: auto; margin-left: auto; margin-bot= tom: 0; margin-",
+      "unread": false
+    },
+    {
+      "from": "Zoho Team <noreply@zohoaccounts.eu>",
+      "subject": "Verify your email address",
+      "date": "2026-05-17T22:01:14.000Z",
+      "preview": "------=_Part_51863122_179212552.1779055274105 Content-Type: multipart/alternative; boundary=\"----=_Part_51863123_1819516561.1779055274105\" ------=_Par",
       "unread": false
     }
   ]
