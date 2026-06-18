@@ -23,7 +23,7 @@ Format:
   }
 ]
 
-Return only valid JSON array, no other text.`;
+Important: keep each "relevance" field under 15 words. Return only valid JSON array, no other text.`;
 
   try {
     const res = await fetch("https://api.anthropic.com/v1/messages", {
@@ -35,7 +35,7 @@ Return only valid JSON array, no other text.`;
       },
       body: JSON.stringify({
         model: "claude-haiku-4-5-20251001",
-        max_tokens: 2000,
+        max_tokens: 4096,
         messages: [{ role: "user", content: prompt }],
       }),
     });
