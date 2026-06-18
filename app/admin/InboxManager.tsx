@@ -264,6 +264,16 @@ export default function InboxManager({ initialData }: { initialData: InboxData }
                       <div className="mt-4">
                         <div className="flex items-center justify-between mb-2">
                           <p className="text-xs font-semibold text-gray-700 uppercase tracking-wide">Reply</p>
+                          <div className="flex items-center gap-2">
+                          <button
+                            onClick={async () => {
+                              await fetch("/api/inbox/mark-replied", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ from_addr: email.from_addr }) });
+                              setData(d => ({ ...d, unread: d.unread.map(e => e.from_addr === key ? { ...e, needs_reply: false } : e) }));
+                            }}
+                            className="text-xs font-medium px-3 py-1.5 rounded-lg bg-gray-100 text-gray-500 hover:bg-gray-200 transition-colors"
+                          >
+                            Already replied ✓
+                          </button>
                           <button
                             onClick={() => handleGenerate(email)}
                             disabled={generating[key]}
@@ -276,6 +286,7 @@ export default function InboxManager({ initialData }: { initialData: InboxData }
                               </>
                             ) : hasDraft ? "Regenerate" : "Generate reply"}
                           </button>
+                          </div>
                         </div>
                         <textarea
                           value={replies[key] || ""}

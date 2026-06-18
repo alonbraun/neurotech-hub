@@ -94,6 +94,16 @@ export async function POST() {
 
     await client.logout();
 
+    // Also load Resend sent-log from GitHub (replies sent via the admin UI)
+    let resendLog: { to: string; sent_at: string }[] = [];
+    try {
+      const logRes = await fetch(
+        `https://raw.githubusercontent.com/${REPO}/main/content/inbox/sent-log.json`,
+        { headers: { "User-Agent": "neurotech/1.0" } }
+      );
+      if (logRes.ok) resendLog = await logRes.json();
+    } catch {}
+
     const allMsgs = [...inboxMsgs, ...sentMsgs];
 
     // Find unread (newest inbox messages not matched with a sent reply)
@@ -115,8 +125,9 @@ export async function POST() {
       const addr = extractAddr(msg.from);
       if (seen.has(addr)) continue;
       seen.add(addr);
-      // Check if we have a sent email to this address AFTER this message
+      // Check if we have a sent email to this address AFTER this message (Zoho Sent or Resend log)
       const sentAfter = sentMsgs.filter(s => extractAddr(s.to) === addr && s.date > msg.date);
+      const resendAfter = resendLog.filter(s => s.to === addr && s.sent_at > msg.date);
       const thread = (threadMap[addr] || []).sort((a: any, b: any) => a.date.localeCompare(b.date));
       unread.push({
         from: msg.from_name ? `${msg.from_name} <${msg.from}>` : msg.from,
@@ -125,7 +136,7 @@ export async function POST() {
         date: msg.date,
         body: msg.body,
         message_id: msg.message_id,
-        needs_reply: sentAfter.length === 0,
+        needs_reply: sentAfter.length === 0 && resendAfter.length === 0,
         thread_length: thread.length,
         thread: thread.map((t: any) => ({
           folder: t.folder,
