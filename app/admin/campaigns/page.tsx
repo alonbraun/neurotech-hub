@@ -377,6 +377,30 @@ export default function CampaignsPage() {
         <div className="bg-white border border-gray-100 rounded-2xl p-6 max-w-xl">
           <h2 className="text-sm font-semibold text-gray-900 mb-5">Campaign setup</h2>
           <div className="flex flex-col gap-4">
+            {/* Quick-fill for NeuroTech.com self-promotion */}
+            <label className="flex items-center gap-3 p-3 rounded-xl border border-[#1a3d6b]/20 bg-[#1a3d6b]/5 cursor-pointer hover:bg-[#1a3d6b]/10 transition-colors">
+              <input type="checkbox"
+                checked={campaign.client_company === "NeuroTech.com"}
+                onChange={e => {
+                  if (e.target.checked) {
+                    const month = new Date().toLocaleString("en-US", { month: "long", year: "numeric" });
+                    setCampaign({
+                      name: `NeuroTech.com — Sponsored Content Outreach ${month}`,
+                      client_company: "NeuroTech.com",
+                      client_description: "NeuroTech.com is the industry directory and news portal for the neurotechnology sector — covering BCIs, cognitive health, neuromodulation, neurofeedback, and mental health tech. Read by researchers, clinicians, founders, and investors in the space.",
+                      campaign_goal: "Get marketing or comms leads at neurotechnology companies to book a sponsored content package on NeuroTech.com — featured listing ($199/mo), sponsored article ($500), or newsletter sponsorship ($500/issue). Direct them to neurotech.com/advertise to see options and get in touch.",
+                      sequence_step: 1,
+                    });
+                  } else {
+                    setCampaign({ name: "", client_company: "", client_description: "", campaign_goal: "", sequence_step: 1 });
+                  }
+                }}
+                className="w-4 h-4 accent-[#1a3d6b]" />
+              <div>
+                <p className="text-sm font-semibold text-[#1a3d6b]">NeuroTech.com self-promotion</p>
+                <p className="text-xs text-gray-500">Auto-fill for outreach selling advertising on neurotech.com</p>
+              </div>
+            </label>
             <div>
               <label className="text-xs font-medium text-gray-600 block mb-1">Campaign name</label>
               <input type="text" value={campaign.name} onChange={e => setCampaign(c => ({ ...c, name: e.target.value }))}
