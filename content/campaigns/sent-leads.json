@@ -326,5 +326,13 @@
     "client": "NeuroTech.com",
     "subject": "MindAffect's EEG diagnostics + NeuroTech.com's audience",
     "sent_at": "2026-06-18T15:20:52.995Z"
+  },
+  {
+    "email": "mike@phantomneuro.com",
+    "name": "Mike Faltys",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "Phantom Neuro's work deserves to reach the right audience",
+    "sent_at": "2026-06-18T15:20:55.037Z"
   }
 ]
