@@ -209,7 +209,7 @@ export default function CampaignsPage() {
 
   async function generateEmailForLead(index: number) {
     const lead = leads[index];
-    const key = lead.from_addr || lead.email;
+    const key = lead.email;
     setLeads(l => l.map((x, i) => i === index ? { ...x, status: "generating" } : x));
     try {
       const res = await fetch("/api/campaigns/generate-email", {
