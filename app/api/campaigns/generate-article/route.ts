@@ -45,7 +45,9 @@ Return only valid JSON.`;
       }),
     });
     const data = await res.json();
-    const text = data.content?.[0]?.text?.trim() || "{}";
+    if (data.error) return NextResponse.json({ error: data.error.message || JSON.stringify(data.error) }, { status: 500 });
+    let text = data.content?.[0]?.text?.trim() || "{}";
+    text = text.replace(/^```(?:json)?\s*/i, "").replace(/\s*```$/, "");
     const article = JSON.parse(text);
     return NextResponse.json(article);
   } catch (err: any) {
