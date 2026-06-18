@@ -89,6 +89,10 @@ export default function CampaignsPage() {
   const [leadGenError, setLeadGenError] = useState("");
   const [leadGenTarget, setLeadGenTarget] = useState("");
   const [leadGenCount, setLeadGenCount] = useState(20);
+  const [remarks, setRemarks] = useState<Record<string, string>>({});
+  const [voiceGuidelines, setVoiceGuidelines] = useState("");
+  const [savingVoice, setSavingVoice] = useState(false);
+  const [voiceSaved, setVoiceSaved] = useState(false);
   const [activeTab, setActiveTab] = useState<"setup" | "content" | "leads" | "preview" | "send">("setup");
   const [sendProgress, setSendProgress] = useState(0);
   const [content, setContent] = useState<ContentState>({
@@ -205,6 +209,7 @@ export default function CampaignsPage() {
 
   async function generateEmailForLead(index: number) {
     const lead = leads[index];
+    const key = lead.from_addr || lead.email;
     setLeads(l => l.map((x, i) => i === index ? { ...x, status: "generating" } : x));
     try {
       const res = await fetch("/api/campaigns/generate-email", {
@@ -218,12 +223,33 @@ export default function CampaignsPage() {
           sequence_step: campaign.sequence_step,
           article_url: content.article_url || undefined,
           article_title: content.article?.title || undefined,
+          remarks: remarks[key] || undefined,
         }),
       });
       const json = await res.json();
-      setLeads(l => l.map((x, i) => i === index ? { ...x, status: "ready", subject: json.subject, body: json.body } : x));
+      if (json.error) {
+        setLeads(l => l.map((x, i) => i === index ? { ...x, status: "error", error: json.error } : x));
+      } else {
+        setLeads(l => l.map((x, i) => i === index ? { ...x, status: "ready", subject: json.subject, body: json.body } : x));
+      }
     } catch (err: any) {
       setLeads(l => l.map((x, i) => i === index ? { ...x, status: "error", error: err.message } : x));
+    }
+  }
+
+  async function saveVoiceGuidelines() {
+    if (!voiceGuidelines.trim()) return;
+    setSavingVoice(true);
+    try {
+      await fetch("/api/campaigns/save-voice-guidelines", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ guidelines: voiceGuidelines }),
+      });
+      setVoiceSaved(true);
+      setTimeout(() => setVoiceSaved(false), 3000);
+    } finally {
+      setSavingVoice(false);
     }
   }
 
@@ -581,7 +607,30 @@ export default function CampaignsPage() {
             </button>
           </div>
 
-          {leads.map((lead, i) => (
+          {/* Voice guidelines panel */}
+          <div className="bg-amber-50 border border-amber-100 rounded-xl p-4">
+            <div className="flex items-start justify-between gap-3 mb-2">
+              <div>
+                <p className="text-xs font-semibold text-amber-800">Voice & style guidelines</p>
+                <p className="text-xs text-amber-600 mt-0.5">Saved permanently — applied to every future campaign email</p>
+              </div>
+              <button onClick={saveVoiceGuidelines} disabled={savingVoice || !voiceGuidelines.trim()}
+                className="text-xs font-medium px-3 py-1.5 rounded-lg bg-amber-700 text-white hover:bg-amber-800 disabled:opacity-40 transition-colors shrink-0">
+                {savingVoice ? "Saving…" : voiceSaved ? "Saved ✓" : "Save guidelines"}
+              </button>
+            </div>
+            <textarea
+              value={voiceGuidelines}
+              onChange={e => setVoiceGuidelines(e.target.value)}
+              placeholder={`e.g.\n- Never mention specific audience numbers\n- Always sign as Alon Braun\n- Tone: founder-to-founder, direct and warm\n- Don't use corporate language like "leverage" or "synergy"\n- Keep emails under 150 words`}
+              rows={4}
+              className="w-full text-xs border border-amber-200 rounded-lg px-3 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-amber-300 resize-none"
+            />
+          </div>
+
+          {leads.map((lead, i) => {
+            const key = lead.email;
+            return (
             <div key={i} className={`bg-white border rounded-xl overflow-hidden ${
               lead.status === "sent" ? "border-green-100" :
               lead.status === "ready" ? "border-blue-100" :
@@ -593,7 +642,7 @@ export default function CampaignsPage() {
                   <p className="text-xs text-gray-400">{lead.title} · {lead.company} · {lead.email}</p>
                 </div>
                 <div className="flex items-center gap-2">
-                  {lead.status === "pending" && (
+                  {(lead.status === "pending" || lead.status === "error") && (
                     <button onClick={() => generateEmailForLead(i)}
                       className="text-xs font-medium px-3 py-1.5 rounded-lg bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors">
                       Generate
@@ -604,31 +653,58 @@ export default function CampaignsPage() {
                       <span className="w-3 h-3 border-2 border-gray-300 border-t-[#1a3d6b] rounded-full animate-spin" />Generating…
                     </span>
                   )}
-                  {lead.status === "ready" && <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-blue-50 text-blue-700">Ready</span>}
+                  {lead.status === "ready" && (
+                    <>
+                      <button onClick={() => generateEmailForLead(i)}
+                        className="text-xs font-medium px-3 py-1.5 rounded-lg bg-gray-100 text-gray-600 hover:bg-gray-200 transition-colors">
+                        Regenerate
+                      </button>
+                      <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-blue-50 text-blue-700">Ready</span>
+                    </>
+                  )}
                   {lead.status === "sent" && <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-green-50 text-green-700">Sent</span>}
-                  {lead.status === "error" && <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-red-50 text-red-600">Error</span>}
                 </div>
               </div>
 
-              {(lead.status === "ready" || lead.status === "sending") && (
+              {lead.status !== "sent" && (
                 <div className="px-4 pb-4 border-t border-gray-100">
+                  {/* Remarks for regeneration */}
                   <div className="mt-3">
-                    <label className="text-xs font-medium text-gray-500 block mb-1">Subject</label>
-                    <input type="text" value={lead.subject || ""}
-                      onChange={e => setLeads(l => l.map((x, j) => j === i ? { ...x, subject: e.target.value } : x))}
-                      className="w-full text-sm border border-gray-200 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#1a3d6b]/20 focus:border-[#1a3d6b]" />
+                    <label className="text-xs font-medium text-gray-400 block mb-1">Remarks for (re)generation — optional</label>
+                    <div className="flex gap-2">
+                      <input type="text" value={remarks[key] || ""}
+                        onChange={e => setRemarks(r => ({ ...r, [key]: e.target.value }))}
+                        placeholder="e.g. make it shorter, focus on their clinical work, more casual"
+                        className="flex-1 text-xs border border-gray-200 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#1a3d6b]/20 focus:border-[#1a3d6b]" />
+                      {lead.status === "ready" && (
+                        <button onClick={() => generateEmailForLead(i)}
+                          className="text-xs font-medium px-3 py-1.5 rounded-lg bg-[#1a3d6b] text-white hover:bg-[#152f54] transition-colors whitespace-nowrap">
+                          Regenerate ↺
+                        </button>
+                      )}
+                    </div>
                   </div>
-                  <div className="mt-3">
-                    <label className="text-xs font-medium text-gray-500 block mb-1">Email body</label>
-                    <textarea value={lead.body || ""}
-                      onChange={e => setLeads(l => l.map((x, j) => j === i ? { ...x, body: e.target.value } : x))}
-                      rows={8}
-                      className="w-full text-sm border border-gray-200 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#1a3d6b]/20 focus:border-[#1a3d6b] resize-y leading-relaxed" />
-                  </div>
+                  {(lead.status === "ready" || lead.status === "sending") && (<>
+                    <div className="mt-3">
+                      <label className="text-xs font-medium text-gray-500 block mb-1">Subject</label>
+                      <input type="text" value={lead.subject || ""}
+                        onChange={e => setLeads(l => l.map((x, j) => j === i ? { ...x, subject: e.target.value } : x))}
+                        className="w-full text-sm border border-gray-200 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#1a3d6b]/20 focus:border-[#1a3d6b]" />
+                    </div>
+                    <div className="mt-3">
+                      <label className="text-xs font-medium text-gray-500 block mb-1">Email body</label>
+                      <textarea value={lead.body || ""}
+                        onChange={e => setLeads(l => l.map((x, j) => j === i ? { ...x, body: e.target.value } : x))}
+                        rows={8}
+                        className="w-full text-sm border border-gray-200 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#1a3d6b]/20 focus:border-[#1a3d6b] resize-y leading-relaxed" />
+                    </div>
+                  </>)}
+                  {lead.status === "error" && <p className="text-xs text-red-600 mt-2">{lead.error}</p>}
                 </div>
               )}
             </div>
-          ))}
+            );
+          })}
 
           {readyCount > 0 && (
             <div className="sticky bottom-4">
