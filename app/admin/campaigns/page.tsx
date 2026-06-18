@@ -90,6 +90,28 @@ export default function CampaignsPage() {
   const [leadGenTarget, setLeadGenTarget] = useState("");
   const [leadGenCount, setLeadGenCount] = useState(20);
   const [previouslySent, setPreviouslySent] = useState<Set<string>>(new Set());
+  const [invalidEmails, setInvalidEmails] = useState<Set<string>>(new Set());
+  const [verifying, setVerifying] = useState(false);
+
+  async function verifyEmails(leadList: Lead[]) {
+    setVerifying(true);
+    try {
+      const res = await fetch("/api/campaigns/verify-emails", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ emails: leadList.map(l => l.email) }),
+      });
+      const json = await res.json();
+      if (json.results) {
+        const invalid = new Set<string>(
+          json.results.filter((r: any) => !r.valid).map((r: any) => r.email.toLowerCase())
+        );
+        setInvalidEmails(invalid);
+      }
+    } finally {
+      setVerifying(false);
+    }
+  }
 
   // Load previously contacted emails when entering leads tab
   async function loadSentLeads() {
@@ -127,7 +149,9 @@ export default function CampaignsPage() {
     const reader = new FileReader();
     reader.onload = ev => {
       const parsed = parseLeadsCsv(ev.target?.result as string);
-      setLeads(parsed.map(l => ({ ...l, status: "pending" })));
+      const newLeads = parsed.map(l => ({ ...l, status: "pending" as const }));
+      setLeads(newLeads);
+      verifyEmails(newLeads);
     };
     reader.readAsText(file);
   }
@@ -144,7 +168,11 @@ export default function CampaignsPage() {
       });
       const json = await res.json();
       if (json.error) setLeadGenError(json.error);
-      else if (json.leads) setLeads(json.leads.map((l: Lead) => ({ ...l, status: "pending" })));
+      else if (json.leads) {
+        const newLeads = json.leads.map((l: Lead) => ({ ...l, status: "pending" as const }));
+        setLeads(newLeads);
+        verifyEmails(newLeads);
+      }
       else setLeadGenError("No leads returned — try again.");
     } finally {
       setGeneratingLeads(false);
@@ -570,14 +598,28 @@ export default function CampaignsPage() {
             <div className="bg-white border border-gray-100 rounded-2xl p-6">
               <div className="flex items-center justify-between mb-4">
                 <div>
-                  <h2 className="text-sm font-semibold text-gray-900">{leads.length} leads loaded</h2>
-                  {previouslySent.size > 0 && leads.filter(l => previouslySent.has(l.email.toLowerCase())).length > 0 && (
+                  <h2 className="text-sm font-semibold text-gray-900">
+                    {leads.length} leads loaded
+                    {verifying && <span className="ml-2 text-xs font-normal text-gray-400">Verifying emails…</span>}
+                  </h2>
+                  {!verifying && invalidEmails.size > 0 && (
+                    <p className="text-xs text-red-600 mt-0.5">
+                      ✕ {leads.filter(l => invalidEmails.has(l.email.toLowerCase())).length} invalid domains (will hard bounce) — remove before sending
+                    </p>
+                  )}
+                  {!verifying && previouslySent.size > 0 && leads.filter(l => previouslySent.has(l.email.toLowerCase())).length > 0 && (
                     <p className="text-xs text-amber-600 mt-0.5">
-                      ⚠ {leads.filter(l => previouslySent.has(l.email.toLowerCase())).length} already emailed in a previous campaign — remove them or they'll get a duplicate
+                      ⚠ {leads.filter(l => previouslySent.has(l.email.toLowerCase())).length} already emailed in a previous campaign
                     </p>
                   )}
                 </div>
                 <div className="flex items-center gap-2">
+                  {leads.some(l => invalidEmails.has(l.email.toLowerCase())) && (
+                    <button onClick={() => { setLeads(leads.filter(l => !invalidEmails.has(l.email.toLowerCase()))); setInvalidEmails(new Set()); }}
+                      className="text-xs font-medium px-3 py-1.5 rounded-lg bg-red-100 text-red-700 hover:bg-red-200 transition-colors">
+                      Remove invalid ({leads.filter(l => invalidEmails.has(l.email.toLowerCase())).length})
+                    </button>
+                  )}
                   {leads.some(l => previouslySent.has(l.email.toLowerCase())) && (
                     <button onClick={() => setLeads(leads.filter(l => !previouslySent.has(l.email.toLowerCase())))}
                       className="text-xs font-medium px-3 py-1.5 rounded-lg bg-amber-100 text-amber-700 hover:bg-amber-200 transition-colors">
@@ -604,11 +646,13 @@ export default function CampaignsPage() {
                   <tbody>
                     {leads.map((lead, i) => {
                       const alreadySent = previouslySent.has(lead.email.toLowerCase());
+                      const isInvalid = invalidEmails.has(lead.email.toLowerCase());
                       return (
-                      <tr key={i} className={`border-b border-gray-50 ${alreadySent ? "bg-amber-50/50" : "hover:bg-gray-50/50"}`}>
+                      <tr key={i} className={`border-b border-gray-50 ${isInvalid ? "bg-red-50/50" : alreadySent ? "bg-amber-50/50" : "hover:bg-gray-50/50"}`}>
                         <td className="py-2 font-medium text-gray-800">
                           {lead.name}
-                          {alreadySent && <span className="ml-1.5 text-amber-600 text-[10px] font-semibold">already sent</span>}
+                          {isInvalid && <span className="ml-1.5 text-red-500 text-[10px] font-semibold">invalid domain</span>}
+                          {!isInvalid && alreadySent && <span className="ml-1.5 text-amber-600 text-[10px] font-semibold">already sent</span>}
                         </td>
                         <td className="py-2 text-gray-500">{lead.title}<br /><span className="text-gray-400">{lead.company}</span></td>
                         <td className="py-2 text-gray-500">{lead.email}</td>
