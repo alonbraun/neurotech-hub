@@ -1,12 +1,12 @@
 ---
 name: Precision Neuroscience
 slug: precision-neuroscience
-category: Brain-Computer Interfaces
-description: Precision Neuroscience develops a minimally invasive brain-computer interface using a thin-film electrode array called the Layer 7 Cortical Interface, designed for rapid surgical placement on the brain's surface. Their technology aims to restore communication and motor function in patients with paralysis.
-website: https://www.precisionneuroscience.com
-funding: Series C · $93M
-location: New York, USA
+category: Neurotechnology
+description: Precision Neuroscience develops advanced brain-computer interfaces, including its proprietary Layer 7 cortical interface technology, designed to restore neurological function for patients with motor and sensory impairments. The company manufactures medical devices for clinical applications in neurology, combining neuroscience expertise with precision engineering to create next-generation neural interface solutions.
+website: https://precisionneuro.io
+funding: Private
+location: ""
 tier: free
 featured: false
-date: 2026-06-15
+date: 2026-06-22
 ---
