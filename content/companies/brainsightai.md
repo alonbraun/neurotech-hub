@@ -2,7 +2,7 @@
 name: BrainSightAI
 slug: brainsightai
 category: Neurotechnology
-description: BrainSightAI develops connectome-based diagnostic technology leveraging artificial intelligence and machine learning to advance psychiatric and neurological assessment in clinical settings. The company combines deep neuroscience research with AI-driven analysis to provide hospitals and healthcare providers with data-driven tools for improved patient diagnosis and treatment planning.
+description: BrainSightAI develops connectome-based diagnostic solutions using deep learning and machine learning to advance psychiatric and neurological assessment in clinical settings. The company's AI-driven platform leverages neuroscience research to provide data-driven insights for hospitals and healthcare providers seeking to improve patient diagnostics and treatment outcomes.
 website: https://brainsightai.com
 funding: Private
 location: ""
