@@ -2,7 +2,7 @@
 name: Precision Neuroscience
 slug: precision-neuroscience
 category: Neurotechnology
-description: Precision Neuroscience develops advanced brain-computer interfaces, including its proprietary Layer 7 cortical interface technology, designed to restore neurological function for patients with motor and sensory impairments. The company manufactures medical devices for clinical applications in neurology, combining neuroscience expertise with precision engineering to create next-generation neural interface solutions.
+description: Precision Neuroscience develops advanced brain-computer interfaces and cortical implants designed to restore neurological function and improve patient outcomes in neurology. The company manufactures medical devices including its proprietary Layer 7 cortical interface technology, serving patients with neurological conditions through innovative neuroscience-based solutions.
 website: https://precisionneuro.io
 funding: Private
 location: ""
