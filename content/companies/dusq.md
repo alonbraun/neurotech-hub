@@ -2,7 +2,7 @@
 name: DUSQ
 slug: dusq
 category: Neurotechnology
-description: DUSQ develops an app-connected wearable device that combines neuroscience-based insights with AI-driven wellness plans to enhance mental resilience and physical fitness. The platform integrates reflective journaling tools with ergonomic smart device technology to deliver personalized wellness recommendations grounded in neuroscience innovation.
+description: DUSQ develops an app-connected wellness device that combines reflective journaling with neuroscience-based insights to deliver personalized, AI-driven wellness plans focused on mental resilience and stress management. The ergonomically designed smart device integrates with a mobile application to provide users with science-backed fitness and mental wellness tools tailored to build long-term behavioral change.
 website: https://getinnergize.com
 funding: Private
 location: ""
