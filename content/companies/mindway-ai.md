@@ -2,7 +2,7 @@
 name: Mindway AI
 slug: mindway-ai
 category: Neurotechnology
-description: Mindway AI develops responsible gambling software powered by artificial intelligence and behavioral machine learning to detect and prevent problem gambling through real-time player protection systems. The company's virtual expert technology enables operators to implement safer gambling measures and addiction intervention tools through advanced software solutions.
+description: Mindway AI develops artificial intelligence and behavioral machine learning software designed to identify and prevent problem gambling through real-time player protection systems. The company's responsible gambling platform uses virtual expert technology to detect at-risk gambling behaviors and support safer gaming environments across the industry.
 website: https://mindway.ai
 funding: Private
 location: ""
