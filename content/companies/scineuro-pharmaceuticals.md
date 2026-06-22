@@ -2,7 +2,7 @@
 name: SciNeuro Pharmaceuticals
 slug: scineuro-pharmaceuticals
 category: Neurotechnology
-description: SciNeuro Pharmaceuticals is a biotechnology company focused on advancing treatments for neurodegenerative diseases through biomarker-driven research and the study of proteinopathy and neuroinflammation. The company specializes in research and development across biotechnology, engineering, and life sciences to develop innovative therapeutic solutions for neurological disorders.
+description: SciNeuro Pharmaceuticals is a biotechnology research company specializing in proteinopathy and neuroinflammation, leveraging biomarker-driven research approaches to advance therapeutic development. The company focuses on research and development across physical, engineering, and life sciences disciplines to address neurodegenerative diseases.
 website: https://scineuro.com
 funding: Private
 location: ""
