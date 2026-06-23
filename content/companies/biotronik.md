@@ -2,11 +2,11 @@
 name: BIOTRONIK
 slug: biotronik
 category: Neurotechnology
-description: BIOTRONIK is a global medical device company specializing in cardiac rhythm management systems, including implantable pacemakers (IPG), defibrillators (ICD), and cardiac resynchronization therapy (CRT) devices for treating arrhythmias and heart failure. The company develops advanced home monitoring solutions that enable remote patient management and continuous surveillance of implanted cardiac devices.
+description: BIOTRONIK is a leading medical device manufacturer specializing in cardiac rhythm management systems, including implantable pacemakers (IPG), defibrillators (ICD), and cardiac resynchronization therapy (CRT) devices. The company offers advanced home monitoring solutions and vascular intervention devices, enabling remote patient management and improved clinical outcomes for cardiac patients worldwide.
 website: https://biotronik.com
 funding: Private
 location: ""
 tier: free
 featured: false
-date: 2026-06-22
+date: 2026-06-23
 ---
