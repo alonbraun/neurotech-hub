@@ -1,12 +1,12 @@
 ---
 name: Flow Neuroscience
 slug: flow-neuroscience
-category: Brain-Computer Interfaces
-description: Flow Neuroscience combines a CE-marked tDCS headset with a digital therapy app to treat major depression at home. Their closed-loop approach pairs brain stimulation with behavioral therapy sessions guided by a smartphone application.
+category: Neurotechnology
+description: Flow Neuroscience develops transcranial direct current stimulation (tDCS) medical devices designed to treat depression through non-invasive neuromodulation. The company's FDA-cleared technology delivers targeted brain stimulation to provide patients with an evidence-based therapeutic option for managing depressive symptoms.
 website: https://flowneuroscience.com
-funding: Series A · $12M
-location: Malmö, Sweden
+funding: Private
+location: ""
 tier: free
 featured: false
-date: 2026-06-15
+date: 2026-06-23
 ---
