@@ -2,7 +2,7 @@
 name: i-BrainTech
 slug: i-braintech
 category: Neurotechnology
-description: i-BrainTech develops brain-computer interface technology and medical devices designed to optimize human performance through advanced visualization training and real-time brain activity monitoring. The company specializes in applications for athlete recovery and sports performance enhancement, leveraging neurotechnology to improve training outcomes and cognitive function.
+description: i-BrainTech develops brain-computer interface technology and medical devices designed to enhance human performance through advanced visualization training and neurotechnology solutions. The company specializes in athlete recovery and sports performance optimization, leveraging real-time brain activity monitoring and feedback systems to improve training outcomes.
 website: https://i-brain.tech
 funding: Private
 location: ""
