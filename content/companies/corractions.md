@@ -2,7 +2,7 @@
 name: CorrActions
 slug: corractions
 category: Neurotechnology
-description: CorrActions develops neurotech software solutions that monitor driver safety through EEG signal analysis and muscle micro-motion detection to identify impairment and enhance automotive safety compliance. The company specializes in ADAS-integrated technology platforms that enable real-time driver monitoring and over-the-air vehicle updates to meet evolving driver safety regulations.
+description: CorrActions develops advanced neurotech software solutions that monitor driver impairment and muscle micro-motions to enhance automotive safety and ADAS compliance through real-time EEG signal coupling technology. The company specializes in driver safety regulation systems and over-the-air vehicle updates designed to reduce accidents and support the evolving landscape of autonomous vehicle safety requirements.
 website: https://corractions.com
 funding: Private
 location: ""
