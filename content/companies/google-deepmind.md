@@ -2,7 +2,7 @@
 name: Google DeepMind
 slug: google-deepmind
 category: Neurotechnology
-description: Google DeepMind is an artificial intelligence research laboratory that develops advanced machine learning systems and conducts cutting-edge research in deep learning, reinforcement learning, and neural networks. The company applies AI technologies to solve complex problems in biological research, systems neuroscience, environmental sustainability, and energy management.
+description: Google DeepMind is an artificial intelligence research laboratory that develops advanced machine learning systems and deep learning models, with particular expertise in reinforcement learning and applications across biological research and systems neuroscience. The organization applies its AI capabilities to address complex challenges in environmental sustainability and energy management while conducting foundational research services in computational intelligence.
 website: https://deepmind.google
 funding: Private
 location: ""
