@@ -1,12 +1,12 @@
 ---
 name: Advanced Brain Monitoring
 slug: advanced-brain-monitoring
-category: Neurodiagnostics
-description: Advanced Brain Monitoring develops wireless EEG systems and sleep monitoring technology for research and clinical applications, including the B-Alert X-Series wearable EEG headsets and the Sleep Profiler device. Their tools are used in fatigue monitoring, cognitive workload assessment, and sleep staging.
-website: https://www.advancedbrainmonitoring.com
+category: Neurotechnology
+description: Advanced Brain Monitoring develops clinical EEG solutions and sleep monitoring technologies that analyze sleep architecture and brain activity for biotechnology research and neuroscience applications. The company's sleep therapy devices and data analysis platforms support clinical research and treatment monitoring for neurodegenerative diseases and sleep disorders.
+website: https://advancedbrainmonitoring.com
 funding: Private
-location: Carlsbad, USA
+location: ""
 tier: free
 featured: false
-date: 2026-06-15
+date: 2026-06-23
 ---
