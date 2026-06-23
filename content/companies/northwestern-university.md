@@ -2,7 +2,7 @@
 name: Northwestern University
 slug: northwestern-university
 category: Neurotechnology
-description: Northwestern University is a leading research institution that integrates cutting-edge materials science and neuroscience research with its acclaimed programs in medicine, communications, and journalism. The university fosters innovation and entrepreneurship across its Schools of Arts & Sciences, Medicine, and Communications, positioning itself as a hub for interdisciplinary neurotech research and talent development.
+description: Northwestern University is a leading research institution offering comprehensive programs across materials science, medicine, arts and sciences, communications, and journalism, with significant applications in advancing neurotechnology and brain-related research. The university supports neurotech innovation through interdisciplinary collaboration, entrepreneurship initiatives, and its robust engineering and medical research facilities.
 website: https://northwestern.edu
 funding: Private
 location: ""
