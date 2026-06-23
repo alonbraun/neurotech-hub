@@ -2,7 +2,7 @@
 name: Angeion Group
 slug: angeion-group
 category: Neurotechnology
-description: Angeion Group provides comprehensive claims administration and litigation support services for class action lawsuits, mass torts, and bankruptcy cases, offering expertise in legal noticing, case management, and settlement distribution. The company delivers multichannel communication and public relations solutions to law firms, corporations, and government agencies navigating complex legal proceedings.
+description: Angeion Group is a specialized administration firm providing comprehensive support services for complex litigation matters, including class action and mass tort claims administration, legal noticing, and bankruptcy support. The company leverages multichannel communication strategies and litigation support expertise to serve attorneys, corporations, and stakeholders involved in large-scale legal proceedings.
 website: https://angeiongroup.com
 funding: Private
 location: ""
