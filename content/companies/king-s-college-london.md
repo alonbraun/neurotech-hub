@@ -2,7 +2,7 @@
 name: King's College London
 slug: king-s-college-london
 category: Neurotechnology
-description: King's College London is a leading research institution offering comprehensive neurotech education, research services, and innovation support through its faculty and specialized programs. The university fosters entrepreneurship and social innovation by connecting students, researchers, and investors with resources for launching ventures, accessing venture capital, and developing solutions for societal challenges.
+description: King's College London is a leading research university that conducts pioneering neurotechnology research across its faculties and supports innovation through education, research services, and venture capital initiatives. The institution fosters entrepreneurship and social innovation through its heritage academic programs and facilities, while facilitating connections between researchers, startups, and investors in the neurotech ecosystem.
 website: https://kcl.ac.uk
 funding: Private
 location: ""
