@@ -2,7 +2,7 @@
 name: INSIGHTEC
 slug: insightec
 category: Neurotechnology
-description: InSightec is a medical device company that develops and commercializes focused ultrasound technology platforms, including MR-guided Focused Ultrasound (MRgFUS), for non-invasive surgical ablation treatments across neurology, oncology, and other therapeutic areas. The company's innovative ultrasound ablation technology enables outpatient procedures with real-time imaging guidance, offering patients and healthcare providers minimally invasive alternatives to traditional surgical interventions.
+description: Insightec is a medical device company specializing in magnetic resonance-guided focused ultrasound (MRgFUS) technology for non-invasive therapeutic treatments across neurological and oncological applications. The company develops outpatient-based ultrasound ablation solutions designed to enhance patient outcomes while reducing procedural invasiveness in healthcare settings.
 website: https://insightec.com
 funding: Private
 location: ""
