@@ -1,12 +1,12 @@
 ---
-name: Spark Neuro
+name: SPARK Neuro
 slug: spark-neuro
-category: Neuromodulation
-description: Spark Neuro develops targeted electrical neurostimulation for neurological and psychiatric conditions, with a lead program in sphenopalatine ganglion stimulation for cluster headache and major depression.
-website: https://www.sparkneuro.com
-funding: Series B · $30M
-location: New York, NY, USA
+category: Neurotechnology
+description: SPARK Neuro develops AI-powered neurotech solutions that measure and analyze biometric data from the central nervous system to identify biomarkers for advertising effectiveness, consumer behavior, and neurological diseases including Alzheimer's. The company applies advanced neuroscience research and machine learning to bridge neuromarketing insights with medical technology applications.
+website: https://sparkneuro.com
+funding: Private
+location: ""
 tier: free
 featured: false
-date: 2026-06-15
+date: 2026-06-23
 ---
