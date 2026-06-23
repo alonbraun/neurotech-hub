@@ -2,7 +2,7 @@
 name: CorTec
 slug: cortec
 category: Neurotechnology
-description: CorTec develops innovative neurotechnological implants and research devices designed to advance neurological treatment and rehabilitation applications. The company specializes in medical device manufacturing and B2B services, providing high-quality implant components and neurotechnology solutions for stroke rehabilitation and clinical research.
+description: CorTec develops advanced neurotechnological implants and research devices for neurological applications, including stroke rehabilitation and other neurological conditions. The company manufactures implant components and medical devices while providing B2B services to support innovation in the neurotech field.
 website: https://cortec-neuro.com
 funding: Private
 location: ""
