@@ -2,7 +2,7 @@
 name: CereGate
 slug: ceregate
 category: Neurotechnology
-description: CereGate is a medical equipment manufacturer specializing in brain implants and neural interfaces designed to treat movement disorders through advanced computer-brain interface technology. The company provides neurodiagnostic services and brain signal enhancement solutions to advance neural interface applications.
+description: CereGate is a neurotech company specializing in the design and manufacturing of advanced neural interfaces and brain implants for treating movement disorders and other neurological conditions. The company provides comprehensive neurodiagnostic services and brain signal enhancement solutions, leveraging computer-brain interface technology to develop innovative medical devices and therapeutic solutions.
 website: https://ceregate.com
 funding: Private
 location: ""
