@@ -1,12 +1,12 @@
 ---
 name: SetPoint Medical
 slug: setpoint-medical
-category: Neuromodulation
-description: SetPoint Medical develops an implantable bioelectronic medicine device that stimulates the vagus nerve to treat inflammatory diseases including rheumatoid arthritis and Crohn's disease.
-website: https://www.setpointmedical.com
-funding: Series E · $200M
-location: Valencia, CA, USA
+category: Neurotechnology
+description: SetPoint Medical develops bioelectronic medicines that leverage vagus nerve stimulation to treat inflammatory and autoimmune diseases, including rheumatoid arthritis, through proprietary neuromodulation technology. The company designs and manufactures advanced medical equipment that targets the body's neural circuitry to modulate immune responses and reduce chronic inflammation.
+website: https://setpointmedical.com
+funding: Private
+location: ""
 tier: free
 featured: false
-date: 2026-06-15
+date: 2026-06-23
 ---
