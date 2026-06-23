@@ -2,7 +2,7 @@
 name: Sutter Health
 slug: sutter-health
 category: Neurotechnology
-description: Sutter Health is a not-for-profit integrated health care system providing comprehensive clinical services across hospitals, physician offices, and digital health platforms throughout Northern California. The organization combines community-based care delivery with strategic initiatives focused on advancing healthcare innovation and serving seniors through digital health solutions.
+description: Sutter Health is a not-for-profit integrated health care system providing comprehensive clinical services across Northern California through hospitals, physician offices, and community-based care facilities. The organization serves seniors and diverse patient populations through digital health solutions and coordinated care delivery designed to improve health outcomes and access to quality healthcare services.
 website: https://sutterhealth.org
 funding: Private
 location: ""
