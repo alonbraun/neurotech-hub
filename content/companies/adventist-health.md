@@ -2,7 +2,7 @@
 name: Adventist Health
 slug: adventist-health
 category: Neurotechnology
-description: Adventist Health operates a comprehensive network of hospitals, clinics, home health services, and rural health facilities dedicated to providing integrated healthcare across multiple communities. The organization delivers hospice care, health education, and community wellness programs with a commitment to advancing patient outcomes and community wellbeing.
+description: Adventist Health operates a comprehensive network of hospitals, clinics, home health services, and rural health clinics dedicated to providing quality healthcare and community wellbeing across multiple regions. The organization offers integrated services including hospice care and health education programs, serving patients through both clinical facilities and community-based health initiatives.
 website: https://adventisthealth.org
 funding: Private
 location: ""
