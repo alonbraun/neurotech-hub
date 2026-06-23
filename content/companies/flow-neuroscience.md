@@ -2,7 +2,7 @@
 name: Flow Neuroscience
 slug: flow-neuroscience
 category: Neurotechnology
-description: Flow Neuroscience develops transcranial direct current stimulation (tDCS) medical devices designed to treat depression through non-invasive neuromodulation. The company's FDA-cleared technology delivers targeted brain stimulation to provide patients with an evidence-based therapeutic option for managing depressive symptoms.
+description: Flow Neuroscience develops transcranial direct current stimulation (tDCS) medical devices designed to treat depression through non-invasive brain stimulation technology. The company combines neuroscience research with neuromodulation techniques to provide patients and psychiatrists with evidence-based therapeutic solutions for mood disorders.
 website: https://flowneuroscience.com
 funding: Private
 location: ""
