@@ -2,7 +2,7 @@
 name: Cognito Therapeutics, Inc.
 slug: cognito-therapeutics-inc
 category: Neurotechnology
-description: Cognito Therapeutics is a neurotech company that develops medical equipment designed to modulate brain activity and support brain function, with a focus on white matter preservation and brain plasticity. The company's technology platform targets neurodegenerative conditions including Alzheimer's disease, aiming to advance brain health through innovative therapeutic approaches.
+description: Cognito Therapeutics develops non-invasive neuromodulation devices designed to modulate brain activity and support brain health through white matter preservation and brain plasticity enhancement. The company focuses on medical device solutions for neurodegenerative diseases, including Alzheimer's disease, with a mission to support brain function and cognitive health.
 website: https://cognitotx.com
 funding: Private
 location: ""
