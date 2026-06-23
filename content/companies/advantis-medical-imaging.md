@@ -2,7 +2,7 @@
 name: Advantis Medical Imaging
 slug: advantis-medical-imaging
 category: Neurotechnology
-description: Advantis Medical Imaging develops advanced cloud-based MR imaging solutions for radiology and healthcare providers, specializing in functional MRI, perfusion MRI, and diffusion MRI technologies. The company's medical device platform leverages cloud technology to enhance diagnostic imaging capabilities and improve clinical workflows.
+description: Advantis Medical Imaging develops cloud-based MR imaging technology that enhances diagnostic capabilities through advanced functional, perfusion, and diffusion MRI applications for healthcare providers. The company's medical device solutions streamline radiology workflows and improve clinical outcomes by delivering sophisticated imaging analysis through accessible cloud technology.
 website: https://advantis.io
 funding: Private
 location: ""
