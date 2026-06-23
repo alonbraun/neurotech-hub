@@ -2,7 +2,7 @@
 name: NordicNeuroLab
 slug: nordicneurolab
 category: Neurotechnology
-description: NordicNeuroLab specializes in MRI and fMRI technology solutions, offering MR-compatible monitoring equipment and advanced software designed for functional neuroimaging research and clinical applications. The company provides comprehensive fMRI hardware and software systems, including ASL imaging capabilities and paradigm design tools to support advanced neuroimaging studies.
+description: NordicNeuroLab specializes in advanced neuroimaging solutions, providing MRI-compatible hardware and software designed for functional MRI (fMRI) research and clinical applications. The company offers innovative paradigm design tools, MR-compatible monitoring systems, and specialized fMRI hardware to support cutting-edge brain imaging studies and ASL imaging protocols.
 website: https://nordicneurolab.com
 funding: Private
 location: ""
