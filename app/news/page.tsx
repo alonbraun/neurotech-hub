@@ -1,5 +1,6 @@
 import { getAllFiles } from "@/lib/content";
 import Link from "next/link";
+import NewsImage from "@/components/NewsImage";
 
 export const metadata = {
   title: "NeuroTech News & Insights — NeuroTech.com",
@@ -8,7 +9,24 @@ export const metadata = {
 
 const CATEGORY_COLORS: Record<string, string> = { Funding: "#dce8fb", Product: "#e6e0fb", Research: "#dff4f8", Policy: "#fef3d0", Industry: "#fde8f0" };
 const CATEGORY_TEXT: Record<string, string> = { Funding: "#185fa5", Product: "#5c3db5", Research: "#0f6e7a", Policy: "#a06b00", Industry: "#99355a" };
-const CATEGORY_EMOJI: Record<string, string> = { Funding: "💰", Product: "🚀", Research: "🔬", Policy: "📋", Industry: "🧠" };
+
+// Curated Unsplash photo IDs relevant to neurotech
+const CATEGORY_IMAGES: Record<string, string[]> = {
+  Funding:  ["1559523182-a284dc3b7f96","1444653614773-995cb1ef9efa","1611974789855-9c2a0a7236a3"],
+  Product:  ["1576086213369-97a306d36557","1614974488824-af01a3b3c5a9","1532094349600-8bd85fb9e1c3"],
+  Research: ["1559757148-5c350d0d3c56","1510915361894-db8b60106cb1","1554475901-4538ddfbccc2"],
+  Policy:   ["1589829545856-d10d557cf95f","1453749024858-4bca89bd9edc","1507003211169-0a1dd7228f2d"],
+  Industry: ["1581092160607-ee67df5e8b42","1504639725590-34d0984388bd","1555664496-1a98040dc2f4"],
+};
+const FALLBACK_IMAGES = ["1559757148-5c350d0d3c56","1576086213369-97a306d36557","1510915361894-db8b60106cb1","1614974488824-af01a3b3c5a9"];
+
+function getArticleImage(article: any): string {
+  if (article.image) return article.image;
+  const pool = CATEGORY_IMAGES[article.category] || FALLBACK_IMAGES;
+  // deterministic pick based on slug
+  const idx = article.slug.split("").reduce((acc: number, c: string) => acc + c.charCodeAt(0), 0) % pool.length;
+  return `https://images.unsplash.com/photo-${pool[idx]}?w=900&q=80&auto=format&fit=crop`;
+}
 
 export default function NewsPage() {
   const articles = getAllFiles("news") as any[];
@@ -29,12 +47,12 @@ export default function NewsPage() {
           <>
             {lead && (
               <Link href={`/news/${lead.slug}`} className="group block mb-12 rounded-3xl overflow-hidden border border-gray-100 hover:border-[#1a3d6b]/20 hover:shadow-lg transition-all">
-                <div className="h-52 md:h-64 flex items-center justify-center text-6xl" style={{ background: CATEGORY_COLORS[lead.category] || "#f0f0f0" }}>
-                  {CATEGORY_EMOJI[lead.category] || "🧠"}
+                <div className="h-52 md:h-64 overflow-hidden relative">
+                  <NewsImage src={getArticleImage(lead)} alt={lead.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                  {lead.category && <span className="absolute top-4 left-4 text-xs font-bold px-3 py-1 rounded-full" style={{ background: CATEGORY_COLORS[lead.category] || "#f0f0f0", color: CATEGORY_TEXT[lead.category] || "#555" }}>{lead.category}</span>}
                 </div>
                 <div className="p-8 bg-white">
-                  {lead.category && <span className="text-xs font-bold px-3 py-1 rounded-full" style={{ background: CATEGORY_COLORS[lead.category] || "#f0f0f0", color: CATEGORY_TEXT[lead.category] || "#555" }}>{lead.category}</span>}
-                  <h2 className="mt-3 text-2xl md:text-3xl font-semibold text-gray-900 leading-snug group-hover:text-[#1a3d6b] transition-colors">{lead.title}</h2>
+                  <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 leading-snug group-hover:text-[#1a3d6b] transition-colors">{lead.title}</h2>
                   {lead.excerpt && <p className="mt-3 text-gray-500 text-base leading-relaxed max-w-2xl">{lead.excerpt}</p>}
                   <p className="mt-4 text-sm text-gray-400">{lead.date}</p>
                 </div>
@@ -44,11 +62,11 @@ export default function NewsPage() {
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
                 {rest.map((a) => (
                   <Link key={a.slug} href={`/news/${a.slug}`} className="group bg-white rounded-2xl overflow-hidden border border-gray-100 hover:border-[#1a3d6b]/20 hover:-translate-y-0.5 hover:shadow-md transition-all">
-                    <div className="h-32 flex items-center justify-center text-4xl" style={{ background: CATEGORY_COLORS[a.category] || "#f0f0f0" }}>
-                      {CATEGORY_EMOJI[a.category] || "🧠"}
+                    <div className="h-36 overflow-hidden relative">
+                      <img src={getArticleImage(a)} alt={a.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                      {a.category && <span className="absolute top-2.5 left-2.5 text-xs font-bold px-2.5 py-0.5 rounded-full" style={{ background: CATEGORY_COLORS[a.category] || "#f0f0f0", color: CATEGORY_TEXT[a.category] || "#555" }}>{a.category}</span>}
                     </div>
                     <div className="p-5">
-                      {a.category && <span className="text-xs font-bold px-2.5 py-0.5 rounded-full" style={{ background: CATEGORY_COLORS[a.category] || "#f0f0f0", color: CATEGORY_TEXT[a.category] || "#555" }}>{a.category}</span>}
                       <h3 className="mt-2 text-sm font-semibold text-gray-900 leading-snug line-clamp-3 group-hover:text-[#1a3d6b] transition-colors">{a.title}</h3>
                       {a.excerpt && <p className="mt-1.5 text-xs text-gray-500 line-clamp-2 leading-relaxed">{a.excerpt}</p>}
                       <p className="mt-3 text-xs text-gray-400">{a.date}</p>

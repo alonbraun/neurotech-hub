@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getAllFiles } from "@/lib/content";
+import NewsImage from "@/components/NewsImage";
 
 const CATEGORY_ICONS: Record<string, string> = {
   "Brain-Computer Interfaces": "🧠",
@@ -307,17 +308,15 @@ export default function Home() {
               {news.slice(0, 6).map((n) => {
                 const catBg = NEWS_CATEGORY_COLORS[n.category] || "#f0f0f0";
                 const catFg = NEWS_CATEGORY_TEXT[n.category] || "#555";
-                const emoji = NEWS_CATEGORY_EMOJI[n.category] || "🧠";
                 return (
                   <Link key={n.slug} href={`/news/${n.slug}`}
                     className="bg-white rounded-2xl overflow-hidden border border-gray-100 hover:border-[#1a3d6b]/20 hover:-translate-y-0.5 hover:shadow-md transition-all group">
-                    <div className="h-24 flex items-center justify-center text-4xl font-bold relative overflow-hidden" style={{ background: catBg }}>
-                      <span className="opacity-30 text-6xl absolute">{emoji}</span>
-                      <span className="relative z-10 text-3xl">{emoji}</span>
+                    <div className="h-36 overflow-hidden relative" style={{ background: catBg }}>
+                      {n.image && <NewsImage src={n.image} alt={n.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />}
+                      <span className="absolute top-2.5 left-2.5 text-[10px] font-bold px-2 py-0.5 rounded-full" style={{ background: catBg, color: catFg }}>{n.category || "Industry"}</span>
                     </div>
                     <div className="p-4">
-                      <span className="text-[10px] font-bold px-2 py-0.5 rounded-full" style={{ background: catBg, color: catFg }}>{n.category || "Industry"}</span>
-                      <h3 className="mt-2 text-sm font-bold text-gray-900 leading-snug line-clamp-2 group-hover:text-[#1a3d6b] transition-colors">{n.title}</h3>
+                      <h3 className="text-sm font-bold text-gray-900 leading-snug line-clamp-2 group-hover:text-[#1a3d6b] transition-colors">{n.title}</h3>
                       {n.excerpt && <p className="mt-1.5 text-xs text-gray-500 line-clamp-2 leading-relaxed">{n.excerpt}</p>}
                       <p className="mt-2.5 text-[10px] text-gray-400 font-medium">{n.date}</p>
                     </div>

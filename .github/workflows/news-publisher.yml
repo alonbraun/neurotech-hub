@@ -47,7 +47,7 @@ jobs:
           sponsored: false
           ---
 
-          Article body here (350-450 words, plain paragraphs, no headers or markdown inside body)
+          Article body here (350-450 words). Use ## for 2-3 section headings to break up the article (e.g. ## Background, ## What This Means, ## Looking Ahead). Write paragraphs as plain text — no bullet lists, no bold/italic inline.
           """}]
           )
 

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${geist.variable} h-full`}>
+    <html lang="en" className={`${geist.variable} h-full`} style={{ colorScheme: "light" }}>
       <body className="min-h-full flex flex-col bg-white text-gray-900 font-[family-name:var(--font-geist-sans)]">
         <header className="sticky top-0 z-50 bg-[#0d1525]/95 backdrop-blur-md border-b border-white/5">
           <div className="max-w-7xl mx-auto px-5 h-16 flex items-center justify-between">

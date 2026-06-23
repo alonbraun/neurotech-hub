@@ -1,514 +1,1175 @@
 [
   {
-    "email": "patrick@cortirio.com",
-    "name": "Patrick Beldon",
+    "email": "shalmali.kadu@getinnergize.com",
+    "name": "Shalmali Kadu",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "Cortirio's portable brain imaging deserves an audience that gets it",
-    "sent_at": "2026-06-18T15:19:35.531Z"
+    "subject": "DUSQ is now on NeuroTech.com",
+    "sent_at": "2026-06-22T14:03:06.328Z"
   },
   {
-    "email": "sandra@alva-health.com",
-    "name": "Sandra Nouri",
+    "email": "min.li@scineuro.com",
+    "name": "Min Li",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "Alva Health's stroke detection work deserves more visibility",
-    "sent_at": "2026-06-18T15:19:37.389Z"
+    "subject": "SciNeuro now live on NeuroTech.com",
+    "sent_at": "2026-06-22T14:03:09.713Z"
   },
   {
-    "email": "dzajc@longeviti.com",
-    "name": "David Zajc",
+    "email": "rk@mindway.ai",
+    "name": "Rasmus Kjaergaard",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "Longeviti's neurosurgical innovations deserve a bigger stage",
-    "sent_at": "2026-06-18T15:19:39.181Z"
+    "subject": "Mindway AI is now on NeuroTech.com",
+    "sent_at": "2026-06-22T14:03:12.926Z"
   },
   {
-    "email": "sam@parley-neuro.com",
-    "name": "Sam Budoff",
+    "email": "rimjhim.agrawal@brainsightai.com",
+    "name": "Rimjhim Agrawal",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "Parley's hearing tech deserves to be seen by neurotechs building the future",
-    "sent_at": "2026-06-18T15:19:40.929Z"
+    "subject": "BrainSightAI is now on NeuroTech.com",
+    "sent_at": "2026-06-22T14:03:16.185Z"
   },
   {
-    "email": "adam@synchroni.co",
-    "name": "Adam Chabchoub",
+    "email": "michael@precisionneuro.io",
+    "name": "Michael Mager",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "Synchroni + NeuroTech.com — reaching the people building biometric infrastructure",
-    "sent_at": "2026-06-18T15:19:42.833Z"
+    "subject": "Your Precision Neuroscience listing is live on NeuroTech.com",
+    "sent_at": "2026-06-22T14:03:19.472Z"
   },
   {
-    "email": "hayato@ruten-neuro.com",
-    "name": "Hayato Nakamura",
+    "email": "steve@precisionlife.com",
+    "name": "Steve Gardner",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "Ruten's neurorestoration work + NeuroTech's new job board",
-    "sent_at": "2026-06-18T15:19:44.511Z"
+    "subject": "PrecisionLife is now on NeuroTech.com",
+    "sent_at": "2026-06-22T14:03:22.712Z"
   },
   {
-    "email": "anderson@neurogram.com",
-    "name": "Anderson Carubelli",
+    "email": "gary@motioninformatics.ai",
+    "name": "Gary Sagiv",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "Neurogram's digital EEG platform + neurotechnology audience = interesting fit?",
-    "sent_at": "2026-06-18T15:19:46.248Z"
+    "subject": "Motion Informatics is now on NeuroTech.com",
+    "sent_at": "2026-06-22T14:03:25.943Z"
   },
   {
-    "email": "simon@relentlesspursuitpartners.com",
-    "name": "Simon Whitfield",
+    "email": "adrian.harel@medicortex.fi",
+    "name": "Adrian Harel",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "Relentless + NeuroTech: reaching founders solving brain health",
-    "sent_at": "2026-06-18T15:19:47.931Z"
+    "subject": "Medicortex is now on NeuroTech.com",
+    "sent_at": "2026-06-22T14:20:34.240Z"
   },
   {
-    "email": "cmartin@ablehumanmotion.com",
-    "name": "Carmen Martin Rico",
+    "email": "cchambliss@neurelis.com",
+    "name": "Craig Chambliss",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "ABLE's exoskeletons + the neurotech community",
-    "sent_at": "2026-06-18T15:19:49.964Z"
+    "subject": "Neurelis is now on NeuroTech.com",
+    "sent_at": "2026-06-22T14:20:37.568Z"
   },
   {
-    "email": "scott.drees@neurolief.com",
-    "name": "Scott Drees",
+    "email": "nabeel@kandu.com",
+    "name": "Nabeel Ahmed",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "Neurolief + the neurotech community (curious about your thoughts)",
-    "sent_at": "2026-06-18T15:19:51.734Z"
+    "subject": "Kandu is now on NeuroTech.com",
+    "sent_at": "2026-06-22T14:20:40.798Z"
   },
   {
-    "email": "tomas@sentante.com",
-    "name": "Tomas Baltrunas",
+    "email": "ilan@corractions.com",
+    "name": "Ilan Reingold",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "Sentante's haptic robotics deserve more visibility",
-    "sent_at": "2026-06-18T15:19:53.466Z"
+    "subject": "CorrActions is now on NeuroTech.com",
+    "sent_at": "2026-06-22T14:20:44.011Z"
   },
   {
-    "email": "akashsud@higherprana.com",
-    "name": "Akash Sud",
+    "email": "hristijan.gjoreski@emteqlabs.com",
+    "name": "Hristijan Gjoreski",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "Higher Prana + NeuroTech.com community",
-    "sent_at": "2026-06-18T15:19:55.204Z"
+    "subject": "emteq labs is now on NeuroTech.com",
+    "sent_at": "2026-06-22T14:36:40.163Z"
   },
   {
-    "email": "povilas@pulsetto.tech",
-    "name": "Povilas Sabaliauskas",
+    "email": "df@arctop.com",
+    "name": "Dan Furman",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "Pulsetto + NeuroTech.com — reaching people interested in vagus nerve tech",
-    "sent_at": "2026-06-18T15:19:56.904Z"
+    "subject": "Arctop is now on NeuroTech.com",
+    "sent_at": "2026-06-22T14:36:43.421Z"
   },
   {
-    "email": "epurcell@paradromics.com",
-    "name": "Emily Purcell",
+    "email": "chad@vistimlabs.com",
+    "name": "Chad Vardas",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "Paradromics + NeuroTech.com — reaching the people building the future of neural interfaces",
-    "sent_at": "2026-06-18T15:19:58.630Z"
+    "subject": "Vistim Labs is now on NeuroTech.com",
+    "sent_at": "2026-06-22T14:36:46.637Z"
   },
   {
-    "email": "jichul.kim@oscillobiosciences.com",
-    "name": "Ji Kim",
+    "email": "amir@wesper.co",
+    "name": "Amir Reuveny",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "Music-based neuromodulation catching traction — thought you'd want visibility on NeuroTech",
-    "sent_at": "2026-06-18T15:20:00.456Z"
+    "subject": "Wesper is now on NeuroTech.com",
+    "sent_at": "2026-06-22T14:36:50.024Z"
   },
   {
-    "email": "nic.hubacz@magstim.com",
-    "name": "Nicolas Hubacz",
+    "email": "kevin.reeder@neurocaregroup.com",
+    "name": "Kevin Reeder",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "Magstim's next move in US West — thought on visibility?",
-    "sent_at": "2026-06-18T15:20:02.262Z"
+    "subject": "neurocare group is now on NeuroTech.com",
+    "sent_at": "2026-06-22T14:45:40.015Z"
   },
   {
-    "email": "kazutaka@ruten-neuro.com",
-    "name": "Kazutaka Takahashi",
+    "email": "aaron.koenig@syndeio.bio",
+    "name": "Aaron Koenig",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "Ruten's brain-machine interface work + where neurotechnology researchers actually look",
-    "sent_at": "2026-06-18T15:20:04.179Z"
+    "subject": "Syndeio's synapse platform caught our eye — free listing live",
+    "sent_at": "2026-06-22T14:45:43.201Z"
   },
   {
-    "email": "patrickj@cadwell.com",
-    "name": "Patrick Jensen",
+    "email": "adrian@somarealityhub.com",
+    "name": "Adrian Brodesser",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "Cadwell + the neurotechs actually building the future",
-    "sent_at": "2026-06-18T15:20:05.792Z"
+    "subject": "SOMAREALITY is now on NeuroTech.com",
+    "sent_at": "2026-06-22T14:45:46.374Z"
   },
   {
-    "email": "ian@mintneuro.com",
-    "name": "Ian Williams",
+    "email": "mleprado@mag4health.com",
+    "name": "Matthieu Prado",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "MintNeuro's next-gen neural interfaces deserve better visibility",
-    "sent_at": "2026-06-18T15:20:07.569Z"
+    "subject": "MAG4HEALTH is now on NeuroTech.com",
+    "sent_at": "2026-06-22T14:45:49.531Z"
   },
   {
-    "email": "matthew@mintneuro.com",
-    "name": "Matthew Cavuto",
+    "email": "dennis@bulbitech.com",
+    "name": "Dennis Hens",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "MintNeuro's next audience might already be on NeuroTech.com",
-    "sent_at": "2026-06-18T15:20:09.472Z"
+    "subject": "Bulbitech AS is now on NeuroTech.com",
+    "sent_at": "2026-06-22T14:54:37.246Z"
   },
   {
-    "email": "fan.wu@diagnosticbiochips.com",
-    "name": "Fan Wu",
+    "email": "veera.anantha@constanttherapyhealth.com",
+    "name": "Veera Anantha",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "Your neural recording tech deserves to be seen by the right researchers",
-    "sent_at": "2026-06-18T15:20:12.039Z"
+    "subject": "Constant Therapy is now live on NeuroTech.com",
+    "sent_at": "2026-06-22T14:54:40.433Z"
   },
   {
-    "email": "gagan@comind.io",
-    "name": "Gagan Sooch",
+    "email": "mridhu.varshini@entropik.io",
+    "name": "Mridhu Varshini",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "CoMind's brain monitoring tech + NeuroTech's audience",
-    "sent_at": "2026-06-18T15:20:13.817Z"
+    "subject": "Entropik is now live on NeuroTech.com",
+    "sent_at": "2026-06-22T14:54:43.619Z"
   },
   {
-    "email": "bgoldstein@brainbit.com",
-    "name": "Boris Goldstein",
+    "email": "monuscheck@presidiomedical.com",
+    "name": "Michael Onuscheck",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "BrainBit's wearable EEG is exactly what neurotechs are looking for",
-    "sent_at": "2026-06-18T15:20:15.643Z"
+    "subject": "Presidio Medical is now on NeuroTech.com",
+    "sent_at": "2026-06-22T14:54:46.816Z"
   },
   {
-    "email": "patrick@neuromore.com",
-    "name": "Patrick Hilsbos",
+    "email": "gunn@equahealth.io",
+    "name": "Gunn Herabat",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "neuromore + NeuroTech.com — reaching the people building the future",
-    "sent_at": "2026-06-18T15:20:17.379Z"
+    "subject": "Equa Health is now listed on NeuroTech.com",
+    "sent_at": "2026-06-22T14:54:50.001Z"
   },
   {
-    "email": "tina_chang@hipposcreen-nc.com",
-    "name": "Tina Chang",
+    "email": "aloni@theranica.com",
+    "name": "Alon Ironi",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "HippoScreen + NeuroTech.com community",
-    "sent_at": "2026-06-18T15:20:19.113Z"
+    "subject": "Theranica is now on NeuroTech.com",
+    "sent_at": "2026-06-22T14:54:53.162Z"
   },
   {
-    "email": "marcela@interaxon.ca",
-    "name": "Marcela Guerra",
+    "email": "dillan@mindstate.design",
+    "name": "Dillan Dinardo",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "Muse's brain-sensing story + NeuroTech's audience (researchers, founders, clinicians)",
-    "sent_at": "2026-06-18T15:20:21.171Z"
+    "subject": "Your Mindstate Design Labs listing is live on NeuroTech.com",
+    "sent_at": "2026-06-22T15:00:06.810Z"
   },
   {
-    "email": "r.small@neurotechusa.com",
-    "name": "Rich Small",
+    "email": "baptiste.billoir@agent-biotech.com",
+    "name": "Baptiste Billoir",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "Reaching the neurotech community working on vision restoration",
-    "sent_at": "2026-06-18T15:20:23.374Z"
+    "subject": "AgenT is now listed on NeuroTech.com",
+    "sent_at": "2026-06-22T15:07:28.125Z"
   },
   {
-    "email": "llabat@neo-bionica.com",
-    "name": "Ludovic Labat",
+    "email": "emirro@synchneuro.com",
+    "name": "Emily Mirro",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "neo-bionica's work + NeuroTech.com's audience",
-    "sent_at": "2026-06-18T15:20:25.353Z"
+    "subject": "Your SynchNeuro listing is live on NeuroTech.com",
+    "sent_at": "2026-06-22T15:07:31.381Z"
   },
   {
-    "email": "nadia@musehealth.ai",
-    "name": "Nadia Kumentas",
+    "email": "celine@flowly.world",
+    "name": "Celine Tien",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "Muse's audience is probably looking for you on NeuroTech.com",
-    "sent_at": "2026-06-18T15:20:27.142Z"
+    "subject": "Flowly is now on NeuroTech.com",
+    "sent_at": "2026-06-22T15:21:02.344Z"
   },
   {
-    "email": "saskia@mindaffect.nl",
-    "name": "Saskia Vulliez-Sermet",
+    "email": "david@pison.com",
+    "name": "David Cipoletta",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "MindAffect's brain-based diagnostics deserve more visibility",
-    "sent_at": "2026-06-18T15:20:28.931Z"
+    "subject": "Pison is now on NeuroTech.com's directory",
+    "sent_at": "2026-06-22T15:21:05.523Z"
   },
   {
-    "email": "areddy@basilhealth.com",
-    "name": "Akshitha Reddy",
+    "email": "christoph.doelitzsch@biotronik.com",
+    "name": "Christoph Doelitzsch",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "Basil Health's mental health tools + the neurotech community",
-    "sent_at": "2026-06-18T15:20:30.848Z"
+    "subject": "BIOTRONIK is now live on NeuroTech.com",
+    "sent_at": "2026-06-23T08:13:16.236Z"
   },
   {
-    "email": "aissah@paradromics.com",
-    "name": "Amina Issah",
+    "email": "konstantin@i-brain.tech",
+    "name": "Konstantin Sonkin",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "Paradromics + NeuroTech.com — reaching the people building BCI",
-    "sent_at": "2026-06-18T15:20:32.995Z"
+    "subject": "i-BrainTech is now live on NeuroTech.com",
+    "sent_at": "2026-06-23T08:13:19.472Z"
   },
   {
-    "email": "chris.mccabe@neurovalens.com",
-    "name": "Chris McCabe",
+    "email": "alex@samphireneuro.com",
+    "name": "Alex Cook",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "Neurovalens + NeuroTech.com — reaching the people who care about your work",
-    "sent_at": "2026-06-18T15:20:34.798Z"
+    "subject": "Samphire is now on NeuroTech.com — and there's more we can do together",
+    "sent_at": "2026-06-23T08:13:22.645Z"
   },
   {
-    "email": "mfahey@paradromics.com",
-    "name": "Marie Fahey",
+    "email": "martin.schuettler@cortec-neuro.com",
+    "name": "Martin Schuettler",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "Paradromics + NeuroTech.com — reaching the people who care about high-bandwidth neural interfaces",
-    "sent_at": "2026-06-18T15:20:39.021Z"
+    "subject": "CorTec is now on NeuroTech.com",
+    "sent_at": "2026-06-23T08:13:25.844Z"
   },
   {
-    "email": "rbhandari@blackrockneuro.com",
-    "name": "Raj Bhandari",
+    "email": "steve.g@nordicneurolab.com",
+    "name": "Steve Greenland",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "Blackrock's work in neural interfaces + a platform question",
-    "sent_at": "2026-06-18T15:20:40.980Z"
+    "subject": "Your NordicNeuroLab listing is live on NeuroTech.com",
+    "sent_at": "2026-06-23T08:13:29.048Z"
   },
   {
-    "email": "luke@neurotech.biz",
-    "name": "Luke Speller",
+    "email": "gserafin@nanodiagnostics.com",
+    "name": "George Serafin",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "Your VR therapy work deserves visibility with neuro researchers and founders",
-    "sent_at": "2026-06-18T15:20:43.068Z"
+    "subject": "NanoDx is now on NeuroTech.com",
+    "sent_at": "2026-06-23T08:13:32.220Z"
   },
   {
-    "email": "jschachtele@clinilabs.com",
-    "name": "Jennifer Schachtele",
+    "email": "daniela.brunner@psychogenics.com",
+    "name": "Daniela Brunner",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "Clinilabs' work in early-phase neuro trials + NeuroTech.com",
-    "sent_at": "2026-06-18T15:20:45.685Z"
+    "subject": "PsychoGenics is now on NeuroTech.com",
+    "sent_at": "2026-06-23T08:13:35.408Z"
   },
   {
-    "email": "andy.bhushan@censyn.com",
-    "name": "Andy Bhushan",
+    "email": "joseph@openbci.com",
+    "name": "Joseph Artuso",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "CenSyn's brain monitoring work + where neurotech founders are looking",
-    "sent_at": "2026-06-18T15:20:47.519Z"
+    "subject": "OpenBCI is now on NeuroTech.com's directory",
+    "sent_at": "2026-06-23T08:16:47.762Z"
   },
   {
-    "email": "leo@kandu.com",
-    "name": "Leo Petrossian",
+    "email": "guger@gtec.at",
+    "name": "Christoph Guger",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "Kandu's stroke recovery work + a neurotechnology audience that needs to know about it",
-    "sent_at": "2026-06-18T15:20:49.381Z"
+    "subject": "Your g.tec listing is live on NeuroTech.com",
+    "sent_at": "2026-06-23T08:20:03.624Z"
   },
   {
-    "email": "ted@innercosmos.io",
-    "name": "Theodore Kucklick",
+    "email": "shaun.walsh@phagenesis.com",
+    "name": "Shaun Walsh",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "Inner Cosmos + NeuroTech.com — reaching the neurotech community",
-    "sent_at": "2026-06-18T15:20:51.191Z"
+    "subject": "Phagenesis is now on NeuroTech.com",
+    "sent_at": "2026-06-23T08:20:06.890Z"
   },
   {
-    "email": "markvk@mindaffect.nl",
-    "name": "Mark Van Kesteren",
+    "email": "rkern@cognitotx.com",
+    "name": "Ralph Kern",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "MindAffect's EEG diagnostics + NeuroTech.com's audience",
-    "sent_at": "2026-06-18T15:20:52.995Z"
+    "subject": "Cognito Therapeutics is now on NeuroTech.com",
+    "sent_at": "2026-06-23T08:20:10.085Z"
   },
   {
-    "email": "mike@phantomneuro.com",
-    "name": "Mike Faltys",
+    "email": "eric@insitro.com",
+    "name": "Eric McKeeby",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "Phantom Neuro's work deserves to reach the right audience",
-    "sent_at": "2026-06-18T15:20:55.037Z"
+    "subject": "insitro is now on NeuroTech.com",
+    "sent_at": "2026-06-23T08:24:12.965Z"
   },
   {
-    "email": "rikky@eecs.berkeley.edu",
-    "name": "Rikky Muller",
+    "email": "darr@brainpatch.ai",
+    "name": "Dauren Toleukhanov",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "MZR's ear-based sleep tech + NeuroTech's audience (thought you might find it useful)",
-    "sent_at": "2026-06-18T15:20:56.809Z"
+    "subject": "BrainPatch is now live on NeuroTech.com",
+    "sent_at": "2026-06-23T08:24:16.144Z"
   },
   {
-    "email": "wgirardi@apn.com",
-    "name": "Wendy Girardi",
+    "email": "marco.mohoric@angelinipharma.com",
+    "name": "Marco Mohoric'",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "All Points North + neurotechnology community at NeuroTech.com",
-    "sent_at": "2026-06-18T15:20:58.639Z"
+    "subject": "Angelini Pharma is now on NeuroTech.com",
+    "sent_at": "2026-06-23T08:24:19.347Z"
   },
   {
-    "email": "will@lovebrain.com",
-    "name": "Will Harding",
+    "email": "lava.kumar@entropiktech.com",
+    "name": "Lava Kumar",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "Lovebrain's next audience is probably on NeuroTech.com",
-    "sent_at": "2026-06-18T15:21:00.334Z"
+    "subject": "Entropik is now on NeuroTech.com",
+    "sent_at": "2026-06-23T08:24:22.543Z"
   },
   {
-    "email": "qi.wang@columbia.edu",
-    "name": "Qi Wang",
+    "email": "gregor@cloudsofcare.com",
+    "name": "Gregor Strobbe",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "Sharper Sense + the neurotechnology community",
-    "sent_at": "2026-06-18T15:21:02.080Z"
+    "subject": "CLOUDS OF CARE is now on NeuroTech.com",
+    "sent_at": "2026-06-23T08:30:28.236Z"
   },
   {
-    "email": "ryan.field@kernel.com",
-    "name": "Ryan Field",
+    "email": "yroche@synapcell.fr",
+    "name": "Yann Roche",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "Kernel's portable neuroimaging catching attention in the neurotechnology community",
-    "sent_at": "2026-06-18T15:21:03.887Z"
+    "subject": "SynapCell is now on NeuroTech.com",
+    "sent_at": "2026-06-23T08:30:31.453Z"
   },
   {
-    "email": "ignas.brazdauskas@pulsetto.tech",
-    "name": "Ignas Brazdauskas",
+    "email": "sam@flowneuroscience.com",
+    "name": "Sam Lowden",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "Pulsetto + NeuroTech.com — reaching the neurotech community",
-    "sent_at": "2026-06-18T15:21:05.858Z"
+    "subject": "Flow Neuroscience is now on NeuroTech.com",
+    "sent_at": "2026-06-23T08:30:34.636Z"
   },
   {
-    "email": "sdevrieze@neurotechinsights.com",
-    "name": "Steve Devrieze",
+    "email": "joseph.hartman@specialtycare.net",
+    "name": "Joseph Hartman",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "Gait as a biomarker—reaching the clinicians who care",
-    "sent_at": "2026-06-18T15:21:07.587Z"
+    "subject": "SpecialtyCare is now on NeuroTech.com",
+    "sent_at": "2026-06-23T08:33:58.065Z"
   },
   {
-    "email": "avedave@mindalive.com",
-    "name": "Dave Siever",
+    "email": "jack.ruth@bryanjohnson.com",
+    "name": "Jack Ruth",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "Mind Alive + NeuroTech.com — reaching the people building neurotech",
-    "sent_at": "2026-06-18T15:21:09.441Z"
+    "subject": "Blueprint is now in the NeuroTech directory",
+    "sent_at": "2026-06-23T08:34:01.233Z"
   },
   {
-    "email": "geoff@emotiv.com",
-    "name": "Geoff Mackellar",
+    "email": "hannah.garner@arcticshores.com",
+    "name": "Hannah Garner",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "EMOTIV + NeuroTech.com — reaching the builders in this space",
-    "sent_at": "2026-06-18T15:21:11.306Z"
+    "subject": "Arctic Shores is now listed on NeuroTech.com",
+    "sent_at": "2026-06-23T08:38:09.775Z"
   },
   {
-    "email": "steve.goetz@motifneuro.tech",
-    "name": "Steven Goetz",
+    "email": "jgshaka@rebion.net",
+    "name": "Justin Shaka",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "Motif's minimally invasive approach deserves more visibility in neurotech",
-    "sent_at": "2026-06-18T15:21:13.236Z"
+    "subject": "Rebion is now on NeuroTech.com",
+    "sent_at": "2026-06-23T08:38:13.249Z"
   },
   {
-    "email": "adam.hanina@dandelion.science",
-    "name": "Adam Hanina",
+    "email": "bkeath@oni.bio",
+    "name": "Brenton Keath",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "Dandelion's next move: reaching the neurotech community",
-    "sent_at": "2026-06-18T15:21:15.028Z"
+    "subject": "ONI is now on NeuroTech.com",
+    "sent_at": "2026-06-23T08:38:16.468Z"
   },
   {
-    "email": "jbaltz@raptventures.com",
-    "name": "Jeff Baltz",
+    "email": "andrea.trescot@curonix.com",
+    "name": "Andrea Trescot",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "RAPT's brain training approach + the neurotechnology audience",
-    "sent_at": "2026-06-18T15:21:17.047Z"
+    "subject": "Curonix is now on NeuroTech.com",
+    "sent_at": "2026-06-23T08:38:19.656Z"
   },
   {
-    "email": "afrascino@apn.com",
-    "name": "Alex Frascino",
+    "email": "keren@corractions.com",
+    "name": "Keren Rogachevsky",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "Deep TMS and ketamine therapy reaching the right audience",
-    "sent_at": "2026-06-18T15:21:18.820Z"
+    "subject": "CorrActions is now on NeuroTech.com",
+    "sent_at": "2026-06-23T08:40:40.206Z"
   },
   {
-    "email": "jordan.muraskin@decervo.com",
-    "name": "Jordan Muraskin",
+    "email": "susan.greenfield@neuro-bio.com",
+    "name": "Baroness Greenfield",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "deCervo's decision training work + neurotechnology audience",
-    "sent_at": "2026-06-18T15:21:20.640Z"
+    "subject": "Neuro-Bio Ltd is now on NeuroTech.com",
+    "sent_at": "2026-06-23T08:40:43.391Z"
   },
   {
-    "email": "mangle@paradromics.com",
-    "name": "Matt Angle",
+    "email": "jonathan@avivscientific.com",
+    "name": "Preminger Jonathan",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "Paradromics + NeuroTech.com — reaching the people building the future of neural interfaces",
-    "sent_at": "2026-06-18T15:21:22.558Z"
+    "subject": "Aviv Scientific is now on NeuroTech.com",
+    "sent_at": "2026-06-23T08:40:46.551Z"
   },
   {
-    "email": "madams@basilhealth.com",
-    "name": "Matthew Adams",
+    "email": "matt.ziglar@noctrixhealth.com",
+    "name": "Matt Ziglar",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "Basil Health AI + NeuroTech.com — reaching the mental health tech community",
-    "sent_at": "2026-06-18T15:21:24.481Z"
+    "subject": "Noctrix Health is now on NeuroTech.com",
+    "sent_at": "2026-06-23T08:43:43.277Z"
   },
   {
-    "email": "simon@comind.io",
-    "name": "Simon Morling",
+    "email": "suvidya@ajnalens.com",
+    "name": "Suvidya Angre",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "CoMind's brain monitoring tech + NeuroTech audience",
-    "sent_at": "2026-06-18T15:21:26.132Z"
+    "subject": "AjnaLens is now on NeuroTech.com",
+    "sent_at": "2026-06-23T08:43:46.438Z"
   },
   {
-    "email": "hugo.chrost@solvemed.ai",
-    "name": "Hugo Chrost",
+    "email": "tom@bearmind.tech",
+    "name": "Tom Bertrand",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "PuRe Pupillometer + the neurotechs building the future",
-    "sent_at": "2026-06-18T15:21:27.924Z"
+    "subject": "Bearmind is now on NeuroTech.com",
+    "sent_at": "2026-06-23T08:43:49.595Z"
   },
   {
-    "email": "rfornera@skaaltec.com",
-    "name": "Reda Fornera",
+    "email": "han-joo.kim@imnewrun.com",
+    "name": "Han-Joo Kim",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "Skaaltec's neurorehabilitation work + where neurotechnology decision-makers are looking",
-    "sent_at": "2026-06-18T15:21:29.861Z"
+    "subject": "IMNEWRUN is now on NeuroTech.com",
+    "sent_at": "2026-06-23T09:01:26.827Z"
   },
   {
-    "email": "julian@augmental.tech",
-    "name": "Julian Odabachian",
+    "email": "amanda@eargym.world",
+    "name": "Amanda Philpott",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "Augmental's tongue-interface story deserves a bigger stage",
-    "sent_at": "2026-06-18T15:21:31.773Z"
+    "subject": "eargym is now on NeuroTech.com",
+    "sent_at": "2026-06-23T09:01:30.011Z"
   },
   {
-    "email": "rob@dannce.ai",
-    "name": "Rob Baldoni",
+    "email": "rcristovao@plux.info",
+    "name": "Rita Cristovao",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "Dannce.ai's movement quantification is exactly what neurotech researchers need to see",
-    "sent_at": "2026-06-18T15:21:33.519Z"
+    "subject": "PLUX Biosignals is now live on NeuroTech.com",
+    "sent_at": "2026-06-23T09:01:33.186Z"
   },
   {
-    "email": "bruce.jamieson@diagnosticbiochips.com",
-    "name": "Bruce Jamieson",
+    "email": "bill.shaw@curonix.com",
+    "name": "Bill Shaw",
     "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
     "client": "NeuroTech.com",
-    "subject": "Diagnostic Biochips in front of the neurotech community?",
-    "sent_at": "2026-06-18T15:21:35.261Z"
+    "subject": "Curonix is now on NeuroTech.com",
+    "sent_at": "2026-06-23T09:01:36.359Z"
+  },
+  {
+    "email": "ivan@valkyrie-vr.com",
+    "name": "Ivan Isakov",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "Valkyrie Industries is now on NeuroTech.com",
+    "sent_at": "2026-06-23T09:04:59.054Z"
+  },
+  {
+    "email": "jcasarella@cogres.com",
+    "name": "Jason Casarella",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "Your Cognitive Research Corporation listing is live on NeuroTech.com",
+    "sent_at": "2026-06-23T09:05:02.242Z"
+  },
+  {
+    "email": "ebohlen@eneura.com",
+    "name": "Eric Bohlen",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "eNeura is now on NeuroTech.com",
+    "sent_at": "2026-06-23T09:05:05.453Z"
+  },
+  {
+    "email": "hharries@rapidpulsemed.com",
+    "name": "Heather Harries",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "RapidPulse is now on NeuroTech.com",
+    "sent_at": "2026-06-23T09:05:08.651Z"
+  },
+  {
+    "email": "abhishek@ajnalens.com",
+    "name": "Abhishek Tomar",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "AjnaLens is now live on NeuroTech.com",
+    "sent_at": "2026-06-23T09:05:11.869Z"
+  },
+  {
+    "email": "jsurek@valenciatechnologies.com",
+    "name": "Jim Surek",
+    "company": "Valencia Technologies",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "Valencia Technologies is now on NeuroTech.com",
+    "sent_at": "2026-06-23T09:15:04.904Z"
+  },
+  {
+    "email": "tyler@atombodies.com",
+    "name": "Tyler Hayes",
+    "company": "Atom",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "Atom is now in the NeuroTech.com directory",
+    "sent_at": "2026-06-23T09:15:08.096Z"
+  },
+  {
+    "email": "matthias@ceregate.com",
+    "name": "Matthias Puls",
+    "company": "CereGate",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "CereGate is now listed on NeuroTech.com",
+    "sent_at": "2026-06-23T09:23:05.913Z"
+  },
+  {
+    "email": "zoi@advantis.io",
+    "name": "Zoi Giavri",
+    "company": "Advantis Medical Imaging",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "Advantis Medical Imaging is now on NeuroTech.com",
+    "sent_at": "2026-06-23T09:23:19.905Z"
+  },
+  {
+    "email": "siggi@cumulusneuro.com",
+    "name": "Siggi Saevarsson",
+    "company": "Cumulus Neuroscience",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "Cumulus Neuroscience is now on NeuroTech.com",
+    "sent_at": "2026-06-23T09:23:33.368Z"
+  },
+  {
+    "email": "myria.crawford@zetoinc.com",
+    "name": "Myria Crawford",
+    "company": "Zeto / Rapid Full-Montage EEG",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "Your Zeto listing is live on NeuroTech.com",
+    "sent_at": "2026-06-23T09:23:46.860Z"
+  },
+  {
+    "email": "rodriguez.c@cognifit.com",
+    "name": "Carlos Rodriguez",
+    "company": "CogniFit",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "CogniFit is now on NeuroTech.com",
+    "sent_at": "2026-06-23T09:24:02.486Z"
+  },
+  {
+    "email": "ashley@nmaiom.com",
+    "name": "Ashley McManus",
+    "company": "NMA (Neuromonitoring Associates)",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "Your NMA listing is live on NeuroTech.com",
+    "sent_at": "2026-06-23T09:24:13.388Z"
+  },
+  {
+    "email": "alain@wisear.io",
+    "name": "Alain Sirois",
+    "company": "Wisear",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "Wisear is now listed on NeuroTech.com",
+    "sent_at": "2026-06-23T09:24:27.013Z"
+  },
+  {
+    "email": "brad.siff@biowave.com",
+    "name": "Brad Siff",
+    "company": "BioWave Corporation",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "BioWave is now on NeuroTech.com",
+    "sent_at": "2026-06-23T09:24:39.598Z"
+  },
+  {
+    "email": "avinoam@neurobrave.com",
+    "name": "Avinoam Brog",
+    "company": "NeuroBrave",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "NeuroBrave is now on NeuroTech.com",
+    "sent_at": "2026-06-23T09:24:51.879Z"
+  },
+  {
+    "email": "plgambus@predictheon.com",
+    "name": "Pedro Gambus",
+    "company": "Predictheon",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "Predictheon is now listed on NeuroTech.com",
+    "sent_at": "2026-06-23T09:25:09.021Z"
+  },
+  {
+    "email": "dean.radin@cognigenics.io",
+    "name": "Dean Radin",
+    "company": "Cognigenics",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "Cognigenics is now on NeuroTech.com",
+    "sent_at": "2026-06-23T09:25:19.864Z"
+  },
+  {
+    "email": "sam.weinstein@specialtycare.net",
+    "name": "Sam Weinstein",
+    "company": "SpecialtyCare",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "SpecialtyCare is now on NeuroTech.com",
+    "sent_at": "2026-06-23T09:25:39.802Z"
+  },
+  {
+    "email": "ivan@mbraintrain.com",
+    "name": "Ivan Gligorijevic",
+    "company": "mbt I mBrainTrain",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "mBrainTrain is now live on NeuroTech.com",
+    "sent_at": "2026-06-23T09:25:51.999Z"
+  },
+  {
+    "email": "sward@draigtherapeutics.com",
+    "name": "Simon Ward",
+    "company": "Draig Therapeutics",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "Draig Therapeutics is now on NeuroTech.com",
+    "sent_at": "2026-06-23T09:26:07.998Z"
+  },
+  {
+    "email": "alejandro.covalin@sparkbiomedical.com",
+    "name": "Alejandro Covalin",
+    "company": "Spark Biomedical Inc",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "Spark Biomedical is now on NeuroTech.com",
+    "sent_at": "2026-06-23T09:26:30.044Z"
+  },
+  {
+    "email": "chris@b-alert.com",
+    "name": "Chris Berka",
+    "company": "Advanced Brain Monitoring",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "Advanced Brain Monitoring is now on NeuroTech.com",
+    "sent_at": "2026-06-23T09:26:43.048Z"
+  },
+  {
+    "email": "ben@coherenceneuro.com",
+    "name": "Ben Woodington",
+    "company": "Coherence Neuro",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "Coherence Neuro is now on NeuroTech.com",
+    "sent_at": "2026-06-23T09:26:57.410Z"
+  },
+  {
+    "email": "mathieu.letombe@naox-technologies.com",
+    "name": "Mathieu Letombe",
+    "company": "NAOX Technologies",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "NAOX Technologies is now on NeuroTech.com",
+    "sent_at": "2026-06-23T09:27:13.925Z"
+  },
+  {
+    "email": "sregan@rhythmlink.com",
+    "name": "Shawn Regan",
+    "company": "Rhythmlink International, LLC",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "Your Rhythmlink listing is live on NeuroTech.com",
+    "sent_at": "2026-06-23T09:27:30.797Z"
+  },
+  {
+    "email": "erin@jyzen.com",
+    "name": "Erin Shea",
+    "company": "Jyzen",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "Jyzen is now on NeuroTech.com",
+    "sent_at": "2026-06-23T09:27:49.954Z"
+  },
+  {
+    "email": "charlie@kiin.tech",
+    "name": "Charlie Pearmund",
+    "company": "Kiin -  Learning by feeling",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "Kiin is now on NeuroTech.com",
+    "sent_at": "2026-06-23T09:32:24.647Z"
+  },
+  {
+    "email": "jukka.kortelainen@cerenion.com",
+    "name": "Jukka Kortelainen",
+    "company": "Cerenion Oy",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "Cerenion is now on NeuroTech.com",
+    "sent_at": "2026-06-23T09:32:41.612Z"
+  },
+  {
+    "email": "kees.been@kynexistx.com",
+    "name": "Kees Been",
+    "company": "Kynexis",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "Kynexis is now on NeuroTech.com",
+    "sent_at": "2026-06-23T09:32:57.429Z"
+  },
+  {
+    "email": "hans.declercq@byteflies.com",
+    "name": "Hans Clercq",
+    "company": "Byteflies",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "Byteflies is now on NeuroTech.com",
+    "sent_at": "2026-06-23T09:33:11.685Z"
+  },
+  {
+    "email": "roshan.rajappa@elemindtech.com",
+    "name": "Roshan Rajappa",
+    "company": "Elemind Technologies, Inc.",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "Elemind is now on NeuroTech.com",
+    "sent_at": "2026-06-23T09:33:28.263Z"
+  },
+  {
+    "email": "mshay@presidiomedical.com",
+    "name": "Maureen Shay",
+    "company": "Presidio Medical, Inc.",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "Presidio Medical is now on NeuroTech.com",
+    "sent_at": "2026-06-23T09:33:45.934Z"
+  },
+  {
+    "email": "ariel@mastil.com",
+    "name": "Ariel Poler",
+    "company": "Reveri",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "Reveri is now on NeuroTech.com",
+    "sent_at": "2026-06-23T09:33:58.229Z"
+  },
+  {
+    "email": "vered@corractions.com",
+    "name": "Vered Levy-Ron",
+    "company": "CorrActions",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "CorrActions is now on NeuroTech.com",
+    "sent_at": "2026-06-23T09:34:15.089Z"
+  },
+  {
+    "email": "francesco.petrini@sensars.com",
+    "name": "Francesco Petrini",
+    "company": "Sensars",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "Sensars is now on NeuroTech.com",
+    "sent_at": "2026-06-23T09:34:31.101Z"
+  },
+  {
+    "email": "per.lundin@evoxtherapeutics.com",
+    "name": "Per Lundin",
+    "company": "Evox Therapeutics Ltd",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "Evox now listed on NeuroTech.com — and a thought on reaching your audience",
+    "sent_at": "2026-06-23T09:34:41.452Z"
+  },
+  {
+    "email": "jb@nextsense.io",
+    "name": "Jonathan Berent",
+    "company": "NextSense, Inc",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "NextSense is now on NeuroTech.com",
+    "sent_at": "2026-06-23T09:34:51.807Z"
+  },
+  {
+    "email": "hon@corticallabs.com",
+    "name": "Hon Chong",
+    "company": "Cortical Labs",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "Cortical Labs is now on NeuroTech.com",
+    "sent_at": "2026-06-23T09:35:13.369Z"
+  },
+  {
+    "email": "linh@sharpersense.com",
+    "name": "Linh Le",
+    "company": "Sharper Sense",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "Sharper Sense is now on NeuroTech.com",
+    "sent_at": "2026-06-23T09:35:26.056Z"
+  },
+  {
+    "email": "dr.slater@stratusneuro.com",
+    "name": "Jeremy Slater",
+    "company": "Stratus",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "Stratus is now on NeuroTech.com",
+    "sent_at": "2026-06-23T09:35:36.015Z"
+  },
+  {
+    "email": "savas@smartlens.health",
+    "name": "Savas Komban",
+    "company": "Smartlens, Inc",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "Smartlens is now on NeuroTech.com",
+    "sent_at": "2026-06-23T09:35:51.551Z"
+  },
+  {
+    "email": "ashah@setpointmedical.com",
+    "name": "Ankit Shah",
+    "company": "SetPoint Medical",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "SetPoint Medical is now on NeuroTech.com",
+    "sent_at": "2026-06-23T09:36:01.929Z"
+  },
+  {
+    "email": "jacob@afference.io",
+    "name": "Jacob Segil",
+    "company": "Afference, Inc.",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "Afference is now on NeuroTech.com",
+    "sent_at": "2026-06-23T09:36:20.636Z"
+  },
+  {
+    "email": "chowell@cognitotx.com",
+    "name": "Christian Howell",
+    "company": "Cognito Therapeutics, Inc.",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "Cognito Therapeutics is now on NeuroTech.com",
+    "sent_at": "2026-06-23T09:36:32.485Z"
+  },
+  {
+    "email": "mark@faucet.works",
+    "name": "Mark Borsody",
+    "company": "NeuroSpring",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "NeuroSpring is now on NeuroTech.com",
+    "sent_at": "2026-06-23T09:36:42.533Z"
+  },
+  {
+    "email": "hamzah.selim@letsmindstep.com",
+    "name": "Hamzah Selim",
+    "company": "Mindstep",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "Mindstep is now on NeuroTech.com",
+    "sent_at": "2026-06-23T09:36:55.675Z"
+  },
+  {
+    "email": "spencer@sparkneuro.com",
+    "name": "Spencer Gerrol",
+    "company": "SPARK Neuro",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "SPARK Neuro is now on NeuroTech.com",
+    "sent_at": "2026-06-23T10:22:02.856Z"
+  },
+  {
+    "email": "gagegreg@backyardbrains.com",
+    "name": "Greg Gage",
+    "company": "Backyard Brains",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "We just listed Backyard Brains in our directory",
+    "sent_at": "2026-06-23T10:22:17.342Z"
+  },
+  {
+    "email": "david@mjn.cat",
+    "name": "David Blanquez Caurel",
+    "company": "mjn-neuro",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "mjn-neuro is now on NeuroTech.com",
+    "sent_at": "2026-06-23T10:22:27.783Z"
+  },
+  {
+    "email": "dr.bhargava@getinnergize.com",
+    "name": "Siddhant Bhargava",
+    "company": "DUSQ",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "DUSQ is now on NeuroTech.com",
+    "sent_at": "2026-06-23T10:22:41.728Z"
+  },
+  {
+    "email": "wkaptein@evasc.com",
+    "name": "Wieger Kaptein",
+    "company": "Evasc Neurovascular",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "Evasc is now on NeuroTech.com — thought you'd want to know",
+    "sent_at": "2026-06-23T10:22:52.843Z"
+  },
+  {
+    "email": "lauri@soihtudtx.com",
+    "name": "Lauri Lukka",
+    "company": "Soihtu DTx",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "Soihtu DTx is now on NeuroTech.com",
+    "sent_at": "2026-06-23T10:24:29.005Z"
+  },
+  {
+    "email": "baltazar.gomez-mancilla@stalicla.com",
+    "name": "Baltazar Gomez-Mancilla",
+    "company": "STALICLA",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "STALICLA is now on NeuroTech.com",
+    "sent_at": "2026-06-23T10:24:40.426Z"
+  },
+  {
+    "email": "kim.martinez@oscillobiosciences.com",
+    "name": "Kim Martinez",
+    "company": "Oscillo Biosciences",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "Oscillo is now on NeuroTech.com",
+    "sent_at": "2026-06-23T10:25:45.565Z"
+  },
+  {
+    "email": "vineet@sevaro.com",
+    "name": "Vineet Agrawal",
+    "company": "Sevaro",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "Sevaro is now on NeuroTech.com",
+    "sent_at": "2026-06-23T10:25:58.642Z"
+  },
+  {
+    "email": "nathan@neurosteer.com",
+    "name": "Nathan Intrator",
+    "company": "Neurosteer",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "Neurosteer is now listed on NeuroTech.com",
+    "sent_at": "2026-06-23T10:26:09.253Z"
+  },
+  {
+    "email": "crandby@synchron.com",
+    "name": "Chris Randby",
+    "company": "Synchron",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "Synchron is now on NeuroTech.com",
+    "sent_at": "2026-06-23T10:26:22.699Z"
+  },
+  {
+    "email": "colin.bartel@eodyne.com",
+    "name": "Colin Bartel",
+    "company": "Eodyne Systems S.L.",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "Eodyne Systems is now on NeuroTech.com",
+    "sent_at": "2026-06-23T10:26:41.158Z"
+  },
+  {
+    "email": "hamish@flowneuroscience.com",
+    "name": "Hamish Elley-Brown",
+    "company": "Flow Neuroscience",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "Flow Neuroscience is now on NeuroTech.com",
+    "sent_at": "2026-06-23T10:26:53.593Z"
+  },
+  {
+    "email": "laina.emmanuel@brainsightai.com",
+    "name": "Laina Emmanuel",
+    "company": "BrainSightAI",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "BrainSightAI is now on NeuroTech.com",
+    "sent_at": "2026-06-23T10:27:10.845Z"
+  },
+  {
+    "email": "aliciamp@tibtimeisbrain.com",
+    "name": "Alicia Martinez Pineiro",
+    "company": "Time is Brain",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "Your Time is Brain listing is live on NeuroTech.com",
+    "sent_at": "2026-06-23T10:27:40.115Z"
+  },
+  {
+    "email": "twest@nalumed.com",
+    "name": "Thomas West",
+    "company": "Nalu Medical, Inc.",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "Nalu Medical is now on NeuroTech.com",
+    "sent_at": "2026-06-23T10:27:51.274Z"
+  },
+  {
+    "email": "f.constantino@theranica.com",
+    "name": "Frank Constantino",
+    "company": "Theranica",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "Theranica is now on NeuroTech.com",
+    "sent_at": "2026-06-23T10:28:06.368Z"
+  },
+  {
+    "email": "qfrerichs@wustl.edu",
+    "name": "Quintin Frerichs",
+    "company": "Nudge",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "Nudge is now listed on NeuroTech.com",
+    "sent_at": "2026-06-23T10:28:17.788Z"
+  },
+  {
+    "email": "steen@emteqlabs.com",
+    "name": "Steen Strand",
+    "company": "emteq labs",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "emteq labs is now on NeuroTech.com",
+    "sent_at": "2026-06-23T10:28:31.748Z"
+  },
+  {
+    "email": "chuck@neuroem.com",
+    "name": "Chuck Papageorgiou",
+    "company": "NeuroEM",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "NeuroEM is now live on NeuroTech.com",
+    "sent_at": "2026-06-23T10:28:42.080Z"
+  },
+  {
+    "email": "k.krasnogir@cleverpoint.pro",
+    "name": "Kirill Krasnogir",
+    "company": "CleverPoint Neuro",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "CleverPoint Neuro is now live on NeuroTech.com",
+    "sent_at": "2026-06-23T10:28:51.960Z"
+  },
+  {
+    "email": "mark.edwards@viewmind.com",
+    "name": "Mark Edwards",
+    "company": "ViewMind Inc.",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "ViewMind is now listed on NeuroTech.com",
+    "sent_at": "2026-06-23T10:29:07.735Z"
+  },
+  {
+    "email": "cristhian@neurogram.com",
+    "name": "Cristhian Carniel",
+    "company": "Neurogram™",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "Neurogram™ is now listed on NeuroTech.com",
+    "sent_at": "2026-06-23T10:29:22.061Z"
+  },
+  {
+    "email": "msampson@nanodiagnostics.com",
+    "name": "Mike Sampson",
+    "company": "NanoDx, Inc.",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "NanoDx is now on NeuroTech.com — and we're curious about your needs",
+    "sent_at": "2026-06-23T10:29:32.861Z"
+  },
+  {
+    "email": "summer@interaxon.ca",
+    "name": "Summer Martin",
+    "company": "Muse® by Interaxon Inc.",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "Muse is now live on NeuroTech.com's directory",
+    "sent_at": "2026-06-23T10:29:48.199Z"
+  },
+  {
+    "email": "rp@empatica.com",
+    "name": "Rosalind Picard",
+    "company": "Empatica",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "Empatica is now on NeuroTech.com",
+    "sent_at": "2026-06-23T10:30:01.361Z"
+  },
+  {
+    "email": "lray@linus.health",
+    "name": "Leah Ray",
+    "company": "Linus Health",
+    "campaign": "NeuroTech.com — Sponsored Content Outreach June 2026",
+    "client": "NeuroTech.com",
+    "subject": "Linus Health is now on NeuroTech.com",
+    "sent_at": "2026-06-23T10:30:14.082Z"
   }
 ]

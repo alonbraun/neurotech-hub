@@ -1,0 +1,1222 @@
+[
+  {
+    "email": "james.bertioli@vccp.com",
+    "company": "VCCP",
+    "rejected_at": "2026-06-22T13:26:59.756Z"
+  },
+  {
+    "email": "dlevin@google.com",
+    "company": "Google DeepMind",
+    "rejected_at": "2026-06-22T13:28:14.087Z"
+  },
+  {
+    "email": "lori.knowles@memorialhermann.org",
+    "company": "Memorial Hermann Health System",
+    "rejected_at": "2026-06-22T13:28:49.249Z"
+  },
+  {
+    "email": "edwin.hauw@elembio.com",
+    "company": "Element Biosciences",
+    "rejected_at": "2026-06-22T13:44:46.305Z"
+  },
+  {
+    "email": "jpbradette@apprentx.rocks",
+    "company": "Apprentx by Edgenda",
+    "rejected_at": "2026-06-22T13:47:57.374Z"
+  },
+  {
+    "email": "gail.seymour@averitaspharma.com",
+    "company": "Averitas Pharma",
+    "rejected_at": "2026-06-22T13:56:57.240Z"
+  },
+  {
+    "email": "chris.hollander@corticacare.com",
+    "company": "Cortica",
+    "rejected_at": "2026-06-22T13:58:43.628Z"
+  },
+  {
+    "email": "reenie.mccarthy@stealthpeptides.com",
+    "company": "Stealth BioTherapeutics",
+    "rejected_at": "2026-06-22T13:59:43.599Z"
+  },
+  {
+    "email": "nicol@seedtag.com",
+    "company": "Seedtag",
+    "rejected_at": "2026-06-22T14:09:08.560Z"
+  },
+  {
+    "email": "sara.davis@worldwide.com",
+    "company": "Worldwide Clinical Trials",
+    "rejected_at": "2026-06-22T14:10:55.495Z"
+  },
+  {
+    "email": "maruf.rahman@rwjbh.org",
+    "company": "RWJBarnabas Health",
+    "rejected_at": "2026-06-22T14:12:22.348Z"
+  },
+  {
+    "email": "bernard@vimatx.com",
+    "company": "Vima Therapeutics",
+    "rejected_at": "2026-06-22T14:13:21.156Z"
+  },
+  {
+    "email": "sagi@speedsize.com",
+    "company": "SpeedSize",
+    "rejected_at": "2026-06-22T14:13:45.177Z"
+  },
+  {
+    "email": "patrik.darsund@tfscro.com",
+    "company": "TFS HealthScience",
+    "rejected_at": "2026-06-22T14:16:44.986Z"
+  },
+  {
+    "email": "reina.benabou@rest-therapeutics.com",
+    "company": "ReST THERAPEUTICS",
+    "rejected_at": "2026-06-22T14:21:55.514Z"
+  },
+  {
+    "email": "jeff.coulter@parkview.com",
+    "company": "Parkview Health",
+    "rejected_at": "2026-06-22T14:27:34.286Z"
+  },
+  {
+    "email": "francois@poppins.io",
+    "company": "Poppins",
+    "rejected_at": "2026-06-22T14:31:44.567Z"
+  },
+  {
+    "email": "massey@delmic.com",
+    "company": "Delmic",
+    "rejected_at": "2026-06-22T14:32:16.581Z"
+  },
+  {
+    "email": "amaury@absmartmaterials.com",
+    "company": "Creative Destruction Lab",
+    "rejected_at": "2026-06-22T14:32:45.016Z"
+  },
+  {
+    "email": "cara.vaccarino@theroyal.ca",
+    "company": "The Royal",
+    "rejected_at": "2026-06-22T14:33:14.425Z"
+  },
+  {
+    "email": "bezich-louis@cooperhealth.edu",
+    "company": "Cooper University Health Care",
+    "rejected_at": "2026-06-22T14:37:38.505Z"
+  },
+  {
+    "email": "jerome.hubbard@sutterhealth.org",
+    "company": "Sutter Health",
+    "rejected_at": "2026-06-22T14:38:07.332Z"
+  },
+  {
+    "email": "robert.nordgren@sutterhealth.org",
+    "company": "Sutter Health",
+    "rejected_at": "2026-06-22T14:38:15.322Z"
+  },
+  {
+    "email": "joyce.peralta2@mcgill.ca",
+    "company": "McGill University",
+    "rejected_at": "2026-06-22T14:39:06.376Z"
+  },
+  {
+    "email": "josepha@intervivo.com",
+    "company": "Transpharmation Ltd.",
+    "rejected_at": "2026-06-22T14:41:09.000Z"
+  },
+  {
+    "email": "hannah.beaver@bigthink.com",
+    "company": "Big Think",
+    "rejected_at": "2026-06-22T14:42:01.586Z"
+  },
+  {
+    "email": "brett.edgar@vccp.com",
+    "company": "VCCP",
+    "rejected_at": "2026-06-22T14:50:56.938Z"
+  },
+  {
+    "email": "gmeyerson@locustwalk.com",
+    "company": "Locust Walk",
+    "rejected_at": "2026-06-22T14:52:05.443Z"
+  },
+  {
+    "email": "priya@century.tech",
+    "company": "CENTURY Tech",
+    "rejected_at": "2026-06-22T14:52:32.081Z"
+  },
+  {
+    "email": "amir@my-cardiacare.com",
+    "company": "StimCardio Medical",
+    "rejected_at": "2026-06-22T14:52:42.641Z"
+  },
+  {
+    "email": "veronique@precisionlife.com",
+    "company": "PrecisionLife",
+    "rejected_at": "2026-06-22T14:55:38.765Z"
+  },
+  {
+    "email": "mikeatuw@uw.edu",
+    "company": "University of Washington",
+    "rejected_at": "2026-06-22T14:55:50.213Z"
+  },
+  {
+    "email": "david.callender@memorialhermann.org",
+    "company": "Memorial Hermann Health System",
+    "rejected_at": "2026-06-22T14:56:07.896Z"
+  },
+  {
+    "email": "jorge@seedtag.com",
+    "company": "Seedtag",
+    "rejected_at": "2026-06-22T14:56:18.256Z"
+  },
+  {
+    "email": "mreinke@mcw.edu",
+    "company": "Medical College of Wisconsin",
+    "rejected_at": "2026-06-22T14:56:31.243Z"
+  },
+  {
+    "email": "emily@getmarlee.com",
+    "company": "Marlee",
+    "rejected_at": "2026-06-22T14:57:23.877Z"
+  },
+  {
+    "email": "sabennett@themedicalcity.com",
+    "company": "The Medical City",
+    "rejected_at": "2026-06-22T14:57:45.453Z"
+  },
+  {
+    "email": "bravosp@sutterhealth.org",
+    "company": "Sutter Health",
+    "rejected_at": "2026-06-22T14:58:01.266Z"
+  },
+  {
+    "email": "ajay@mindvalley.com",
+    "company": "Mindvalley",
+    "rejected_at": "2026-06-22T14:58:04.225Z"
+  },
+  {
+    "email": "venus.ranieri@su.org",
+    "company": "Singularity University",
+    "rejected_at": "2026-06-22T15:00:24.197Z"
+  },
+  {
+    "email": "vdaggett@altpep.com",
+    "company": "AltPep",
+    "rejected_at": "2026-06-22T15:01:17.634Z"
+  },
+  {
+    "email": "nik@basedhardware.com",
+    "company": "Omi",
+    "rejected_at": "2026-06-22T15:01:42.594Z"
+  },
+  {
+    "email": "lon.cardon@jax.org",
+    "company": "The Jackson Laboratory",
+    "rejected_at": "2026-06-22T15:02:05.554Z"
+  },
+  {
+    "email": "romain.laporte@nuchemsciences.com",
+    "company": "Sygnature Discovery North America",
+    "rejected_at": "2026-06-22T15:02:50.329Z"
+  },
+  {
+    "email": "bill@octaneoc.org",
+    "company": "Octane OC",
+    "rejected_at": "2026-06-22T15:03:15.179Z"
+  },
+  {
+    "email": "sudip@dreamtimelearning.com",
+    "company": "Dreamtime Learning",
+    "rejected_at": "2026-06-22T15:06:00.891Z"
+  },
+  {
+    "email": "ramya.rednam@mindvalley.com",
+    "company": "Mindvalley",
+    "rejected_at": "2026-06-22T15:06:05.231Z"
+  },
+  {
+    "email": "jkelley@cerescan.com",
+    "company": "CereHealth Corp.",
+    "rejected_at": "2026-06-22T15:09:14.508Z"
+  },
+  {
+    "email": "gilles.rubinstenn@rest-therapeutics.com",
+    "company": "ReST THERAPEUTICS",
+    "rejected_at": "2026-06-22T15:09:36.911Z"
+  },
+  {
+    "email": "todd@stellaromics.com",
+    "company": "Stellaromics Inc.",
+    "rejected_at": "2026-06-22T15:14:51.947Z"
+  },
+  {
+    "email": "heidi@awarehealth.io",
+    "company": "Aware Health",
+    "rejected_at": "2026-06-22T15:15:49.978Z"
+  },
+  {
+    "email": "rajvee.vora@nyulangone.org",
+    "company": "NYU Langone Health",
+    "rejected_at": "2026-06-22T15:17:33.916Z"
+  },
+  {
+    "email": "ncook@monell.org",
+    "company": "Monell Chemical Senses Center",
+    "rejected_at": "2026-06-22T15:18:15.398Z"
+  },
+  {
+    "email": "julia.bradsher@hmri.org",
+    "company": "HMRI - Huntington Medical Research Institutes",
+    "rejected_at": "2026-06-22T15:19:19.813Z"
+  },
+  {
+    "email": "kayci.prince@bswhealth.org",
+    "company": "Baylor Scott & White Health",
+    "rejected_at": "2026-06-22T15:19:39.347Z"
+  },
+  {
+    "email": "lukas.toth@behaviolabs.com",
+    "company": "Behavio",
+    "rejected_at": "2026-06-22T15:21:39.265Z"
+  },
+  {
+    "email": "benjamin.busse@babilou-family.sg",
+    "company": "Babilou Family Singapore",
+    "rejected_at": "2026-06-22T15:22:04.811Z"
+  },
+  {
+    "email": "dennis.wilson@rwjbh.org",
+    "company": "RWJBarnabas Health",
+    "rejected_at": "2026-06-23T08:03:05.334Z"
+  },
+  {
+    "email": "heather.jones@bswhealth.org",
+    "company": "Baylor Scott & White Health",
+    "rejected_at": "2026-06-23T08:03:17.028Z"
+  },
+  {
+    "email": "deolivj@ah.org",
+    "company": "Adventist Health",
+    "rejected_at": "2026-06-23T08:03:25.125Z"
+  },
+  {
+    "email": "andrei.sapera@spaceapplications.com",
+    "company": "Space Applications Services NV/SA",
+    "rejected_at": "2026-06-23T08:04:26.707Z"
+  },
+  {
+    "email": "joel@heights.com",
+    "company": "Heights",
+    "rejected_at": "2026-06-23T08:05:14.166Z"
+  },
+  {
+    "email": "rich.rogers@prismahealth.org",
+    "company": "Prisma Health",
+    "rejected_at": "2026-06-23T08:05:43.914Z"
+  },
+  {
+    "email": "matthew@seneca.io",
+    "company": "Seneca Learning",
+    "rejected_at": "2026-06-23T08:10:28.418Z"
+  },
+  {
+    "email": "mjarrard@biocircuit.com",
+    "company": "BioCircuit Technologies",
+    "rejected_at": "2026-06-23T08:10:47.389Z"
+  },
+  {
+    "email": "pcowan@innovatebc.ca",
+    "company": "Innovate BC",
+    "rejected_at": "2026-06-23T08:11:39.675Z"
+  },
+  {
+    "email": "e.tam@neurotechusa.com",
+    "company": "Neurotech Pharmaceuticals, Inc.",
+    "rejected_at": "2026-06-23T08:14:03.956Z"
+  },
+  {
+    "email": "sbratcher@sbch.org",
+    "company": "Cottage Health",
+    "rejected_at": "2026-06-23T08:14:13.562Z"
+  },
+  {
+    "email": "jori@headversity.com",
+    "company": "Headversity",
+    "rejected_at": "2026-06-23T08:14:30.242Z"
+  },
+  {
+    "email": "jdhoward@caltech.edu",
+    "company": "Caltech",
+    "rejected_at": "2026-06-23T08:14:51.584Z"
+  },
+  {
+    "email": "robby.andrews@google.com",
+    "company": "Google DeepMind",
+    "rejected_at": "2026-06-23T08:14:57.518Z"
+  },
+  {
+    "email": "meyersjm01@ah.org",
+    "company": "Adventist Health",
+    "rejected_at": "2026-06-23T08:15:02.026Z"
+  },
+  {
+    "email": "sofia@miltoneducation.com",
+    "company": "Milton Education",
+    "rejected_at": "2026-06-23T08:15:09.364Z"
+  },
+  {
+    "email": "paul@getimmersion.com",
+    "company": "Immersion: The Value Measurement Company",
+    "rejected_at": "2026-06-23T08:15:22.510Z"
+  },
+  {
+    "email": "oleh@north-ai.com",
+    "company": "North AI",
+    "rejected_at": "2026-06-23T08:15:33.688Z"
+  },
+  {
+    "email": "sbrown@angeiongroup.com",
+    "company": "Angeion Group",
+    "rejected_at": "2026-06-23T08:17:01.626Z"
+  },
+  {
+    "email": "shannon@adtonos.com",
+    "company": "AdTonos",
+    "rejected_at": "2026-06-23T08:17:26.460Z"
+  },
+  {
+    "email": "jhughes@scoutliterarymedia.com",
+    "company": "Brown University Health",
+    "rejected_at": "2026-06-23T08:17:46.436Z"
+  },
+  {
+    "email": "kcohen@montaratx.com",
+    "company": "Montara Therapeutics, Inc.",
+    "rejected_at": "2026-06-23T08:18:07.527Z"
+  },
+  {
+    "email": "kmobini@neurelis.com",
+    "company": "Neurelis, Inc.",
+    "rejected_at": "2026-06-23T08:18:27.343Z"
+  },
+  {
+    "email": "oguz.acar@kcl.ac.uk",
+    "company": "King's College London",
+    "rejected_at": "2026-06-23T08:18:33.350Z"
+  },
+  {
+    "email": "myriamkhan@google.com",
+    "company": "Google DeepMind",
+    "rejected_at": "2026-06-23T08:18:38.852Z"
+  },
+  {
+    "email": "ngomez@bethanychildrens.org",
+    "company": "Bethany Children's Health Center",
+    "rejected_at": "2026-06-23T08:20:55.377Z"
+  },
+  {
+    "email": "jill.crimm@bswhealth.org",
+    "company": "Baylor Scott & White Health",
+    "rejected_at": "2026-06-23T08:21:07.044Z"
+  },
+  {
+    "email": "matteo@vinhood.com",
+    "company": "VINHOOD",
+    "rejected_at": "2026-06-23T08:21:20.325Z"
+  },
+  {
+    "email": "bcathcart@aimmedrobotics.com",
+    "company": "AiM Medical Robotics",
+    "rejected_at": "2026-06-23T08:21:34.880Z"
+  },
+  {
+    "email": "sharyl.smith@prismahealth.org",
+    "company": "Prisma Health",
+    "rejected_at": "2026-06-23T08:21:47.031Z"
+  },
+  {
+    "email": "amy.linsin@prismahealth.org",
+    "company": "Prisma Health",
+    "rejected_at": "2026-06-23T08:23:07.632Z"
+  },
+  {
+    "email": "zene.colt@uphs.upenn.edu",
+    "company": "Penn Medicine, University of Pennsylvania Health System",
+    "rejected_at": "2026-06-23T08:24:36.944Z"
+  },
+  {
+    "email": "michelle@getmarlee.com",
+    "company": "Marlee",
+    "rejected_at": "2026-06-23T08:24:51.127Z"
+  },
+  {
+    "email": "becky@override.health",
+    "company": "Override",
+    "rejected_at": "2026-06-23T08:25:12.643Z"
+  },
+  {
+    "email": "kirti.kalra@deallus.com",
+    "company": "Deallus",
+    "rejected_at": "2026-06-23T08:25:21.034Z"
+  },
+  {
+    "email": "graeme.collie@kcl.ac.uk",
+    "company": "King's College London",
+    "rejected_at": "2026-06-23T08:25:26.143Z"
+  },
+  {
+    "email": "kerleyl@google.com",
+    "company": "Google DeepMind",
+    "rejected_at": "2026-06-23T08:25:30.050Z"
+  },
+  {
+    "email": "kieron.hall@sygnaturediscovery.com",
+    "company": "Sygnature Discovery",
+    "rejected_at": "2026-06-23T08:25:45.481Z"
+  },
+  {
+    "email": "rob.lee@sunnybrook.ca",
+    "company": "Sunnybrook",
+    "rejected_at": "2026-06-23T08:26:04.192Z"
+  },
+  {
+    "email": "jessica.lee-hansen@parkview.com",
+    "company": "Parkview Health",
+    "rejected_at": "2026-06-23T08:26:11.234Z"
+  },
+  {
+    "email": "mazzarelli-anthony@cooperhealth.edu",
+    "company": "Cooper University Health Care",
+    "rejected_at": "2026-06-23T08:26:20.391Z"
+  },
+  {
+    "email": "catherine.lunardi@genaiz.com",
+    "company": "GENAIZ",
+    "rejected_at": "2026-06-23T08:26:36.976Z"
+  },
+  {
+    "email": "alex@osmo.ai",
+    "company": "Osmo",
+    "rejected_at": "2026-06-23T08:27:02.777Z"
+  },
+  {
+    "email": "clementine.decoopman@creativedestructionlab.com",
+    "company": "Creative Destruction Lab",
+    "rejected_at": "2026-06-23T08:27:40.092Z"
+  },
+  {
+    "email": "jamiem@adeption.io",
+    "company": "Adeption",
+    "rejected_at": "2026-06-23T08:27:49.367Z"
+  },
+  {
+    "email": "scortereal@technophage.pt",
+    "company": "Technophage, SA",
+    "rejected_at": "2026-06-23T08:28:05.468Z"
+  },
+  {
+    "email": "cbelmont@mhg.com",
+    "company": "Tallahassee Memorial HealthCare",
+    "rejected_at": "2026-06-23T08:29:05.413Z"
+  },
+  {
+    "email": "brad@cerevance.com",
+    "company": "Cerevance",
+    "rejected_at": "2026-06-23T08:29:19.546Z"
+  },
+  {
+    "email": "luke.mcmurray@ah.org",
+    "company": "Adventist Health",
+    "rejected_at": "2026-06-23T08:30:46.562Z"
+  },
+  {
+    "email": "bryan@novusbio.com",
+    "company": "Novus Biologicals, a Bio-Techne brand",
+    "rejected_at": "2026-06-23T08:31:35.386Z"
+  },
+  {
+    "email": "abbey.crawford@bit.bio",
+    "company": "bit.bio",
+    "rejected_at": "2026-06-23T08:31:48.809Z"
+  },
+  {
+    "email": "gmcghee@uw.edu",
+    "company": "University of Washington",
+    "rejected_at": "2026-06-23T08:31:54.814Z"
+  },
+  {
+    "email": "genesispirolo@parker.edu",
+    "company": "Parker University",
+    "rejected_at": "2026-06-23T08:32:02.349Z"
+  },
+  {
+    "email": "roberto.iannone@zoundream.com",
+    "company": "Zoundream",
+    "rejected_at": "2026-06-23T08:32:21.594Z"
+  },
+  {
+    "email": "matt.jackson@unmind.com",
+    "company": "Unmind",
+    "rejected_at": "2026-06-23T08:32:29.154Z"
+  },
+  {
+    "email": "paul@molecule.to",
+    "company": "Molecule",
+    "rejected_at": "2026-06-23T08:32:41.042Z"
+  },
+  {
+    "email": "elizabeth.vilardo@sutterhealth.org",
+    "company": "Sutter Health",
+    "rejected_at": "2026-06-23T08:34:20.032Z"
+  },
+  {
+    "email": "karan.nathan@kcl.ac.uk",
+    "company": "King's College London",
+    "rejected_at": "2026-06-23T08:34:23.611Z"
+  },
+  {
+    "email": "marc.scarduffa@nyulangone.org",
+    "company": "NYU Langone Health",
+    "rejected_at": "2026-06-23T08:34:32.708Z"
+  },
+  {
+    "email": "yahin.medic@lovevery.com",
+    "company": "Lovevery",
+    "rejected_at": "2026-06-23T08:35:27.964Z"
+  },
+  {
+    "email": "david.newton@akriviahealth.com",
+    "company": "Akrivia Health",
+    "rejected_at": "2026-06-23T08:36:48.206Z"
+  },
+  {
+    "email": "jonathanw@insightec.com",
+    "company": "INSIGHTEC",
+    "rejected_at": "2026-06-23T08:37:06.579Z"
+  },
+  {
+    "email": "jer@grandir.com",
+    "company": "Grandir Group",
+    "rejected_at": "2026-06-23T08:38:52.945Z"
+  },
+  {
+    "email": "eflamm@angeiongroup.com",
+    "company": "Angeion Group",
+    "rejected_at": "2026-06-23T08:39:19.601Z"
+  },
+  {
+    "email": "pascal@avea-life.com",
+    "company": "AVEA",
+    "rejected_at": "2026-06-23T08:39:44.936Z"
+  },
+  {
+    "email": "julie.quenneville@uhn.ca",
+    "company": "UHN Foundation",
+    "rejected_at": "2026-06-23T08:39:56.420Z"
+  },
+  {
+    "email": "lars@pangeabio.com",
+    "company": "Pangea Bio",
+    "rejected_at": "2026-06-23T08:40:04.997Z"
+  },
+  {
+    "email": "meenakshi.medler@sutterhealth.org",
+    "company": "Sutter Health",
+    "rejected_at": "2026-06-23T08:40:10.401Z"
+  },
+  {
+    "email": "cmatthews@metabolon.com",
+    "company": "Metabolon, Inc.",
+    "rejected_at": "2026-06-23T08:40:22.076Z"
+  },
+  {
+    "email": "guillaume.audy@iberchem.com",
+    "company": "Iberchem",
+    "rejected_at": "2026-06-23T08:40:59.839Z"
+  },
+  {
+    "email": "joel.stanley@ajnabiosciences.com",
+    "company": "AJNA BioSciences",
+    "rejected_at": "2026-06-23T08:41:25.081Z"
+  },
+  {
+    "email": "murtaza.nisar@clario.com",
+    "company": "Clario",
+    "rejected_at": "2026-06-23T08:41:56.241Z"
+  },
+  {
+    "email": "dsommer@bcipkg.com",
+    "company": "Buckeye Corrugated, Inc. (BCI)",
+    "rejected_at": "2026-06-23T08:42:18.191Z"
+  },
+  {
+    "email": "jschultz@ecamedical.com",
+    "company": "ECA Medical",
+    "rejected_at": "2026-06-23T08:42:37.157Z"
+  },
+  {
+    "email": "mgilman@arrakistx.com",
+    "company": "Arrakis Therapeutics",
+    "rejected_at": "2026-06-23T08:43:23.940Z"
+  },
+  {
+    "email": "gabe@greenhousecoaching.co",
+    "company": "Greenhouse Coaching",
+    "rejected_at": "2026-06-23T08:43:30.608Z"
+  },
+  {
+    "email": "jfalinski@clinilabs.com",
+    "company": "Clinilabs",
+    "rejected_at": "2026-06-23T08:44:11.807Z"
+  },
+  {
+    "email": "krates@unlearn.ai",
+    "company": "Unlearn.AI",
+    "rejected_at": "2026-06-23T08:44:40.461Z"
+  },
+  {
+    "email": "julian.runge@northwestern.edu",
+    "company": "Northwestern University",
+    "rejected_at": "2026-06-23T08:45:15.545Z"
+  },
+  {
+    "email": "anillamba@seedtag.com",
+    "company": "Seedtag",
+    "rejected_at": "2026-06-23T08:45:20.838Z"
+  },
+  {
+    "email": "andrewicass@northwestern.edu",
+    "company": "Northwestern University",
+    "rejected_at": "2026-06-23T08:45:30.831Z"
+  },
+  {
+    "email": "dmcdevitt@aspenneuro.com",
+    "company": "Aspen Neuroscience, Inc.",
+    "rejected_at": "2026-06-23T08:46:11.688Z"
+  },
+  {
+    "email": "pat@thehappinessindex.com",
+    "company": "The Happiness Index",
+    "rejected_at": "2026-06-23T09:01:51.975Z"
+  },
+  {
+    "email": "jason@breatheforchange.com",
+    "company": "Breathe For Change",
+    "rejected_at": "2026-06-23T09:02:25.805Z"
+  },
+  {
+    "email": "reuvena@insightec.com",
+    "company": "INSIGHTEC",
+    "rejected_at": "2026-06-23T09:03:36.623Z"
+  },
+  {
+    "email": "scott.wester@cottagehealth.org",
+    "company": "Cottage Health",
+    "rejected_at": "2026-06-23T09:04:14.647Z"
+  },
+  {
+    "email": "shar.matin@cirtecmed.com",
+    "company": "Cirtec Medical",
+    "rejected_at": "2026-06-23T09:04:27.686Z"
+  },
+  {
+    "email": "mike@neuronsinc.com",
+    "company": "Neurons",
+    "rejected_at": "2026-06-23T09:11:00.789Z"
+  },
+  {
+    "email": "claus@nrgtherapeutics.com",
+    "company": "NRG Therapeutics",
+    "rejected_at": "2026-06-23T09:11:40.478Z"
+  },
+  {
+    "email": "stephan@allegro.bio",
+    "company": "Allegro Biotech",
+    "rejected_at": "2026-06-23T09:11:41.647Z"
+  },
+  {
+    "email": "kiranraj@vsplash.com",
+    "company": "vSplash",
+    "rejected_at": "2026-06-23T09:11:42.568Z"
+  },
+  {
+    "email": "tom@clerkenwellhealth.com",
+    "company": "Clerkenwell Health",
+    "rejected_at": "2026-06-23T09:11:44.006Z"
+  },
+  {
+    "email": "sarah@themindcompany.com",
+    "company": "The Mind Company",
+    "rejected_at": "2026-06-23T09:11:48.043Z"
+  },
+  {
+    "email": "megan.petrylak@clinicalink.com",
+    "company": "Clinical ink",
+    "rejected_at": "2026-06-23T09:12:26.031Z"
+  },
+  {
+    "email": "hriess@empathetics.com",
+    "company": "Empathetics",
+    "rejected_at": "2026-06-23T09:12:32.131Z"
+  },
+  {
+    "email": "lucas.schuetz@ariadne.ai",
+    "company": "ariadne.ai ag",
+    "rejected_at": "2026-06-23T09:15:41.511Z"
+  },
+  {
+    "email": "carolyn.cho@vyrao.com",
+    "company": "Vyrao",
+    "rejected_at": "2026-06-23T09:15:42.948Z"
+  },
+  {
+    "email": "ozelphati@ozbiosciences.com",
+    "company": "OZ Biosciences",
+    "rejected_at": "2026-06-23T09:15:44.236Z"
+  },
+  {
+    "email": "niels.fertig@nanion.de",
+    "company": "Nanion Technologies",
+    "rejected_at": "2026-06-23T09:15:57.997Z"
+  },
+  {
+    "email": "edgar@attn.com",
+    "company": "ATTN:",
+    "rejected_at": "2026-06-23T09:16:01.236Z"
+  },
+  {
+    "email": "jbradley@axionbio.com",
+    "company": "Axion BioSystems",
+    "rejected_at": "2026-06-23T09:16:03.996Z"
+  },
+  {
+    "email": "marcin.zaba@memrise.com",
+    "company": "Memrise",
+    "rejected_at": "2026-06-23T09:16:32.263Z"
+  },
+  {
+    "email": "vanessa@brainpower.ca",
+    "company": "Brain Power Enrichment Programs Ltd.",
+    "rejected_at": "2026-06-23T09:16:34.313Z"
+  },
+  {
+    "email": "habib.frost@neurescue.com",
+    "company": "Neurescue",
+    "rejected_at": "2026-06-23T09:23:24.329Z"
+  },
+  {
+    "email": "matthew.papuchis@inova.org",
+    "company": "Inova Health",
+    "rejected_at": "2026-06-23T09:23:37.445Z"
+  },
+  {
+    "email": "mark@qualialife.com",
+    "company": "Qualia Life Sciences",
+    "rejected_at": "2026-06-23T09:23:39.075Z"
+  },
+  {
+    "email": "n.miranchuk@soula.care",
+    "company": "Soula - Female first AI for emotional support",
+    "rejected_at": "2026-06-23T09:23:52.259Z"
+  },
+  {
+    "email": "tmagro@crisisprevention.com",
+    "company": "Crisis Prevention Institute",
+    "rejected_at": "2026-06-23T09:24:18.707Z"
+  },
+  {
+    "email": "vik.nagjee@inova.org",
+    "company": "Inova Health",
+    "rejected_at": "2026-06-23T09:24:44.681Z"
+  },
+  {
+    "email": "ryan@healthtechconnex.com",
+    "company": "HealthTech Connex Inc.",
+    "rejected_at": "2026-06-23T09:24:58.645Z"
+  },
+  {
+    "email": "dhawal@mavehealth.com",
+    "company": "Mave Health",
+    "rejected_at": "2026-06-23T09:25:00.347Z"
+  },
+  {
+    "email": "hskinner@crisisprevention.com",
+    "company": "Crisis Prevention Institute",
+    "rejected_at": "2026-06-23T09:25:01.404Z"
+  },
+  {
+    "email": "pooja@kingdomofchess.com",
+    "company": "Kingdom Of Chess",
+    "rejected_at": "2026-06-23T09:25:24.093Z"
+  },
+  {
+    "email": "zahir@uplearn.co.uk",
+    "company": "Up Learn",
+    "rejected_at": "2026-06-23T09:25:25.574Z"
+  },
+  {
+    "email": "sadel@marcyrlgp.com",
+    "company": "Marcyrl Pharmaceutical Industries",
+    "rejected_at": "2026-06-23T09:25:30.708Z"
+  },
+  {
+    "email": "marco.bagalini@angelinipharma.com",
+    "company": "Angelini Pharma",
+    "rejected_at": "2026-06-23T09:25:32.162Z"
+  },
+  {
+    "email": "david@branchingminds.com",
+    "company": "Branching Minds",
+    "rejected_at": "2026-06-23T09:25:44.312Z"
+  },
+  {
+    "email": "ami@rogalife.com",
+    "company": "Roga",
+    "rejected_at": "2026-06-23T09:26:12.758Z"
+  },
+  {
+    "email": "sly@fivelives.health",
+    "company": "Five Lives",
+    "rejected_at": "2026-06-23T09:26:14.265Z"
+  },
+  {
+    "email": "james.chen@bryanjohnson.com",
+    "company": "Blueprint",
+    "rejected_at": "2026-06-23T09:26:16.362Z"
+  },
+  {
+    "email": "rdeterman@tgen.org",
+    "company": "TGen - Part of City of Hope",
+    "rejected_at": "2026-06-23T09:26:34.752Z"
+  },
+  {
+    "email": "leon@xapa.com",
+    "company": "Xapa",
+    "rejected_at": "2026-06-23T09:26:47.593Z"
+  },
+  {
+    "email": "csilva@carterra-bio.com",
+    "company": "Carterra",
+    "rejected_at": "2026-06-23T09:27:01.950Z"
+  },
+  {
+    "email": "autukuri@vizetto.com",
+    "company": "Vizetto | Reactiv SUITE",
+    "rejected_at": "2026-06-23T09:27:06.129Z"
+  },
+  {
+    "email": "rubens@abracademy.com",
+    "company": "Abracademy",
+    "rejected_at": "2026-06-23T09:27:18.138Z"
+  },
+  {
+    "email": "aurelien.fauquex@lhs-sa.ch",
+    "company": "Lambda",
+    "rejected_at": "2026-06-23T09:27:19.544Z"
+  },
+  {
+    "email": "erald.hector@ucf.edu",
+    "company": "University of Central Florida",
+    "rejected_at": "2026-06-23T09:27:20.550Z"
+  },
+  {
+    "email": "reeva@walkingonearth.com",
+    "company": "WONE (Walking on Earth)",
+    "rejected_at": "2026-06-23T09:27:35.391Z"
+  },
+  {
+    "email": "mcoates@dimensionsretreats.com",
+    "company": "Dimensions",
+    "rejected_at": "2026-06-23T09:32:31.666Z"
+  },
+  {
+    "email": "lou.baverso@ahn.org",
+    "company": "Allegheny Health Network",
+    "rejected_at": "2026-06-23T09:32:33.098Z"
+  },
+  {
+    "email": "kit.tse@bedrocklearning.org",
+    "company": "Bedrock Learning",
+    "rejected_at": "2026-06-23T09:33:01.692Z"
+  },
+  {
+    "email": "leila.siqueiros@biotronik.com",
+    "company": "BIOTRONIK",
+    "rejected_at": "2026-06-23T09:33:02.727Z"
+  },
+  {
+    "email": "daniel@aurahealth.io",
+    "company": "Aura Health",
+    "rejected_at": "2026-06-23T09:33:04.123Z"
+  },
+  {
+    "email": "pdlugosch@naturalintelligence.ai",
+    "company": "Natural Intelligence Systems",
+    "rejected_at": "2026-06-23T09:33:16.282Z"
+  },
+  {
+    "email": "ammar.hasan@biotronik.com",
+    "company": "BIOTRONIK",
+    "rejected_at": "2026-06-23T09:33:17.333Z"
+  },
+  {
+    "email": "michael.boblitz@uvahealth.org",
+    "company": "UVA Health",
+    "rejected_at": "2026-06-23T09:33:19.484Z"
+  },
+  {
+    "email": "vbs4pf@uvahealth.org",
+    "company": "UVA Health",
+    "rejected_at": "2026-06-23T09:33:35.524Z"
+  },
+  {
+    "email": "alissa@ideas42.org",
+    "company": "ideas42",
+    "rejected_at": "2026-06-23T09:34:02.382Z"
+  },
+  {
+    "email": "farnaz@novoed.com",
+    "company": "NovoEd",
+    "rejected_at": "2026-06-23T09:36:09.822Z"
+  },
+  {
+    "email": "pedro.lima@sea4us.pt",
+    "company": "Sea4Us",
+    "rejected_at": "2026-06-23T09:36:25.141Z"
+  },
+  {
+    "email": "neil@beckleyretreats.com",
+    "company": "Beckley Retreats",
+    "rejected_at": "2026-06-23T09:36:46.570Z"
+  },
+  {
+    "email": "shatou@lequest.com",
+    "company": "LeQuest",
+    "rejected_at": "2026-06-23T09:36:47.686Z"
+  },
+  {
+    "email": "riley@healthybaby.com",
+    "company": "HealthyBaby",
+    "rejected_at": "2026-06-23T10:21:55.969Z"
+  },
+  {
+    "email": "jon.rees@mitorxtherapeutics.com",
+    "company": "MitoRx Therapeutics",
+    "rejected_at": "2026-06-23T10:22:07.999Z"
+  },
+  {
+    "email": "billy@myquest.co",
+    "company": "myQuest",
+    "rejected_at": "2026-06-23T10:22:09.180Z"
+  },
+  {
+    "email": "mluo@pier88health.com",
+    "company": "Pier 88 Health",
+    "rejected_at": "2026-06-23T10:22:56.878Z"
+  },
+  {
+    "email": "natalie.burkitt@arcticshores.com",
+    "company": "Arctic Shores",
+    "rejected_at": "2026-06-23T10:22:58.333Z"
+  },
+  {
+    "email": "brion@luminopia.com",
+    "company": "Luminopia",
+    "rejected_at": "2026-06-23T10:24:21.944Z"
+  },
+  {
+    "email": "kevinrandall@crouse.org",
+    "company": "Crouse Health",
+    "rejected_at": "2026-06-23T10:24:33.384Z"
+  },
+  {
+    "email": "raj@sevaro.com",
+    "company": "Sevaro",
+    "rejected_at": "2026-06-23T10:25:32.555Z"
+  },
+  {
+    "email": "george@tapouts.com",
+    "company": "tapouts",
+    "rejected_at": "2026-06-23T10:25:34.572Z"
+  },
+  {
+    "email": "adam@realeye.io",
+    "company": "RealEye",
+    "rejected_at": "2026-06-23T10:25:36.137Z"
+  },
+  {
+    "email": "scoombs@amplifire.com",
+    "company": "Amplifire AI Learning",
+    "rejected_at": "2026-06-23T10:25:37.279Z"
+  },
+  {
+    "email": "arash.rassoulpour@neuron23.com",
+    "company": "Neuron23",
+    "rejected_at": "2026-06-23T10:25:50.229Z"
+  },
+  {
+    "email": "keith@thedesirecompany.com",
+    "company": "The Desire Company",
+    "rejected_at": "2026-06-23T10:25:51.358Z"
+  },
+  {
+    "email": "nsunderji@waypointcentre.ca",
+    "company": "Waypoint Centre for Mental Health Care",
+    "rejected_at": "2026-06-23T10:26:02.744Z"
+  },
+  {
+    "email": "jing.wang@myrotx.com",
+    "company": "Myrobalan Therapeutics",
+    "rejected_at": "2026-06-23T10:26:26.957Z"
+  },
+  {
+    "email": "sgreenberg@nurabio.com",
+    "company": "Nura Bio",
+    "rejected_at": "2026-06-23T10:26:29.277Z"
+  },
+  {
+    "email": "ben@businessofcreativity.com",
+    "company": "The Business of Creativity",
+    "rejected_at": "2026-06-23T10:26:30.480Z"
+  },
+  {
+    "email": "max@neocybernetica.com",
+    "company": "Neo Cybernetica",
+    "rejected_at": "2026-06-23T10:26:45.531Z"
+  },
+  {
+    "email": "malbert@synthesisretreat.com",
+    "company": "The Synthesis Institute",
+    "rejected_at": "2026-06-23T10:26:46.808Z"
+  },
+  {
+    "email": "rahul@liveivory.com",
+    "company": "Ivory",
+    "rejected_at": "2026-06-23T10:27:15.578Z"
+  },
+  {
+    "email": "cbeasley@bluerocktx.com",
+    "company": "BlueRock Therapeutics",
+    "rejected_at": "2026-06-23T10:27:17.101Z"
+  },
+  {
+    "email": "mmaire@rebion.net",
+    "company": "Rebion",
+    "rejected_at": "2026-06-23T10:27:18.429Z"
+  },
+  {
+    "email": "a.prudnikov@exoatlet.com",
+    "company": "ExoAtlet",
+    "rejected_at": "2026-06-23T10:27:19.863Z"
+  },
+  {
+    "email": "robin@intuicell.com",
+    "company": "Intui",
+    "rejected_at": "2026-06-23T10:27:21.195Z"
+  },
+  {
+    "email": "kyle.miko@virtuox.net",
+    "company": "VirtuOx, Inc.",
+    "rejected_at": "2026-06-23T10:27:23.885Z"
+  },
+  {
+    "email": "letta@theclass.com",
+    "company": "The Class",
+    "rejected_at": "2026-06-23T10:27:24.982Z"
+  },
+  {
+    "email": "shai.g@effectivate.org",
+    "company": "Effectivate",
+    "rejected_at": "2026-06-23T10:27:26.519Z"
+  },
+  {
+    "email": "david@dragonflyai.co",
+    "company": "Dragonfly AI",
+    "rejected_at": "2026-06-23T10:27:27.633Z"
+  },
+  {
+    "email": "pablo@4mtx.net",
+    "company": "4M Therapeutics Inc.",
+    "rejected_at": "2026-06-23T10:27:32.120Z"
+  },
+  {
+    "email": "karl@oneleafhealth.com",
+    "company": "Oneleaf",
+    "rejected_at": "2026-06-23T10:27:44.657Z"
+  },
+  {
+    "email": "etopol@scripps.edu",
+    "company": "Scripps Research",
+    "rejected_at": "2026-06-23T10:27:57.957Z"
+  },
+  {
+    "email": "dekel@taliazhealth.com",
+    "company": "TALIAZ",
+    "rejected_at": "2026-06-23T10:27:59.391Z"
+  },
+  {
+    "email": "sarah.colley@mlh.org",
+    "company": "Methodist Le Bonheur Healthcare",
+    "rejected_at": "2026-06-23T10:28:10.372Z"
+  },
+  {
+    "email": "philippe.bastide@dianosic.com",
+    "company": "dianosic",
+    "rejected_at": "2026-06-23T10:28:35.829Z"
+  },
+  {
+    "email": "michele.tavares@sleepup.com.br",
+    "company": "SleepUp",
+    "rejected_at": "2026-06-23T10:28:56.738Z"
+  },
+  {
+    "email": "c.melkert@equalture.com",
+    "company": "Equalture",
+    "rejected_at": "2026-06-23T10:28:57.760Z"
+  },
+  {
+    "email": "d.sangeeta@gotara.com",
+    "company": "Gotara",
+    "rejected_at": "2026-06-23T10:28:59.247Z"
+  },
+  {
+    "email": "ggregory@neurosync.health",
+    "company": "NeuroSync",
+    "rejected_at": "2026-06-23T10:29:00.833Z"
+  },
+  {
+    "email": "jalvarez@flourishresearch.com",
+    "company": "Flourish Research",
+    "rejected_at": "2026-06-23T10:29:11.814Z"
+  },
+  {
+    "email": "lyndon_foster@biosensis.com",
+    "company": "Biosensis Pty Ltd",
+    "rejected_at": "2026-06-23T10:29:13.492Z"
+  },
+  {
+    "email": "viki@taliazhealth.com",
+    "company": "TALIAZ",
+    "rejected_at": "2026-06-23T10:29:15.811Z"
+  },
+  {
+    "email": "jonathan@masterdynamic.com",
+    "company": "Master & Dynamic",
+    "rejected_at": "2026-06-23T10:29:26.113Z"
+  },
+  {
+    "email": "riham.satti@mevitae.com",
+    "company": "MeVitae",
+    "rejected_at": "2026-06-23T10:29:40.598Z"
+  },
+  {
+    "email": "mansuea@ihn.org",
+    "company": "Inspira Health",
+    "rejected_at": "2026-06-23T10:29:54.490Z"
+  },
+  {
+    "email": "dmandavia@deepsight.com",
+    "company": "DeepSight Technology",
+    "rejected_at": "2026-06-23T10:30:05.470Z"
+  }
+]
