@@ -2,7 +2,7 @@
 name: SpecialtyCare
 slug: specialtycare
 category: Neurotechnology
-description: SpecialtyCare provides intraoperative neuromonitoring (IONM) and operating room support services, including EEG monitoring, ECMO management, and perfusion services to enhance patient safety during complex surgical procedures. The company specializes in remote neuromonitoring and minimally invasive surgical support, with expertise in sterile processing department operations for healthcare facilities.
+description: SpecialtyCare provides intraoperative neuromonitoring (IONM) and operating room support services, including EEG monitoring, perfusion management, and remote neuromonitoring capabilities for minimally invasive surgical procedures. The company offers specialized expertise in ECMO support and sterile processing department services to enhance patient safety and surgical outcomes.
 website: https://specialtycareus.com
 funding: Private
 location: ""
