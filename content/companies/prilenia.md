@@ -2,7 +2,7 @@
 name: Prilenia
 slug: prilenia
 category: Neurotechnology
-description: Prilenia Neurotherapeutics is a neurotech company developing innovative therapeutics targeting the sigma-1 receptor to address neurodegenerative and neuropsychiatric diseases through disease-modifying approaches. The company operates globally with a focus on neuroprotective mechanisms and patient access programs while conducting advanced biotechnology and medical research.
+description: Prilenia is a biopharmaceutical company focused on developing neuroprotective therapies targeting the sigma-1 receptor for neurodegenerative and neuropsychiatric diseases. The company combines drug development expertise with global operations to advance disease-modifying treatments and ensure patient access to innovative neurological therapies.
 website: https://prilenia.com
 funding: Private
 location: ""
