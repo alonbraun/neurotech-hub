@@ -2,7 +2,7 @@
 name: BrainCapture
 slug: braincapture
 category: Neurotechnology
-description: BrainCapture develops AI-powered EEG technology for real-time epilepsy detection and monitoring, leveraging machine learning algorithms to analyze brain activity data. The company's medical device platform enables remote patient monitoring and telemedicine capabilities, supporting healthcare providers in delivering timely seizure detection and intervention.
+description: BrainCapture develops AI-powered EEG monitoring solutions designed to detect and manage epilepsy through advanced machine learning algorithms. The company manufactures medical devices that enable real-time seizure detection and telemedicine capabilities, integrating cutting-edge neurological technology into clinical and remote healthcare settings.
 website: https://braincapture.dk
 funding: Private
 location: ""
