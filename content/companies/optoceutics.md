@@ -2,7 +2,7 @@
 name: OptoCeutics
 slug: optoceutics
 category: Neurotechnology
-description: OptoCeutics develops advanced medical light therapy devices that utilize artificial intelligence and machine learning to deliver targeted 40 Hz light treatment for neurological applications. The company's FDA-regulated medical devices combine neuroscience research with innovative phototherapy technology to enable precise, non-invasive therapeutic interventions.
+description: OptoCeutics develops advanced light-based medical devices that leverage artificial intelligence and machine learning to deliver targeted therapeutic treatments, including proprietary 40 Hz light therapy technology for neurological applications. The company combines cutting-edge neuroscience research with medical device innovation to create non-invasive treatment solutions that harness the power of light for therapeutic benefit.
 website: https://optoceutics.com
 funding: Private
 location: ""
