@@ -1,12 +1,12 @@
 ---
 name: EMOTIV
 slug: emotiv
-category: Neurofeedback
-description: EMOTIV produces consumer and research-grade EEG headsets that enable brain-computer interaction, mental wellness monitoring, and cognitive performance tracking. Their EPOC and MN8 devices are widely used in academic research, workplace wellness, and adaptive technology applications.
+category: Neurotechnology
+description: EMOTIV develops scientific-grade EEG (electroencephalography) systems and brain monitoring solutions that capture and analyze brain activity data for applications spanning education, healthcare, industrial safety, and research. The company's neurotech platform combines wearable EEG hardware with advanced bioinformatics software to provide real-time brain health insights and contextual analysis for both consumer and enterprise markets.
 website: https://emotiv.com
-funding: Private · Series B
-location: San Francisco, CA, USA
+funding: Private
+location: ""
 tier: free
 featured: false
-date: 2026-06-15
+date: 2026-06-24
 ---
