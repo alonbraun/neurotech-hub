@@ -2,7 +2,7 @@
 name: Mobia Medical
 slug: mobia-medical
 category: Neurotechnology
-description: Mobia Medical develops innovative neurotech solutions focused on advancing neurological treatment options through cutting-edge medical device technology. The company leverages neuroscience expertise to create healthcare products that address critical needs in the neurology and life sciences sectors.
+description: Mobia Medical develops innovative neurotech medical devices designed to advance treatment options in neuroscience and healthcare. The company specializes in medical equipment manufacturing for life sciences applications, focusing on delivering cutting-edge solutions for clinical and patient care needs.
 website: https://vivistim.com
 funding: Private
 location: ""
