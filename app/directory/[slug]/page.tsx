@@ -2,6 +2,8 @@ import { getFileBySlug, getAllFiles, getFiles } from "@/lib/content";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 
+export const dynamicParams = true;
+
 export async function generateStaticParams() {
   return getFiles("companies").map((f) => ({ slug: f.replace(".md", "") }));
 }
